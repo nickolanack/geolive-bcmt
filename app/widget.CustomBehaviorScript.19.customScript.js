@@ -31,7 +31,7 @@ if (window.Cluster) {
             }
         }
     	   
-        var chars=Math.floor(Math.log10(sum));
+        var chars=Math.floor(Math.log(sum)/Math.log(10));
 
 		//expect to be bound to ClusterSymbol object
 		if (name == "hover") {
