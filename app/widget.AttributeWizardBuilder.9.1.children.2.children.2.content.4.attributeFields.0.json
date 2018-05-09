@@ -1,0 +1,33 @@
+{
+    "visibility": "public",
+    "tableId": "3",
+    "tableName": "siteData",
+    "tableSuffix": "_3544",
+    "title": "section",
+    "label": "Region",
+    "description": false,
+    "fieldType": "text",
+    "color": "#FFFFFF",
+    "searchability": "public",
+    "editability": "registered",
+    "fieldTextOptions": {
+        "textType": "input",
+        "inputOptions": {
+            "buildAutocomplete": false,
+            "requireModeration": false,
+            "limitMaxChars": true,
+            "limitMaxWords": true,
+            "allowHtml": false,
+            "allowMedia": false
+        },
+        "listOptions": {
+            "takeSugesstions": false,
+            "buildTree": false,
+            "iconize": false
+        },
+        "specialOptions": {
+            "attachment": false
+        }
+    },
+    "allowMultiple": false
+}

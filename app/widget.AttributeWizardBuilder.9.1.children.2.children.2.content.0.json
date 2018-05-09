@@ -1,0 +1,53 @@
+{
+    "type": "plugin.Attributes.WizardTextAttribute",
+    "config": {
+        "attributeFields": [
+            {
+                "visibility": "public",
+                "tableId": 3,
+                "tableName": "siteData",
+                "tableSuffix": "_3544",
+                "title": "siteVisitDone",
+                "label": "Site Visit Done",
+                "description": false,
+                "fieldType": "text",
+                "color": "#FFFFFF",
+                "searchability": "public",
+                "editability": "registered",
+                "fieldTextOptions": {
+                    "textType": "input",
+                    "inputOptions": {
+                        "buildAutocomplete": false,
+                        "requireModeration": false,
+                        "limitMaxChars": true,
+                        "limitMaxWords": true,
+                        "allowHtml": false,
+                        "allowMedia": false,
+                        "allowLinks": true
+                    },
+                    "listOptions": {
+                        "takeSugesstions": false,
+                        "buildTree": false,
+                        "iconize": false,
+                        "colorize": false
+                    }
+                },
+                "allowMultiple": false
+            }
+        ],
+        "className": "",
+        "label": "{field.label}",
+        "message": "",
+        "lines": 1,
+        "maxChars": 0,
+        "mandatory": false,
+        "multiEntry": false,
+        "autocomplete": true,
+        "muliTemplate": "lines",
+        "multiMessage": "",
+        "formatter": "none",
+        "iconTint": "rgb(100, 149, 237)",
+        "onRenderTextFieldScript": "",
+        "formatValueScript": ""
+    }
+}

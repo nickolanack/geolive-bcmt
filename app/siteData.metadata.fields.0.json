@@ -1,0 +1,44 @@
+{
+    "icon": [],
+    "fieldBooleanOptions": {
+        "trueIcon": [],
+        "falseIcon": [],
+        "hideFalse": true,
+        "trueLabel": "",
+        "falseLabel": "",
+        "useFieldIcon": false
+    },
+    "was": "landTenure",
+    "title": "landTenure",
+    "label": "Land Tenure",
+    "description": "",
+    "color": "#FFFFFF",
+    "visibility": "public",
+    "editability": "registered",
+    "searchability": "public",
+    "allowMultiple": false,
+    "fieldType": "text",
+    "fieldTextOptions": {
+        "textType": "options",
+        "inputOptions": {
+            "buildAutocomplete": false,
+            "requireModeration": false,
+            "limitMaxChars": 1,
+            "limitMaxWords": 1,
+            "allowHtml": false,
+            "allowMedia": false,
+            "allowLinks": true
+        },
+        "listOptions": {
+            "takeSugesstions": false,
+            "buildTree": false,
+            "iconize": false,
+            "colorize": false
+        }
+    },
+    "fieldNumberOptions": {
+        "precision": 0,
+        "limitMinValue": 0,
+        "limitMaxValue": 0
+    }
+}

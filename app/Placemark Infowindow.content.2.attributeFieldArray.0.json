@@ -1,0 +1,32 @@
+{
+    "visibility": "public",
+    "tableId": 3,
+    "tableName": "siteData",
+    "tableSuffix": "_3544",
+    "title": "landTenure",
+    "label": "Land Tenure",
+    "description": "",
+    "fieldType": "text",
+    "color": "#FFFFFF",
+    "searchability": "public",
+    "editability": "registered",
+    "fieldTextOptions": {
+        "textType": "options",
+        "inputOptions": {
+            "buildAutocomplete": false,
+            "requireModeration": false,
+            "limitMaxChars": 1,
+            "limitMaxWords": 1,
+            "allowHtml": false,
+            "allowMedia": false,
+            "allowLinks": true
+        },
+        "listOptions": {
+            "takeSugesstions": false,
+            "buildTree": false,
+            "iconize": false,
+            "colorize": false
+        }
+    },
+    "allowMultiple": false
+}

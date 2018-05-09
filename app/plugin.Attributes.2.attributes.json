@@ -1,0 +1,789 @@
+[
+    {
+        "id": "3",
+        "name": "siteData",
+        "description": "",
+        "label": "",
+        "suffix": "_3544",
+        "metadata": {
+            "title": "siteData",
+            "readAccess": "public",
+            "appliesTo": [
+                "marker"
+            ],
+            "id": "3",
+            "suffix": "_3544",
+            "description": "",
+            "fields": [
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "landTenure",
+                    "label": "Land Tenure",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "options",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 1,
+                            "limitMaxWords": 1,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "tentSites",
+                    "label": "Tent Sites",
+                    "description": false,
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": true,
+                            "limitMaxWords": true,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "landingComments",
+                    "label": "Landing Comments",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 1,
+                            "limitMaxWords": 1,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "campComments",
+                    "label": "Camp Comments",
+                    "description": false,
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": true,
+                            "limitMaxWords": true,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "otherComments",
+                    "label": "Other Comments",
+                    "description": false,
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": true,
+                            "limitMaxWords": true,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "siteConditionNotes",
+                    "label": "Site Condition Notes",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "rgb(undefined, undefined, undefined)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "siteConditionDate",
+                    "label": "SC Report Date",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "rgb(NaN, NaN, NaN)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "siteFunction",
+                    "label": "Site Function",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "options",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 1,
+                            "limitMaxWords": 1,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "siteUsage",
+                    "label": "Site Usage",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "options",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 1,
+                            "limitMaxWords": 1,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "rationale",
+                    "label": "Rationale",
+                    "description": false,
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": true,
+                            "limitMaxWords": true,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "planningAction",
+                    "label": "Planning Action",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "rgb(undefined, undefined, undefined)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "siteAccess",
+                    "label": "Site Access",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "options",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 1,
+                            "limitMaxWords": 1,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "coordinateSource",
+                    "label": "Coordinate Source",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "options",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 1,
+                            "limitMaxWords": 1,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "provenance",
+                    "label": "Provenance",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "rgb(undefined, undefined, undefined)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "structures",
+                    "label": "Signage & Structures",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "rgb(undefined, undefined, undefined)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "visitDetail",
+                    "label": "Known Visit Detail",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "rgb(NaN, NaN, NaN)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "siteVisitDone",
+                    "label": "Site Visit Done",
+                    "description": false,
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": true,
+                            "limitMaxWords": true,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "siteVisitedBy",
+                    "label": "Site Visited By",
+                    "description": false,
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": true,
+                            "limitMaxWords": true,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "siteVisitDate",
+                    "label": "Site Visit Date",
+                    "description": "false",
+                    "fieldType": "text",
+                    "color": "rgb(undefined, undefined, undefined)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 1,
+                            "limitMaxWords": 1,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "proposedGroundCheckDate",
+                    "label": "Proposed Ground Check Date",
+                    "description": false,
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": true,
+                            "limitMaxWords": true,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "section",
+                    "label": "Region",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "options",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 1,
+                            "limitMaxWords": 1,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "paddlingArea",
+                    "label": "Paddling Area",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "rgb(NaN, NaN, NaN)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "options",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 1,
+                            "limitMaxWords": 1,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": true,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "trail",
+                    "label": "Trail",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "#FFFFFF",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "options",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 1,
+                            "limitMaxWords": 1,
+                            "allowHtml": false,
+                            "allowMedia": false,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": false,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                },
+                {
+                    "visibility": "public",
+                    "tableId": "3",
+                    "tableName": "siteData",
+                    "tableSuffix": "_3544",
+                    "title": "additionalTrails",
+                    "label": "Additional Trails",
+                    "description": "",
+                    "fieldType": "text",
+                    "color": "rgb(undefined, undefined, undefined)",
+                    "searchability": "public",
+                    "editability": "registered",
+                    "fieldTextOptions": {
+                        "textType": "input",
+                        "inputOptions": {
+                            "buildAutocomplete": false,
+                            "requireModeration": false,
+                            "limitMaxChars": 0,
+                            "limitMaxWords": 0,
+                            "allowHtml": false,
+                            "allowMedia": true,
+                            "allowLinks": true
+                        },
+                        "listOptions": {
+                            "takeSugesstions": true,
+                            "buildTree": false,
+                            "iconize": false,
+                            "colorize": false
+                        }
+                    },
+                    "allowMultiple": false
+                }
+            ]
+        }
+    }
+]

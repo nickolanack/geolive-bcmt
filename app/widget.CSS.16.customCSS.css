@@ -1,0 +1,27 @@
+div.tip>.tip-text {
+
+line-height: 15px;
+font-size: 11px;
+white-space: normal;
+}
+
+.iMenuContainer {
+    position: absolute;
+    right: -25px;
+    top: -10px;
+    z-index: -1;
+}
+
+.infowindow_t, .infowindow_tl, .infowindow_tr {
+    background-color: #405E6D;
+    z-index: 1;
+}
+
+.infowindow_title, .geolive_window_title_content>span {
+    z-index: 1;
+    color: white;
+}
+
+span.WizardFooter {
+    bottom: -69px;
+}

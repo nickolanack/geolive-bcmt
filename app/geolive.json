@@ -1,0 +1,2797 @@
+{
+    "plugin.1": {
+        "name": "Activity Monitor",
+        "instance": "ActivityMonitor",
+        "parameters": {}
+    },
+    "plugin.2": {
+        "name": "Attributes",
+        "instance": "Attributes",
+        "parameters": {},
+        "attributes": "plugin.Attributes.2.attributes.json"
+    },
+    "plugin.3": {
+        "name": "Version Manager",
+        "instance": "VersionManager",
+        "parameters": {}
+    },
+    "plugin.5": {
+        "name": "Upgrade",
+        "instance": "Upgrade",
+        "parameters": {
+            "releaseServer": "http:\/\/release.geolive.ca",
+            "releasePackage": "master",
+            "autoUpdate": false
+        }
+    },
+    "plugin.6": {
+        "name": "System Parameters",
+        "instance": "SystemParameters",
+        "parameters": {
+            "JSFileObfuscationEnabled": false,
+            "JSInlineObfuscationEnabled": false,
+            "CSSFileObfuscationEnabled": false,
+            "CSSInlineObfuscationEnabled": false,
+            "PHPDebugEnabled": false,
+            "JSDebugEnabled": true,
+            "CachingEnabled": false,
+            "PrettyPrintJson": true,
+            "JSCacheObfuscationEnabled": false,
+            "phase": "production",
+            "ExternalizeWidgetScripts": true,
+            "showFrontEndEditButtons": true,
+            "ForceHTTPS": false,
+            "allowProxiesFrom": [
+                "*",
+                ""
+            ],
+            "pluginPaths": [
+                ""
+            ],
+            "widgetPaths": [
+                ""
+            ],
+            "modulePaths": [
+                ""
+            ],
+            "sandboxDomains": [
+                "*.z.geolive.ca",
+                "*.s22.ok.ubc.ca",
+                ""
+            ]
+        }
+    },
+    "plugin.15": {
+        "name": "Data Types",
+        "instance": "Data",
+        "parameters": {}
+    },
+    "plugin.8": {
+        "name": "Filesystem",
+        "instance": "Filesystem",
+        "parameters": {
+            "enableFileMetadataCache": true,
+            "showDropboxImagePicker": false,
+            "dropbox-app-key": "",
+            "uploadViewInlineCss": "",
+            "uploadViewPageScript": "",
+            "enableFileAttributes": false,
+            "fileAttributesTableName": "filesystemAttributes"
+        }
+    },
+    "plugin.9": {
+        "name": "Maps",
+        "instance": "Maps",
+        "parameters": {
+            "enableLayerSyncronization": true,
+            "onlyShowMarkersInIconset": false,
+            "googleMapsServerApiKey": "",
+            "googleMapsVersion": "",
+            "tileCachePath": "{site}\/..\/map-tiles",
+            "layerDisplayFilterScript": "",
+            "formatMapitemScript": ""
+        }
+    },
+    "plugin.10": {
+        "name": "Users",
+        "instance": "Users",
+        "parameters": {
+            "customUserGroups": [
+                "site-planning"
+            ],
+            "customUserScript": "plugin.Users.10.customUserScript.js",
+            "customGroupMemberOfGroupScript": "return array(\"special\");"
+        }
+    },
+    "plugin.11": {
+        "name": "External Content",
+        "instance": "ExternalContent",
+        "parameters": {}
+    },
+    "plugin.12": {
+        "name": "Google Maps",
+        "instance": "GoogleMaps",
+        "parameters": {}
+    },
+    "plugin.24": {
+        "name": "Pusher Message Server",
+        "instance": "PusherMessages",
+        "parameters": "_PusherMessages.json"
+    },
+    "plugin.14": {
+        "name": "User Interface",
+        "instance": "UserInterface",
+        "parameters": {
+            "defaultRoute": {
+                "view": "plugin",
+                "plugin": "UserInterface",
+                "pluginView": "front"
+            }
+        }
+    },
+    "plugin.16": {
+        "name": "Deploy",
+        "instance": "Deploy",
+        "parameters": "_Deploy.json"
+    },
+    "plugin.17": {
+        "name": "Email",
+        "instance": "Email",
+        "parameters": {}
+    },
+    "plugin.18": {
+        "name": "Events",
+        "instance": "Events",
+        "parameters": {}
+    },
+    "plugin.19": {
+        "name": "Language",
+        "instance": "Language",
+        "parameters": {}
+    },
+    "plugin.20": {
+        "name": "Links",
+        "instance": "Links",
+        "parameters": {}
+    },
+    "plugin.21": {
+        "name": "Search Plugin",
+        "instance": "Search",
+        "parameters": {}
+    },
+    "plugin.22": {
+        "name": "Monolog Plugin",
+        "instance": "Monolog",
+        "parameters": {
+            "logPath": "{core}\/log",
+            "logToSentry": false
+        }
+    },
+    "plugin.23": {
+        "name": "Sentry IO Error reporting",
+        "instance": "SentryIO",
+        "parameters": {
+            "clientSecretUrl": "XXXX-XXXX",
+            "clientPublicUrl": "https:\/\/6197cf631f844a1583e5a04266b48cb5@sentry.io\/297472",
+            "enabled": false
+        }
+    },
+    "widget.28": {
+        "name": "Stylesheet",
+        "instance": "CSS",
+        "parameters": {
+            "target": "map.12",
+            "customCSS": "Template Theme Integration.customCSS.css",
+            "widgetTitle": "Template Theme Integration",
+            "readAccess": "public"
+        }
+    },
+    "widget.2": {
+        "name": "Tile Buttons",
+        "instance": "TileButtons",
+        "parameters": {
+            "sections": [],
+            "markerIcons": "[\"components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_mF_Cry_87_[ImAgE].png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/1QS_[ImAgE]_HKc_[G]_vuX.png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/5qW_[G]_hcQ_[ImAgE]_6hG.png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_jMs_DPA_JWx_[ImAgE].png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_%5BImAgE%5D_%5BG%5D.png\"]",
+            "fullscreenTip": "",
+            "homeTip": "",
+            "markerTip": "",
+            "searchTip": "",
+            "loginTip": "",
+            "logoutTip": "",
+            "profileTip": "",
+            "showToolTips": true,
+            "position": "LEFT_BOTTOM",
+            "offsetX": 100,
+            "offsetY": 100,
+            "markerSize": 32,
+            "tileSize": 50,
+            "direction": "vertical",
+            "tilePadding": 0,
+            "iconSetReferenceName": "",
+            "tileIcon": [],
+            "discussionTag": false,
+            "markerSearch": true,
+            "layerMap": {
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png": "3",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_mF_Cry_87_[ImAgE].png": "2",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/5qW_[G]_hcQ_[ImAgE]_6hG.png": "1",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/1QS_[ImAgE]_HKc_[G]_vuX.png": "7",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_jMs_DPA_JWx_[ImAgE].png": "4",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_%5BImAgE%5D_%5BG%5D.png": "6"
+            },
+            "tipMap": [],
+            "showShiboleth": 0,
+            "showFacebook": 0,
+            "showJoomlaLogin": 1,
+            "widgetTitle": "label this widget",
+            "readAccess": "public",
+            "markerIconset": [
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_mF_Cry_87_[ImAgE].png",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/1QS_[ImAgE]_HKc_[G]_vuX.png",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/5qW_[G]_hcQ_[ImAgE]_6hG.png",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_%5BImAgE%5D_%5BG%5D.png",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/E6W_OuT_Yn7_[ImAgE]_[G].png",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/f7k_oU2_Xyh_[G]_[ImAgE].png"
+            ],
+            "groupIcon": [],
+            "filterLayerMappedIcons": true,
+            "iconsetMetadata": {
+                "layerMap": {
+                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png": 8,
+                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_mF_Cry_87_[ImAgE].png": 2,
+                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/1QS_[ImAgE]_HKc_[G]_vuX.png": 7,
+                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/5qW_[G]_hcQ_[ImAgE]_6hG.png": 1,
+                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_%5BImAgE%5D_%5BG%5D.png": 6,
+                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/E6W_OuT_Yn7_[ImAgE]_[G].png": 3,
+                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/f7k_oU2_Xyh_[G]_[ImAgE].png": 4
+                },
+                "renderSettings": {
+                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png": {
+                        "anchor": [
+                            "50.0%",
+                            "100.0%"
+                        ]
+                    },
+                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_mF_Cry_87_[ImAgE].png": {
+                        "anchor": [
+                            "50.0%",
+                            "100.0%"
+                        ]
+                    },
+                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/1QS_[ImAgE]_HKc_[G]_vuX.png": {
+                        "anchor": [
+                            "50.0%",
+                            "100.0%"
+                        ]
+                    },
+                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/5qW_[G]_hcQ_[ImAgE]_6hG.png": {
+                        "anchor": [
+                            "50.0%",
+                            "100.0%"
+                        ]
+                    },
+                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_%5BImAgE%5D_%5BG%5D.png": {
+                        "anchor": [
+                            "50.0%",
+                            "100.0%"
+                        ]
+                    }
+                }
+            },
+            "controlColor": "rgb(147, 0, 147)",
+            "subControlColor": "rgb(100, 149, 237)",
+            "showLogoutProfile": false,
+            "displayMapSave": "1",
+            "guestLoginDrag": true,
+            "onDragEndScript": "defaultBehaviorFn();",
+            "useTipIconsetLayerTitle": false,
+            "formatTipScript": "",
+            "onDisplayTileScript": "",
+            "onProfileClickScript": "",
+            "target": "map.12"
+        }
+    },
+    "widget.3": {
+        "name": "Google Controls",
+        "instance": "GoogleControl",
+        "parameters": {
+            "showStreetControl": 1,
+            "streetControlPosition": "LEFT_TOP",
+            "showPanControl": 1,
+            "panControlPosition": "LEFT_TOP",
+            "showZoomControl": 1,
+            "zoomControl": "SMALL",
+            "zoomControlPosition": "LEFT_TOP",
+            "showMapTypeControl": 1,
+            "mapType": "DEFAULT",
+            "mapTypePosition": "TOP_RIGHT",
+            "showMapScaleControl": 1,
+            "mapScaleType": "DEFAULT",
+            "mapScalePosition": "BOTTOM_RIGHT",
+            "showMapNavControl": 0,
+            "mapNavPosition": "TOP_LEFT",
+            "showMapOverviewControl": 0,
+            "mapOverviewControlOpened": 0,
+            "widgetTitle": "label this widget",
+            "readAccess": "public"
+        }
+    },
+    "widget.4": {
+        "name": "Attr Search Bar",
+        "instance": "AttributesSearch",
+        "parameters": {
+            "position": "TOP_CENTER",
+            "barWidth": 500,
+            "locationSearch": "1",
+            "showFilterBuilder": "",
+            "hoverTheme": "",
+            "showCloud": "",
+            "cloudTable": "add cloud table",
+            "cloudField": "cloud field",
+            "mapitemSearchLabel": "BCMTA Location",
+            "locationSearchLabel": "Other Locations",
+            "widgetTitle": "label this widget",
+            "readAccess": "public"
+        }
+    },
+    "widget.5": {
+        "name": "Legend",
+        "instance": "Legend",
+        "parameters": {
+            "position": "RIGHT_BOTTOM",
+            "style": "GeoliveLegend.css",
+            "showHitCounter": 0,
+            "showIcon": 0,
+            "useIconSet": true,
+            "iconImage": "",
+            "startMinimized": true,
+            "iconSize": 22,
+            "widgetTitle": "Legend",
+            "readAccess": "public",
+            "draggableIcons": true,
+            "defaultIcon": "DEFAULT",
+            "showEditLayerButtons": false,
+            "showToggle": true,
+            "legendParams": [],
+            "guestLoginDrag": true,
+            "shouldShowLayerScript": "return true",
+            "editableLayerScript": "return true",
+            "formatLayerScript": "",
+            "formatLayerPopoverScript": "Legend.formatLayerPopoverScript.js",
+            "formatLegendScript": "",
+            "onDragEndScript": "defaultBehaviorFn();",
+            "target": "map.12",
+            "editLayerScript": "\r\ndefaultBehaviorFn();\r\n"
+        }
+    },
+    "widget.6": {
+        "name": "Cluster Behavior",
+        "instance": "ClusterBehaviors",
+        "parameters": {
+            "readAccess": "public",
+            "spreadClusters": 0,
+            "spreadClustersWithAnimation": 1,
+            "widgetTitle": "add a label or comment for this widget",
+            "position": "TOP_LEFT"
+        }
+    },
+    "widget.8": {
+        "name": "Generic Wizard",
+        "instance": "WizardBuilder",
+        "parameters": {
+            "metadata": {
+                "class": "DecisionNode",
+                "_diagramState": {
+                    "x": -251,
+                    "y": 203
+                },
+                "children": [
+                    "widget.WizardBuilder.8.metadata.children.0.json",
+                    {
+                        "title": "Step 1, Details",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            "widget.WizardBuilder.8.metadata.children.1.fields.0.json"
+                        ],
+                        "_diagramState": {
+                            "x": 113,
+                            "y": 248
+                        },
+                        "children": [
+                            "widget.WizardBuilder.8.metadata.children.1.children.0.json",
+                            {
+                                "class": "InsertNode",
+                                "_diagramState": {
+                                    "x": 73,
+                                    "y": 499
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        "widget.WizardBuilder.8.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        "widget.WizardBuilder.8.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        {
+                                            "type": "WizardIconizedLayerSelect",
+                                            "config": {
+                                                "icons": [
+                                                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/5qW_[G]_hcQ_[ImAgE]_6hG.png",
+                                                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_mF_Cry_87_[ImAgE].png",
+                                                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/1QS_[ImAgE]_HKc_[G]_vuX.png",
+                                                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/E6W_OuT_Yn7_[ImAgE]_[G].png",
+                                                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/f7k_oU2_Xyh_[G]_[ImAgE].png",
+                                                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png",
+                                                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_[ImAgE]_[G].png"
+                                                ],
+                                                "iconsetMetadata": {
+                                                    "layerMap": {
+                                                        "components\/com_geolive\/users_files\/user_files_62\/Uploads\/5qW_[G]_hcQ_[ImAgE]_6hG.png": 1,
+                                                        "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_mF_Cry_87_[ImAgE].png": 2,
+                                                        "components\/com_geolive\/users_files\/user_files_62\/Uploads\/1QS_[ImAgE]_HKc_[G]_vuX.png": 7,
+                                                        "components\/com_geolive\/users_files\/user_files_62\/Uploads\/E6W_OuT_Yn7_[ImAgE]_[G].png": 3,
+                                                        "components\/com_geolive\/users_files\/user_files_62\/Uploads\/f7k_oU2_Xyh_[G]_[ImAgE].png": 4,
+                                                        "components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png": 8,
+                                                        "components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_[ImAgE]_[G].png": 6
+                                                    },
+                                                    "renderSettings": []
+                                                },
+                                                "formatIconScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardTitleField",
+                                            "config": {
+                                                "label": "Title or Site Name",
+                                                "message": "add a title",
+                                                "className": "",
+                                                "maxChars": 0,
+                                                "textFormatScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "WizardDescriptionField",
+                                            "config": {
+                                                "label": "Description",
+                                                "message": "add a description",
+                                                "lines": 3,
+                                                "mandatory": false,
+                                                "showAudios": true,
+                                                "showImages": true,
+                                                "showDocuments": true,
+                                                "showVideos": true,
+                                                "className": "",
+                                                "maxChars": 0,
+                                                "showExpandInput": true,
+                                                "toolbarPosition": "bottom",
+                                                "textFormatScript": "",
+                                                "mediaIconTint": "rgb(100, 149, 237)",
+                                                "onRenderModuleFn": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.WizardBuilder.8.metadata.children.1.builderMetadata.positions.content.modules.4.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "Land Tenure",
+                                                "message": "set land tenure details",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "onRenderTextFieldScript": "",
+                                                "formatValueScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.WizardBuilder.8.metadata.children.1.builderMetadata.positions.content.modules.5.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "Tent Sites",
+                                                "message": "set tent site details",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "onRenderTextFieldScript": "",
+                                                "formatValueScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.WizardBuilder.8.metadata.children.1.builderMetadata.positions.content.modules.6.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "Landing Comments",
+                                                "message": "add landing comments",
+                                                "lines": 2,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "onRenderTextFieldScript": "",
+                                                "formatValueScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.WizardBuilder.8.metadata.children.1.builderMetadata.positions.content.modules.7.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "Camp Comments",
+                                                "message": "add camp comments",
+                                                "lines": 2,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "onRenderTextFieldScript": "",
+                                                "formatValueScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.WizardBuilder.8.metadata.children.1.builderMetadata.positions.content.modules.8.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "Other Comments",
+                                                "message": "add other comments",
+                                                "lines": 2,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "onRenderTextFieldScript": "",
+                                                "formatValueScript": ""
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": [
+                                        "widget.WizardBuilder.8.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
+                                    ]
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ],
+                            "_diagramState": {
+                                "minimized": false
+                            }
+                        }
+                    }
+                ]
+            },
+            "readAccess": "public",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "widgetTitle": "",
+            "beforeSubmitScript": "",
+            "onLoadScript": "",
+            "requireTarget": true,
+            "templateName": "MapItemTemplate",
+            "target": "map.12"
+        }
+    },
+    "widget.9": {
+        "name": "Attribute Wizard Builder",
+        "instance": "AttributeWizardBuilder",
+        "parameters": {
+            "templateName": "itemAttributesForm",
+            "metadata": {
+                "class": "DecisionNode",
+                "_diagramState": {
+                    "x": -146,
+                    "y": 400
+                },
+                "children": [
+                    "widget.AttributeWizardBuilder.9.metadata.children.0.json",
+                    {
+                        "title": "Attributes Page One",
+                        "class": "AttributesTableNode",
+                        "fields": [
+                            "widget.AttributeWizardBuilder.9.metadata.children.1.fields.0.json"
+                        ],
+                        "_diagramState": {
+                            "x": 33,
+                            "y": 273
+                        },
+                        "children": [
+                            "widget.AttributeWizardBuilder.9.metadata.children.1.children.0.json",
+                            {
+                                "class": "InsertNode",
+                                "_diagramState": {
+                                    "x": -7,
+                                    "y": 511
+                                }
+                            },
+                            {
+                                "title": "Attributes Page Two",
+                                "class": "AttributesTableNode",
+                                "fields": [
+                                    "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.fields.0.json"
+                                ],
+                                "_diagramState": {
+                                    "x": 467,
+                                    "y": 222
+                                },
+                                "children": [
+                                    "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.0.json",
+                                    {
+                                        "class": "InsertNode",
+                                        "_diagramState": {
+                                            "x": 427,
+                                            "y": 460
+                                        }
+                                    },
+                                    {
+                                        "title": "Attributes Page Three",
+                                        "class": "AttributesTableNode",
+                                        "fields": [
+                                            "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.2.fields.0.json"
+                                        ],
+                                        "_diagramState": {
+                                            "x": 902,
+                                            "y": 261
+                                        },
+                                        "children": [
+                                            "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.2.children.0.json",
+                                            {
+                                                "class": "InsertNode",
+                                                "_diagramState": {
+                                                    "x": 862,
+                                                    "y": 499
+                                                }
+                                            }
+                                        ],
+                                        "builderMetadata": {
+                                            "positions": {
+                                                "title": {
+                                                    "modules": [
+                                                        "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.2.builderMetadata.positions.title.modules.0.json"
+                                                    ]
+                                                },
+                                                "content": {
+                                                    "modules": [
+                                                        "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.2.builderMetadata.positions.content.modules.0.json",
+                                                        {
+                                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                                            "config": {
+                                                                "attributeFields": [
+                                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.2.builderMetadata.positions.content.modules.1.config.attributeFields.0.json"
+                                                                ],
+                                                                "className": "",
+                                                                "label": "{field.label}",
+                                                                "message": "",
+                                                                "lines": 1,
+                                                                "maxChars": 0,
+                                                                "mandatory": false,
+                                                                "multiEntry": false,
+                                                                "autocomplete": true,
+                                                                "muliTemplate": "lines",
+                                                                "multiMessage": "",
+                                                                "formatter": "none",
+                                                                "iconTint": "rgb(100, 149, 237)",
+                                                                "onRenderTextFieldScript": "",
+                                                                "formatValueScript": ""
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                                            "config": {
+                                                                "attributeFields": [
+                                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.2.builderMetadata.positions.content.modules.2.config.attributeFields.0.json"
+                                                                ],
+                                                                "className": "",
+                                                                "label": "{field.label}",
+                                                                "message": "",
+                                                                "lines": 1,
+                                                                "maxChars": 0,
+                                                                "mandatory": false,
+                                                                "multiEntry": false,
+                                                                "autocomplete": true,
+                                                                "muliTemplate": "lines",
+                                                                "multiMessage": "",
+                                                                "formatter": "date",
+                                                                "iconTint": "rgb(100, 149, 237)",
+                                                                "onRenderTextFieldScript": "",
+                                                                "formatValueScript": ""
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                                            "config": {
+                                                                "attributeFields": [
+                                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.2.builderMetadata.positions.content.modules.3.config.attributeFields.0.json"
+                                                                ],
+                                                                "className": "",
+                                                                "label": "{field.label}",
+                                                                "message": "",
+                                                                "lines": 1,
+                                                                "maxChars": 0,
+                                                                "mandatory": false,
+                                                                "multiEntry": false,
+                                                                "autocomplete": true,
+                                                                "muliTemplate": "lines",
+                                                                "multiMessage": "",
+                                                                "formatter": "date",
+                                                                "iconTint": "rgb(100, 149, 237)",
+                                                                "onRenderTextFieldScript": "",
+                                                                "formatValueScript": ""
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                                            "config": {
+                                                                "attributeFields": [
+                                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.2.builderMetadata.positions.content.modules.4.config.attributeFields.0.json"
+                                                                ],
+                                                                "className": "",
+                                                                "label": "{field.label}",
+                                                                "message": "",
+                                                                "lines": 1,
+                                                                "maxChars": 0,
+                                                                "mandatory": false,
+                                                                "multiEntry": false,
+                                                                "autocomplete": true,
+                                                                "muliTemplate": "lines",
+                                                                "multiMessage": "",
+                                                                "formatter": "none",
+                                                                "iconTint": "rgb(100, 149, 237)",
+                                                                "onRenderTextFieldScript": "",
+                                                                "formatValueScript": ""
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                                            "config": {
+                                                                "attributeFields": [
+                                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.2.builderMetadata.positions.content.modules.5.config.attributeFields.0.json"
+                                                                ],
+                                                                "className": "",
+                                                                "label": "{field.label}",
+                                                                "message": "",
+                                                                "lines": 1,
+                                                                "maxChars": 0,
+                                                                "mandatory": false,
+                                                                "multiEntry": false,
+                                                                "autocomplete": true,
+                                                                "muliTemplate": "lines",
+                                                                "multiMessage": "",
+                                                                "formatter": "none",
+                                                                "iconTint": "rgb(100, 149, 237)",
+                                                                "onRenderTextFieldScript": "",
+                                                                "formatValueScript": ""
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                                            "config": {
+                                                                "attributeFields": [
+                                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.2.builderMetadata.positions.content.modules.6.config.attributeFields.0.json"
+                                                                ],
+                                                                "className": "",
+                                                                "label": "{field.label}",
+                                                                "message": "",
+                                                                "lines": 1,
+                                                                "maxChars": 0,
+                                                                "mandatory": false,
+                                                                "multiEntry": false,
+                                                                "autocomplete": true,
+                                                                "muliTemplate": "lines",
+                                                                "multiMessage": "",
+                                                                "formatter": "none",
+                                                                "iconTint": "rgb(100, 149, 237)",
+                                                                "onRenderTextFieldScript": "",
+                                                                "formatValueScript": ""
+                                                            }
+                                                        },
+                                                        {
+                                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                                            "config": {
+                                                                "attributeFields": [
+                                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.2.builderMetadata.positions.content.modules.7.config.attributeFields.0.json"
+                                                                ],
+                                                                "className": "",
+                                                                "label": "{field.label}",
+                                                                "message": "",
+                                                                "lines": 1,
+                                                                "maxChars": 0,
+                                                                "mandatory": false,
+                                                                "multiEntry": false,
+                                                                "autocomplete": true,
+                                                                "muliTemplate": "lines",
+                                                                "multiMessage": "",
+                                                                "formatter": "none",
+                                                                "iconTint": "rgb(100, 149, 237)",
+                                                                "onRenderTextFieldScript": "",
+                                                                "formatValueScript": ""
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "footer": {
+                                                    "modules": [
+                                                        "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.children.2.builderMetadata.positions.footer.modules.0.json"
+                                                    ]
+                                                },
+                                                "menu": {
+                                                    "modules": []
+                                                }
+                                            },
+                                            "positionList": [
+                                                "title",
+                                                "content",
+                                                "footer",
+                                                "menu"
+                                            ],
+                                            "_diagramState": {
+                                                "minimized": false
+                                            }
+                                        }
+                                    }
+                                ],
+                                "builderMetadata": {
+                                    "positions": {
+                                        "title": {
+                                            "modules": [
+                                                "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.builderMetadata.positions.title.modules.0.json"
+                                            ]
+                                        },
+                                        "content": {
+                                            "modules": [
+                                                "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.builderMetadata.positions.content.modules.0.json",
+                                                {
+                                                    "type": "plugin.Attributes.WizardTextAttribute",
+                                                    "config": {
+                                                        "attributeFields": [
+                                                            "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.builderMetadata.positions.content.modules.1.config.attributeFields.0.json"
+                                                        ],
+                                                        "className": "",
+                                                        "label": "{field.label}",
+                                                        "message": "",
+                                                        "lines": 1,
+                                                        "maxChars": 0,
+                                                        "mandatory": false,
+                                                        "multiEntry": false,
+                                                        "autocomplete": true,
+                                                        "muliTemplate": "lines",
+                                                        "multiMessage": "",
+                                                        "formatter": "none",
+                                                        "iconTint": "rgb(100, 149, 237)",
+                                                        "onRenderTextFieldScript": "",
+                                                        "formatValueScript": ""
+                                                    }
+                                                },
+                                                {
+                                                    "type": "plugin.Attributes.WizardTextAttribute",
+                                                    "config": {
+                                                        "attributeFields": [
+                                                            "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.builderMetadata.positions.content.modules.2.config.attributeFields.0.json"
+                                                        ],
+                                                        "className": "",
+                                                        "label": "{field.label}",
+                                                        "message": "",
+                                                        "lines": 1,
+                                                        "maxChars": 0,
+                                                        "mandatory": false,
+                                                        "multiEntry": false,
+                                                        "autocomplete": true,
+                                                        "muliTemplate": "lines",
+                                                        "multiMessage": "",
+                                                        "formatter": "none",
+                                                        "iconTint": "rgb(100, 149, 237)",
+                                                        "onRenderTextFieldScript": "",
+                                                        "formatValueScript": ""
+                                                    }
+                                                },
+                                                {
+                                                    "type": "plugin.Attributes.WizardTextAttribute",
+                                                    "config": {
+                                                        "attributeFields": [
+                                                            "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.builderMetadata.positions.content.modules.3.config.attributeFields.0.json"
+                                                        ],
+                                                        "className": "",
+                                                        "label": "{field.label}",
+                                                        "message": "",
+                                                        "lines": 1,
+                                                        "maxChars": 0,
+                                                        "mandatory": false,
+                                                        "multiEntry": false,
+                                                        "autocomplete": true,
+                                                        "muliTemplate": "lines",
+                                                        "multiMessage": "",
+                                                        "formatter": "none",
+                                                        "iconTint": "rgb(100, 149, 237)",
+                                                        "onRenderTextFieldScript": "",
+                                                        "formatValueScript": ""
+                                                    }
+                                                },
+                                                {
+                                                    "type": "plugin.Attributes.WizardTextAttribute",
+                                                    "config": {
+                                                        "attributeFields": [
+                                                            "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.builderMetadata.positions.content.modules.4.config.attributeFields.0.json"
+                                                        ],
+                                                        "className": "",
+                                                        "label": "{field.label}",
+                                                        "message": "",
+                                                        "lines": 1,
+                                                        "maxChars": 0,
+                                                        "mandatory": false,
+                                                        "multiEntry": false,
+                                                        "autocomplete": true,
+                                                        "muliTemplate": "lines",
+                                                        "multiMessage": "",
+                                                        "formatter": "none",
+                                                        "iconTint": "rgb(100, 149, 237)",
+                                                        "onRenderTextFieldScript": "",
+                                                        "formatValueScript": ""
+                                                    }
+                                                },
+                                                {
+                                                    "type": "plugin.Attributes.WizardTextAttribute",
+                                                    "config": {
+                                                        "attributeFields": [
+                                                            "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.builderMetadata.positions.content.modules.5.config.attributeFields.0.json"
+                                                        ],
+                                                        "className": "",
+                                                        "label": "{field.label}",
+                                                        "message": "",
+                                                        "lines": 1,
+                                                        "maxChars": 0,
+                                                        "mandatory": false,
+                                                        "multiEntry": false,
+                                                        "autocomplete": true,
+                                                        "muliTemplate": "lines",
+                                                        "multiMessage": "",
+                                                        "formatter": "none",
+                                                        "iconTint": "rgb(100, 149, 237)",
+                                                        "onRenderTextFieldScript": "",
+                                                        "formatValueScript": ""
+                                                    }
+                                                },
+                                                {
+                                                    "type": "plugin.Attributes.WizardTextAttribute",
+                                                    "config": {
+                                                        "attributeFields": [
+                                                            "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.builderMetadata.positions.content.modules.6.config.attributeFields.0.json"
+                                                        ],
+                                                        "className": "",
+                                                        "label": "{field.label}",
+                                                        "message": "",
+                                                        "lines": 1,
+                                                        "maxChars": 0,
+                                                        "mandatory": false,
+                                                        "multiEntry": false,
+                                                        "autocomplete": true,
+                                                        "muliTemplate": "lines",
+                                                        "multiMessage": "",
+                                                        "formatter": "none",
+                                                        "iconTint": "rgb(100, 149, 237)",
+                                                        "onRenderTextFieldScript": "",
+                                                        "formatValueScript": ""
+                                                    }
+                                                },
+                                                {
+                                                    "type": "plugin.Attributes.WizardTextAttribute",
+                                                    "config": {
+                                                        "attributeFields": [
+                                                            "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.builderMetadata.positions.content.modules.7.config.attributeFields.0.json"
+                                                        ],
+                                                        "className": "",
+                                                        "label": "{field.label}",
+                                                        "message": "",
+                                                        "lines": 1,
+                                                        "maxChars": 0,
+                                                        "mandatory": false,
+                                                        "multiEntry": false,
+                                                        "autocomplete": true,
+                                                        "muliTemplate": "lines",
+                                                        "multiMessage": "",
+                                                        "formatter": "none",
+                                                        "iconTint": "rgb(100, 149, 237)",
+                                                        "onRenderTextFieldScript": "",
+                                                        "formatValueScript": ""
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "footer": {
+                                            "modules": [
+                                                "widget.AttributeWizardBuilder.9.metadata.children.1.children.2.builderMetadata.positions.footer.modules.0.json"
+                                            ]
+                                        },
+                                        "menu": {
+                                            "modules": []
+                                        }
+                                    },
+                                    "positionList": [
+                                        "title",
+                                        "content",
+                                        "footer",
+                                        "menu"
+                                    ],
+                                    "_diagramState": {
+                                        "minimized": false
+                                    }
+                                }
+                            }
+                        ],
+                        "builderMetadata": {
+                            "positions": {
+                                "title": {
+                                    "modules": [
+                                        "widget.AttributeWizardBuilder.9.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                    ]
+                                },
+                                "content": {
+                                    "modules": [
+                                        "widget.AttributeWizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.0.json",
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.1.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "{field.label}",
+                                                "message": "",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "onRenderTextFieldScript": "",
+                                                "formatValueScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.2.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "{field.label}",
+                                                "message": "",
+                                                "lines": 3,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "onRenderTextFieldScript": "",
+                                                "formatValueScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.3.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "Camp Comments",
+                                                "message": "",
+                                                "lines": 3,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "onRenderTextFieldScript": "",
+                                                "formatValueScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.4.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "{field.label}",
+                                                "message": "",
+                                                "lines": 3,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "onRenderTextFieldScript": "",
+                                                "formatValueScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.5.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "{field.label}",
+                                                "message": "",
+                                                "lines": 3,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "onRenderTextFieldScript": "",
+                                                "formatValueScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.6.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "{field.label}",
+                                                "message": "",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "date",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "onRenderTextFieldScript": "",
+                                                "formatValueScript": ""
+                                            }
+                                        },
+                                        {
+                                            "type": "plugin.Attributes.WizardTextAttribute",
+                                            "config": {
+                                                "attributeFields": [
+                                                    "widget.AttributeWizardBuilder.9.metadata.children.1.builderMetadata.positions.content.modules.7.config.attributeFields.0.json"
+                                                ],
+                                                "className": "",
+                                                "label": "{field.label}",
+                                                "message": "",
+                                                "lines": 1,
+                                                "maxChars": 0,
+                                                "mandatory": false,
+                                                "multiEntry": false,
+                                                "autocomplete": true,
+                                                "muliTemplate": "lines",
+                                                "multiMessage": "",
+                                                "formatter": "none",
+                                                "iconTint": "rgb(100, 149, 237)",
+                                                "onRenderTextFieldScript": "",
+                                                "formatValueScript": ""
+                                            }
+                                        }
+                                    ]
+                                },
+                                "footer": {
+                                    "modules": [
+                                        "widget.AttributeWizardBuilder.9.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
+                                    ]
+                                },
+                                "menu": {
+                                    "modules": []
+                                }
+                            },
+                            "positionList": [
+                                "title",
+                                "content",
+                                "footer",
+                                "menu"
+                            ],
+                            "_diagramState": {
+                                "minimized": false
+                            }
+                        }
+                    }
+                ]
+            },
+            "readAccess": "public",
+            "widgetTitle": "",
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
+            "requireTarget": true,
+            "target": "map.12"
+        }
+    },
+    "widget.10": {
+        "name": "Attr CSV Export",
+        "instance": "AttributesCSVExport",
+        "parameters": {
+            "position": "RIGHT_TOP",
+            "iconImage": [],
+            "iconTile": "[]",
+            "widgetTitle": "label this widget",
+            "readAccess": "special",
+            "controlColor": "rgb(48,84,107)",
+            "exportMetadata": {
+                "fields": "DEFAULT"
+            },
+            "downloadImage": [],
+            "uploadImage": [],
+            "showImport": false,
+            "tileIcon": [],
+            "tileHoverTip": "Download CSV File",
+            "exportEncoding": "UTF-8",
+            "importEncoding": "UTF-8",
+            "showImportEncoding": false,
+            "filename": "Geolive Export DATE[Y-m-d (H.i.s)]",
+            "filterRowScript": "return true;",
+            "filterFieldsScript": "return true;",
+            "target": "map.12"
+        }
+    },
+    "widget.11": {
+        "name": "Tile Buttons",
+        "instance": "TileButtons",
+        "parameters": {
+            "sections": [
+                "fullscreen",
+                "home",
+                "",
+                "login",
+                "logout",
+                ""
+            ],
+            "markerIcons": "",
+            "fullscreenTip": "",
+            "homeTip": "",
+            "markerTip": "",
+            "searchTip": "",
+            "loginTip": "",
+            "logoutTip": "",
+            "profileTip": "",
+            "showToolTips": 1,
+            "position": "RIGHT_TOP",
+            "offsetX": 100,
+            "offsetY": 100,
+            "markerSize": 32,
+            "tileSize": 50,
+            "direction": "vertical",
+            "tilePadding": 0,
+            "iconSetReferenceName": "",
+            "tileIcon": [
+                "http:\/\/www.bcmarinetrails.org\/administrator\/components\/com_geolive\/geolive\/Extensions\/Widgets\/DiscussionMenu\/images\/default_tile.png"
+            ],
+            "groupIcon": [],
+            "discussionTag": 1,
+            "markerSearch": 1,
+            "layerMap": "{}",
+            "tipMap": "{}",
+            "showShiboleth": 0,
+            "showFacebook": 0,
+            "showJoomlaLogin": 1,
+            "widgetTitle": "label this widget",
+            "readAccess": "public",
+            "markerIconset": [],
+            "filterLayerMappedIcons": 1,
+            "iconsetMetadata": [],
+            "controlColor": "rgb(64, 94, 109)"
+        }
+    },
+    "widget.12": {
+        "name": "Edit Behavior",
+        "instance": "ItemEditBehavior",
+        "parameters": {
+            "confirmDragMessage": "save new marker position?",
+            "confirmDrag": true,
+            "confirmSearchMessage": "save new marker position?",
+            "confirmSearchMove": true,
+            "disableDraggingOnWindowClose": true,
+            "widgetTitle": "label this widget",
+            "readAccess": "public",
+            "position": ""
+        }
+    },
+    "widget.13": {
+        "name": "Url Variables Parser",
+        "instance": "UrlVariablesBehavior",
+        "parameters": {
+            "widgetTitle": "",
+            "readAccess": "public",
+            "position": ""
+        }
+    },
+    "widget.15": {
+        "name": "Measurement Tool",
+        "instance": "MeasurementTool",
+        "parameters": {
+            "controlColor": "rgb(185, 0, 185)",
+            "tileIcon": [],
+            "strokeColor": "rgb(255, 255, 255)",
+            "strokeWidth": "1.5",
+            "startColor": "rgb(77, 144, 254)",
+            "vertexColor": "rgb(255,255,255)",
+            "endColor": "rgb(77, 144, 254)",
+            "formatPopover": "if(data.isFirst){\r\n\r\n\t\t\t\t\t\tvar lat=Math.round(data.latLng.lat()*1000)\/1000;\r\n\t\t\t\t\t\tvar lng=Math.round(data.latLng.lng()*1000)\/1000;\r\n\t\t\t\t\t\treturn lat+', '+lng;\r\n\r\n\t\t\t\t\t}\r\n\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\tvar i=data.index;\r\n\r\n\t\t\t\t\treturn ''+\r\n\t\t\t\t\t'<span style=\"color:cornflowerblue;\">total distance: '+formatDistance(data.distanceTotal)+'<\/span><br\/>'+\r\n\t\t\t\t\t'from '+(i==1?'start':'last position')+':  '+formatDistance(data.distanceToPrevious)+'<br\/>'+\r\n\t\t\t\t\t'heading from last position:  '+formatHeading(data.heading)+\r\n\t\t\t\t\t(i==1||data.isLast?'':('<br\/>current distance: '+formatDistance(data.distance)))+\r\n\t\t\t\t\t(data.isLast?'':('<br\/>% of total trip: '+data.percent+'%'))+'<br\/>* headings relative to true north';",
+            "formatDistance": "var nm= (d\/1852);\r\nif(nm>50){\r\nnm=Math.round(nm);\r\n}else if(nm>1){\r\nnm=Math.round(nm*10)\/10.0;\r\n}else{\r\nnm=Math.round(nm*100)\/100.0;\r\n}\r\nvar km=d;\r\nvar kmu=\"km\";\r\n   if(d<900){\r\n   km=Math.round(d); \/\/this is meters not km\r\nkmu='m'\r\n}else{\r\n   km=d\/1000.0;\r\n   if(km>50){\r\n       km=Math.round(km);\r\n   }else if(km>10){\r\n       km=Math.round(km*10)\/10.0;\r\n   }else{\r\n      km=Math.round(km*100)\/100.0;\r\n   }\r\n\r\n\r\n}\r\nreturn nm+\"NM\"+' ('+km+kmu+')';",
+            "formatHeading": "if(h<0) h= 360+h;\r\nreturn Math.round(h)+\"&#176N\"",
+            "widgetTitle": "",
+            "readAccess": "registered",
+            "position": "LEFT_CENTER",
+            "target": "map.12"
+        }
+    },
+    "widget.16": {
+        "name": "Stylesheet",
+        "instance": "CSS",
+        "parameters": {
+            "customCSS": "widget.CSS.16.customCSS.css",
+            "widgetTitle": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.17": {
+        "name": "Google Map",
+        "instance": "GoogleMap",
+        "parameters": {
+            "widgetTitle": "The Map",
+            "target": "googleMapDetail",
+            "templateName": "googleMapDetail",
+            "loadWidgetsWithTarget": "map.12",
+            "readAccess": "public"
+        }
+    },
+    "widget.18": {
+        "name": "Flexible Height Widget",
+        "instance": "FlexibleHeight",
+        "parameters": {
+            "offset": 0,
+            "customScript": "",
+            "widgetTitle": "",
+            "target": "map.12",
+            "readAccess": "public"
+        }
+    },
+    "widget.19": {
+        "name": "Javascript",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "customScript": "widget.CustomBehaviorScript.19.customScript.js",
+            "widgetTitle": "",
+            "target": "map.12",
+            "readAccess": "public"
+        }
+    },
+    "widget.20": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "Placemark Infowindow",
+            "target": "map.12",
+            "templateName": "default",
+            "requireTarget": true,
+            "onRenderApplictionScript": "",
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": [
+                            "Placemark Infowindow.metadata.positions.title.modules.0.json"
+                        ]
+                    },
+                    "content": {
+                        "modules": [
+                            "Placemark Infowindow.metadata.positions.content.modules.0.json",
+                            {
+                                "type": "Coordinates",
+                                "config": {
+                                    "className": "",
+                                    "label": "Coordinates",
+                                    "latLabel": "lat",
+                                    "lngLabel": "lng"
+                                }
+                            },
+                            {
+                                "type": "plugin.Attributes.TextAttributes",
+                                "config": {
+                                    "attributeFieldArray": [
+                                        "Placemark Infowindow.metadata.positions.content.modules.2.config.attributeFieldArray.0.json",
+                                        {
+                                            "visibility": "public",
+                                            "tableId": 3,
+                                            "tableName": "siteData",
+                                            "tableSuffix": "_3544",
+                                            "title": "landingComments",
+                                            "label": "Landing Comments",
+                                            "description": "",
+                                            "fieldType": "text",
+                                            "color": "#FFFFFF",
+                                            "searchability": "public",
+                                            "editability": "registered",
+                                            "fieldTextOptions": {
+                                                "textType": "input",
+                                                "inputOptions": {
+                                                    "buildAutocomplete": false,
+                                                    "requireModeration": false,
+                                                    "limitMaxChars": 1,
+                                                    "limitMaxWords": 1,
+                                                    "allowHtml": false,
+                                                    "allowMedia": false,
+                                                    "allowLinks": true
+                                                },
+                                                "listOptions": {
+                                                    "takeSugesstions": false,
+                                                    "buildTree": false,
+                                                    "iconize": false,
+                                                    "colorize": false
+                                                }
+                                            },
+                                            "allowMultiple": false
+                                        },
+                                        {
+                                            "visibility": "public",
+                                            "tableId": 3,
+                                            "tableName": "siteData",
+                                            "tableSuffix": "_3544",
+                                            "title": "campComments",
+                                            "label": "Camp Comments",
+                                            "description": false,
+                                            "fieldType": "text",
+                                            "color": "#FFFFFF",
+                                            "searchability": "public",
+                                            "editability": "registered",
+                                            "fieldTextOptions": {
+                                                "textType": "input",
+                                                "inputOptions": {
+                                                    "buildAutocomplete": false,
+                                                    "requireModeration": false,
+                                                    "limitMaxChars": true,
+                                                    "limitMaxWords": true,
+                                                    "allowHtml": false,
+                                                    "allowMedia": false,
+                                                    "allowLinks": true
+                                                },
+                                                "listOptions": {
+                                                    "takeSugesstions": false,
+                                                    "buildTree": false,
+                                                    "iconize": false,
+                                                    "colorize": false
+                                                }
+                                            },
+                                            "allowMultiple": false
+                                        },
+                                        {
+                                            "visibility": "public",
+                                            "tableId": 3,
+                                            "tableName": "siteData",
+                                            "tableSuffix": "_3544",
+                                            "title": "tentSites",
+                                            "label": "Tent Sites",
+                                            "description": false,
+                                            "fieldType": "text",
+                                            "color": "#FFFFFF",
+                                            "searchability": "public",
+                                            "editability": "registered",
+                                            "fieldTextOptions": {
+                                                "textType": "input",
+                                                "inputOptions": {
+                                                    "buildAutocomplete": false,
+                                                    "requireModeration": false,
+                                                    "limitMaxChars": true,
+                                                    "limitMaxWords": true,
+                                                    "allowHtml": false,
+                                                    "allowMedia": false,
+                                                    "allowLinks": true
+                                                },
+                                                "listOptions": {
+                                                    "takeSugesstions": false,
+                                                    "buildTree": false,
+                                                    "iconize": false,
+                                                    "colorize": false
+                                                }
+                                            },
+                                            "allowMultiple": false
+                                        },
+                                        {
+                                            "visibility": "public",
+                                            "tableId": 3,
+                                            "tableName": "siteData",
+                                            "tableSuffix": "_3544",
+                                            "title": "otherComments",
+                                            "label": "Other Comments",
+                                            "description": false,
+                                            "fieldType": "text",
+                                            "color": "#FFFFFF",
+                                            "searchability": "public",
+                                            "editability": "registered",
+                                            "fieldTextOptions": {
+                                                "textType": "input",
+                                                "inputOptions": {
+                                                    "buildAutocomplete": false,
+                                                    "requireModeration": false,
+                                                    "limitMaxChars": true,
+                                                    "limitMaxWords": true,
+                                                    "allowHtml": false,
+                                                    "allowMedia": false,
+                                                    "allowLinks": true
+                                                },
+                                                "listOptions": {
+                                                    "takeSugesstions": false,
+                                                    "buildTree": false,
+                                                    "iconize": false,
+                                                    "colorize": false
+                                                }
+                                            },
+                                            "allowMultiple": false
+                                        },
+                                        {
+                                            "visibility": "public",
+                                            "tableId": 3,
+                                            "tableName": "siteData",
+                                            "tableSuffix": "_3544",
+                                            "title": "siteConditionNotes",
+                                            "label": "Site Condition Notes",
+                                            "description": "",
+                                            "fieldType": "text",
+                                            "color": "rgb(undefined, undefined, undefined)",
+                                            "searchability": "public",
+                                            "editability": "registered",
+                                            "fieldTextOptions": {
+                                                "textType": "input",
+                                                "inputOptions": {
+                                                    "buildAutocomplete": false,
+                                                    "requireModeration": false,
+                                                    "limitMaxChars": 0,
+                                                    "limitMaxWords": 0,
+                                                    "allowHtml": false,
+                                                    "allowMedia": true,
+                                                    "allowLinks": true
+                                                },
+                                                "listOptions": {
+                                                    "takeSugesstions": true,
+                                                    "buildTree": false,
+                                                    "iconize": false,
+                                                    "colorize": false
+                                                }
+                                            },
+                                            "allowMultiple": false
+                                        }
+                                    ],
+                                    "className": "",
+                                    "maxHeight": 0,
+                                    "maxWidth": 371,
+                                    "showLabels": true,
+                                    "showEmpty": false,
+                                    "showTitle": false,
+                                    "title": "",
+                                    "formatData": "if(this.item.getLayer().getId()==3){\n    \n    \n    \n\n    record.otherComments+='<span style=\"font-style: italic;color: #888888;display: inline-block;\">Visited by paddlers, other boaters. Assessed by BCMTN. Currently on public land. Consultations are yet to occur with local First Nations as to its suitability. Do not disturb soils or remove anything but waste.<\/span>';   \n}\n",
+                                    "formatValueElement": "",
+                                    "formatContainerElement": ""
+                                }
+                            },
+                            {
+                                "type": "NearbyMapitems",
+                                "config": {
+                                    "className": "",
+                                    "label": "Places Nearby",
+                                    "lineBreak": false,
+                                    "popoverLabelFunction": "\nvar nautical=1.852; \/\/ km\/nm\nvar nauticalLabel=(Math.round((item.distance\/nautical)\/100.0)\/10.0)+\"NM\";\nreturn '<span style=\"color:cornflowerblue;\">'+item.name+' '+nauticalLabel+' ('+NearbyMapitemsModule.DefaultDistance(item)+') <\/span><br\/> *distances are as the crow flies';"
+                                }
+                            },
+                            {
+                                "type": "StreetView",
+                                "config": {
+                                    "className": "",
+                                    "showEmpty": false,
+                                    "displayImage": false
+                                }
+                            }
+                        ]
+                    },
+                    "footer": {
+                        "modules": [
+                            "Placemark Infowindow.metadata.positions.footer.modules.0.json"
+                        ]
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "_diagramState": []
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.21": {
+        "name": "Stylesheet",
+        "instance": "CSS",
+        "parameters": {
+            "customCSS": "widget.CSS.21.customCSS.css",
+            "widgetTitle": "",
+            "target": "map.12",
+            "readAccess": "public"
+        }
+    },
+    "widget.23": {
+        "name": "Paddling Areas Tool",
+        "instance": "PaddlingAreasStandalone",
+        "parameters": {
+            "widgetTitle": "Paddling Areas",
+            "target": "paddlingAreasTool",
+            "templateName": "paddlingAreasToolDetail",
+            "readAccess": "public",
+            "position": "RIGHT_CENTER"
+        }
+    },
+    "widget.24": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "testDashboard",
+            "target": "testDashboard",
+            "templateName": "testDashboard",
+            "requireTarget": false,
+            "onRenderApplictionScript": "testDashboard.onRenderApplictionScript.js",
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": []
+                    },
+                    "content": {
+                        "modules": [
+                            "testDashboard.metadata.positions.content.modules.0.json",
+                            {
+                                "type": "WizardScriptElement",
+                                "config": {
+                                    "script": "testDashboard.metadata.positions.content.modules.1.config.script.js",
+                                    "identifier": "customScriptElement"
+                                }
+                            }
+                        ]
+                    },
+                    "footer": {
+                        "modules": []
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "_diagramState": []
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.26": {
+        "name": "Login Behavior",
+        "instance": "LoginWizard",
+        "parameters": {
+            "defineLoginScript": "return defaultLoginFn;",
+            "defineLogoutScript": "return defaultLogoutFn;",
+            "filterLoginModulesScript": "return modules;",
+            "widgetTitle": "",
+            "target": "map.12",
+            "readAccess": "public",
+            "position": "RIGHT_CENTER"
+        }
+    },
+    "widget.27": {
+        "name": "Attributes Table",
+        "instance": "AttributesTable",
+        "parameters": {
+            "widgetTitle": "siteData",
+            "metadata": {
+                "title": "siteData",
+                "_tableDiagramState": {
+                    "x": 322,
+                    "y": 275
+                },
+                "_diagramState": {
+                    "x": 322,
+                    "y": 275
+                },
+                "appliesTo": [
+                    "marker"
+                ],
+                "_typeDiagramState": {
+                    "x": 100,
+                    "y": 300
+                },
+                "readAccess": "public",
+                "maxEntries": 1,
+                "createAutomatically": 1,
+                "description": "",
+                "fields": [
+                    "siteData.metadata.fields.0.json",
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "tentSites",
+                        "title": "tentSites",
+                        "label": "Tent Sites",
+                        "description": false,
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": true,
+                                "limitMaxWords": true,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "landingComments",
+                        "title": "landingComments",
+                        "label": "Landing Comments",
+                        "description": "",
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 1,
+                                "limitMaxWords": 1,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "campComments",
+                        "title": "campComments",
+                        "label": "Camp Comments",
+                        "description": false,
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": true,
+                                "limitMaxWords": true,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "otherComments",
+                        "title": "otherComments",
+                        "label": "Other Comments",
+                        "description": false,
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": true,
+                                "limitMaxWords": true,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "",
+                        "title": "siteConditionNotes",
+                        "label": "Site Condition Notes",
+                        "description": "",
+                        "color": "rgb(undefined, undefined, undefined)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "",
+                        "title": "siteConditionDate",
+                        "label": "SC Report Date",
+                        "description": "",
+                        "color": "rgb(NaN, NaN, NaN)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "siteFunction",
+                        "title": "siteFunction",
+                        "label": "Site Function",
+                        "description": "",
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "options",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 1,
+                                "limitMaxWords": 1,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "siteUsage",
+                        "title": "siteUsage",
+                        "label": "Site Usage",
+                        "description": "",
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "options",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 1,
+                                "limitMaxWords": 1,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "rationale",
+                        "title": "rationale",
+                        "label": "Rationale",
+                        "description": false,
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": true,
+                                "limitMaxWords": true,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "",
+                        "title": "planningAction",
+                        "label": "Planning Action",
+                        "description": "",
+                        "color": "rgb(undefined, undefined, undefined)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "siteAccess",
+                        "title": "siteAccess",
+                        "label": "Site Access",
+                        "description": "",
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "options",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 1,
+                                "limitMaxWords": 1,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "coordinateSource",
+                        "title": "coordinateSource",
+                        "label": "Coordinate Source",
+                        "description": "",
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "options",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 1,
+                                "limitMaxWords": 1,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "",
+                        "title": "provenance",
+                        "label": "Provenance",
+                        "description": "",
+                        "color": "rgb(undefined, undefined, undefined)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "",
+                        "title": "structures",
+                        "label": "Signage & Structures",
+                        "description": "",
+                        "color": "rgb(undefined, undefined, undefined)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "",
+                        "title": "visitDetail",
+                        "label": "Known Visit Detail",
+                        "description": "",
+                        "color": "rgb(NaN, NaN, NaN)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "siteVisitDone",
+                        "title": "siteVisitDone",
+                        "label": "Site Visit Done",
+                        "description": false,
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": true,
+                                "limitMaxWords": true,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "siteVisitedBy",
+                        "title": "siteVisitedBy",
+                        "label": "Site Visited By",
+                        "description": false,
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": true,
+                                "limitMaxWords": true,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "siteVisitDate",
+                        "title": "siteVisitDate",
+                        "label": "Site Visit Date",
+                        "description": "false",
+                        "color": "rgb(undefined, undefined, undefined)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 1,
+                                "limitMaxWords": 1,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "0",
+                            "limitMaxValue": "0"
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "proposedGroundCheckDate",
+                        "title": "proposedGroundCheckDate",
+                        "label": "Proposed Ground Check Date",
+                        "description": false,
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": true,
+                                "limitMaxWords": true,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "section",
+                        "title": "section",
+                        "label": "Region",
+                        "description": "",
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "options",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 1,
+                                "limitMaxWords": 1,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "paddlingArea",
+                        "title": "paddlingArea",
+                        "label": "Paddling Area",
+                        "description": "",
+                        "color": "rgb(NaN, NaN, NaN)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "options",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 1,
+                                "limitMaxWords": 1,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": true,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "0",
+                            "limitMaxValue": "0"
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "trail",
+                        "title": "trail",
+                        "label": "Trail",
+                        "description": "",
+                        "color": "#FFFFFF",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "options",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 1,
+                                "limitMaxWords": 1,
+                                "allowHtml": false,
+                                "allowMedia": false,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": false,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": 0,
+                            "limitMaxValue": 0
+                        }
+                    },
+                    {
+                        "icon": [],
+                        "fieldBooleanOptions": {
+                            "trueIcon": [],
+                            "falseIcon": [],
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false
+                        },
+                        "was": "",
+                        "title": "additionalTrails",
+                        "label": "Additional Trails",
+                        "description": "",
+                        "color": "rgb(undefined, undefined, undefined)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        }
+                    }
+                ]
+            },
+            "target": "siteData",
+            "readAccess": "public",
+            "position": ""
+        }
+    }
+}

@@ -1,0 +1,1 @@
+popover.setText('<span style="color:cornflowerblue;">'+popover.options.description+"</span><br/>click to toggle");

@@ -1,0 +1,32 @@
+{
+    "visibility": "public",
+    "tableId": 3,
+    "tableName": "siteData",
+    "tableSuffix": "_3544",
+    "title": "rationale",
+    "label": "Rationale",
+    "description": false,
+    "fieldType": "text",
+    "color": "#FFFFFF",
+    "searchability": "public",
+    "editability": "registered",
+    "fieldTextOptions": {
+        "textType": "input",
+        "inputOptions": {
+            "buildAutocomplete": false,
+            "requireModeration": false,
+            "limitMaxChars": true,
+            "limitMaxWords": true,
+            "allowHtml": false,
+            "allowMedia": false,
+            "allowLinks": true
+        },
+        "listOptions": {
+            "takeSugesstions": false,
+            "buildTree": false,
+            "iconize": false,
+            "colorize": false
+        }
+    },
+    "allowMultiple": false
+}
