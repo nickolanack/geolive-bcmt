@@ -61,6 +61,11 @@
             ]
         }
     },
+    "plugin.15": {
+        "name": "Data Types",
+        "instance": "Data",
+        "parameters": {}
+    },
     "plugin.8": {
         "name": "Filesystem",
         "instance": "Filesystem",
@@ -108,6 +113,11 @@
         "instance": "GoogleMaps",
         "parameters": {}
     },
+    "plugin.24": {
+        "name": "Pusher Message Server",
+        "instance": "PusherMessages",
+        "parameters": "_PusherMessages.json"
+    },
     "plugin.14": {
         "name": "User Interface",
         "instance": "UserInterface",
@@ -118,11 +128,6 @@
                 "pluginView": "front"
             }
         }
-    },
-    "plugin.15": {
-        "name": "Data Types",
-        "instance": "Data",
-        "parameters": {}
     },
     "plugin.16": {
         "name": "Deploy",
@@ -168,13 +173,18 @@
         "parameters": {
             "clientSecretUrl": "XXXX-XXXX",
             "clientPublicUrl": "https:\/\/6197cf631f844a1583e5a04266b48cb5@sentry.io\/297472",
-            "enabled": false
+            "enabled": true
         }
     },
-    "plugin.24": {
-        "name": "Pusher Message Server",
-        "instance": "PusherMessages",
-        "parameters": "_PusherMessages.json"
+    "widget.28": {
+        "name": "Stylesheet",
+        "instance": "CSS",
+        "parameters": {
+            "target": "map.12",
+            "customCSS": "Template Theme Integration.customCSS.css",
+            "widgetTitle": "Template Theme Integration",
+            "readAccess": "public"
+        }
     },
     "widget.2": {
         "name": "Tile Buttons",
@@ -1345,7 +1355,7 @@
         }
     },
     "widget.13": {
-        "name": "Map Url Segment Parser",
+        "name": "Url Variables Parser",
         "instance": "UrlVariablesBehavior",
         "parameters": {
             "widgetTitle": "",
@@ -2782,16 +2792,6 @@
             "target": "siteData",
             "readAccess": "public",
             "position": ""
-        }
-    },
-    "widget.28": {
-        "name": "Stylesheet",
-        "instance": "CSS",
-        "parameters": {
-            "target": "map.12",
-            "customCSS": "Template Theme Integration.customCSS.css",
-            "widgetTitle": "Template Theme Integration",
-            "readAccess": "public"
         }
     }
 }
