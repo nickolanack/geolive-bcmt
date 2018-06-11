@@ -1,2 +1,2 @@
 //GetWidget('googleMapDetail')->display($targetInstance);
-GetWidget('paddlingAreasToolDetail')->display($targetInstance);
+GetWidget('paddlingAreasTool')->display($targetInstance);
