@@ -301,10 +301,7 @@
             "formatTipScript": "",
             "onDisplayTileScript": "",
             "onProfileClickScript": "",
-            "target": "map.12",
-            "profileIcon": null,
-            "_raw_layerMap": null,
-            "_raw_tipMap": null
+            "target": "map.12"
         }
     },
     "widget.3": {
