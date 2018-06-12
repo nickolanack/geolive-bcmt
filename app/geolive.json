@@ -1397,10 +1397,11 @@
         "name": "Flexible Height Widget",
         "instance": "FlexibleHeight",
         "parameters": {
-            "offset": 0,
-            "customScript": "",
             "widgetTitle": "",
             "target": "map.12",
+            "offset": "100",
+            "maxHeight": "1000",
+            "customScript": "",
             "readAccess": "public"
         }
     },
