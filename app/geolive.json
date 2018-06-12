@@ -1369,7 +1369,9 @@
         "parameters": {
             "widgetTitle": "",
             "target": "map.12",
-            "relativeUrl": ""
+            "relativeUrl": "bc-map",
+            "readAccess": "public",
+            "position": ""
         }
     },
     "widget.12": {
