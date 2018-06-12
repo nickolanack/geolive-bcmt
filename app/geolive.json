@@ -1400,8 +1400,8 @@
             "widgetTitle": "",
             "target": "map.12",
             "offset": "100",
-            "maxHeight": "700",
-            "minHeight": "400",
+            "maxHeight": "550",
+            "minHeight": "300",
             "customScript": "",
             "readAccess": "public"
         }
