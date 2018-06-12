@@ -181,12 +181,13 @@
         "instance": "KeenIO",
         "parameters": {
             "enabled": true,
-            "projectId": "",
-            "writeKey": "",
+            "projectId": "5b1f5e81c9e77c000165ff79",
+            "writeKey": "XXXX-XXXX",
             "ignoreEvents": [
                 "onManipulateMap",
                 "onDisplayView",
-                "onDisplayMap"
+                "onDisplayMap",
+                ""
             ]
         }
     },
