@@ -176,6 +176,20 @@
             "enabled": true
         }
     },
+    "plugin.25": {
+        "name": "Keen I O",
+        "instance": "KeenIO",
+        "parameters": {
+            "enabled": true,
+            "projectId": "",
+            "writeKey": "",
+            "ignoreEvents": [
+                "onManipulateMap",
+                "onDisplayView",
+                "onDisplayMap"
+            ]
+        }
+    },
     "widget.28": {
         "name": "Stylesheet",
         "instance": "CSS",
