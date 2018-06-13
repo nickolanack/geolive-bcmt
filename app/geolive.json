@@ -2827,9 +2827,9 @@
         "name": "Detail View",
         "instance": "DetailView",
         "parameters": {
-            "widgetTitle": "test",
-            "target": "test",
-            "templateName": "test",
+            "widgetTitle": "analyticDasboard",
+            "target": "analyticDasboard",
+            "templateName": "analyticDasboard",
             "requireTarget": false,
             "onRenderApplictionScript": "",
             "metadata": {
@@ -2839,7 +2839,7 @@
                     },
                     "content": {
                         "modules": [
-                            "test.metadata.positions.content.modules.0.json"
+                            "analyticDasboard.metadata.positions.content.modules.0.json"
                         ]
                     },
                     "footer": {
