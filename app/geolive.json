@@ -180,14 +180,15 @@
         "name": "Keen I O",
         "instance": "KeenIO",
         "parameters": {
-            "enabled": true,
+            "enabled": false,
             "projectId": "",
             "writeKey": "",
-            "readKey": "",
+            "readKey": "XXXX-XXXX",
             "ignoreEvents": [
                 "onManipulateMap",
                 "onDisplayView",
-                "onDisplayMap"
+                "onDisplayMap",
+                ""
             ]
         }
     },
