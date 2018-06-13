@@ -181,7 +181,7 @@
         "instance": "KeenIO",
         "parameters": {
             "enabled": false,
-            "projectId": "",
+            "projectId": "5b1f5e81c9e77c000165ff79",
             "writeKey": "",
             "readKey": "XXXX-XXXX",
             "ignoreEvents": [
