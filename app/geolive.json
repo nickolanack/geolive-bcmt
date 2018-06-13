@@ -2835,11 +2835,40 @@
         "name": "Detail View",
         "instance": "DetailView",
         "parameters": {
-            "widgetTitle": "",
-            "target": "none",
-            "templateName": "{target}",
+            "widgetTitle": "analyticsDashboard",
+            "target": "analyticsDashboard",
+            "templateName": "analyticsDashboard",
             "requireTarget": true,
-            "onRenderApplictionScript": ""
+            "onRenderApplictionScript": "",
+            "metadata": {
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "positions": {
+                    "title": {
+                        "modules": [
+                            "analyticsDashboard.metadata.positions.title.modules.0.json"
+                        ]
+                    },
+                    "content": {
+                        "modules": [
+                            "analyticsDashboard.metadata.positions.content.modules.0.json"
+                        ]
+                    },
+                    "footer": {
+                        "modules": [
+                            "analyticsDashboard.metadata.positions.footer.modules.0.json"
+                        ]
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                }
+            },
+            "readAccess": "public"
         }
     }
 }
