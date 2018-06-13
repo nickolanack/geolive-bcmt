@@ -2837,7 +2837,9 @@
                         "modules": []
                     },
                     "content": {
-                        "modules": []
+                        "modules": [
+                            "test.metadata.positions.content.modules.0.json"
+                        ]
                     },
                     "footer": {
                         "modules": []
