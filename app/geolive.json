@@ -2878,7 +2878,9 @@
         "parameters": {
             "contentTemplate": "<h1>Map Analytics<\/h1>",
             "widgetTitle": "module..text",
-            "target": "module..text"
+            "target": "module..text",
+            "comments": "",
+            "readAccess": "public"
         }
     }
 }
