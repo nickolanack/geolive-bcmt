@@ -2838,7 +2838,9 @@
                         "modules": []
                     },
                     "content": {
-                        "modules": []
+                        "modules": [
+                            "analyticDasboard.metadata.positions.content.modules.0.json"
+                        ]
                     },
                     "footer": {
                         "modules": []
