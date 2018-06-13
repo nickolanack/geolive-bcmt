@@ -2838,35 +2838,36 @@
             "widgetTitle": "analyticsDashboard",
             "target": "analyticsDashboard",
             "templateName": "analyticsDashboard",
-            "requireTarget": true,
+            "requireTarget": false,
             "onRenderApplictionScript": "",
             "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": []
+                    },
+                    "content": {
+                        "modules": [
+                            "analyticsDashboard.metadata.positions.content.modules.0.json",
+                            {
+                                "type": "plugin.KeenIO.MapAnalytic",
+                                "config": []
+                            }
+                        ]
+                    },
+                    "footer": {
+                        "modules": []
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                },
                 "positionList": [
                     "title",
                     "content",
                     "footer",
                     "menu"
                 ],
-                "positions": {
-                    "title": {
-                        "modules": [
-                            "analyticsDashboard.metadata.positions.title.modules.0.json"
-                        ]
-                    },
-                    "content": {
-                        "modules": [
-                            "analyticsDashboard.metadata.positions.content.modules.0.json"
-                        ]
-                    },
-                    "footer": {
-                        "modules": [
-                            "analyticsDashboard.metadata.positions.footer.modules.0.json"
-                        ]
-                    },
-                    "menu": {
-                        "modules": []
-                    }
-                }
+                "_diagramState": []
             },
             "readAccess": "public"
         }
