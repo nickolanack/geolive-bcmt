@@ -275,6 +275,16 @@ span.WizardButtonContainer {
     margin-right: 10px;
 }
 
+.item-detail-view {
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 1.3em;
+}
+
+.item-detail-view span.attribute-item {
+    margin-bottom: 13px;
+    display: inline-block;
+}
 
 
 
