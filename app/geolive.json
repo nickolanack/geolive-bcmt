@@ -1406,7 +1406,9 @@
             "target": "googleMapDetail",
             "templateName": "googleMapDetail",
             "loadWidgetsWithTarget": "map.12",
-            "mapOptions": [],
+            "mapOptions": {
+                "gestureHandling": "greedy"
+            },
             "readAccess": "public"
         }
     },
