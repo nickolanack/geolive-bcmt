@@ -290,6 +290,19 @@ span.WizardButtonContainer {
 }
 
 
+.takes-4-5 .atr-landTenure, .atr-tentSites {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 7px;
+}
+
+.takes-4-5 .atr-tentSites {
+    width: calc( 40% - 10px );
+    margin-left: 10px;
+}
+
+
 span.filter-this.is-atrribute-filter:hover{
                 background-image:url(<?php echo json_encode(UrlFrom('{assets}/Control Panel Icons/search.png?tint=rgb(48, 84, 107)'));?>);
             }
