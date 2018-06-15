@@ -286,7 +286,7 @@ span.WizardButtonContainer {
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
-    width: calc( 100% - 30px );
+    width: 100%;
 }
 
 
