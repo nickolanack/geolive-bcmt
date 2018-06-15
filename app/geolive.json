@@ -1429,7 +1429,7 @@
             "widgetTitle": "",
             "target": "map.12",
             "offset": "100",
-            "maxHeight": "550",
+            "maxHeight": "1000",
             "minHeight": "300",
             "customScript": "",
             "readAccess": "public"
