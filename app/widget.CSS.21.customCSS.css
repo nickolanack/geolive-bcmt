@@ -287,6 +287,20 @@ span.WizardButtonContainer {
 }
 
 
+.item-detail-view .site-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #30546B;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.item-detail-view .site-title:after {
+    content: ": Comments";
+    font-size: 15px;
+}
+
+
 
 .takes-4-5 .atr-campComments, 
 .takes-4-5 .atr-otherComments, 
