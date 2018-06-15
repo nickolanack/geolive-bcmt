@@ -1524,10 +1524,17 @@
                                 }
                             },
                             {
+                                "type": "WizardScriptElement",
+                                "config": {
+                                    "script": "Placemark Infowindow.metadata.positions.content.modules.3.config.script.js",
+                                    "identifier": "customScriptElement"
+                                }
+                            },
+                            {
                                 "type": "plugin.Attributes.TextAttributes",
                                 "config": {
                                     "attributeFieldArray": [
-                                        "Placemark Infowindow.metadata.positions.content.modules.3.config.attributeFieldArray.0.json",
+                                        "Placemark Infowindow.metadata.positions.content.modules.4.config.attributeFieldArray.0.json",
                                         {
                                             "visibility": "public",
                                             "tableId": 3,
