@@ -306,6 +306,10 @@ span.resizedImage {
     display:inline-block;
 }
 
+.takes-4-5 .row-1 {
+    display: none;
+}
+
 
 span.filter-this.is-atrribute-filter:hover{
                 background-image:url(<?php echo json_encode(UrlFrom('{assets}/Control Panel Icons/search.png?tint=rgb(48, 84, 107)'));?>);
