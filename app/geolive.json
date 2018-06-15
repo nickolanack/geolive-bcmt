@@ -2890,16 +2890,16 @@
                             "widget.UserWizardBuilder.31.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 149,
-                            "y": 184
+                            "x": 159,
+                            "y": 194
                         },
                         "children": [
                             "widget.UserWizardBuilder.31.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 109,
-                                    "y": 350
+                                    "x": 119,
+                                    "y": 360
                                 }
                             }
                         ],

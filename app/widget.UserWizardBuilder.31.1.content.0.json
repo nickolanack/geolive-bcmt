@@ -3,7 +3,7 @@
     "config": {
         "className": "",
         "viewType": "view",
-        "namedView": "default",
+        "namedView": "itemDetail",
         "shouldRender": true,
         "namedViewScript": "return namedView",
         "showInlineEdit": false,
