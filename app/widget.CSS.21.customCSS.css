@@ -276,6 +276,8 @@ span.WizardButtonContainer {
 }
 
 
+
+
 .takes-4-5 .atr-campComments, 
 .takes-4-5 .atr-otherComments, 
 .takes-4-5 .atr-landingComments{
@@ -284,18 +286,40 @@ span.WizardButtonContainer {
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
-    width: calc( 100% - 30px );
+    width: 100%;
 }
 
 
+.takes-4-5 .atr-landTenure, .takes-4-5 .atr-tentSites {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 7px;
+}
+
+.takes-4-5 .atr-tentSites {
+    width: calc( 40% - 10px );
+    margin-left: 10px;
+}
 
 span.resizedImage {
     display:inline-block;
 }
 
-.takes-4-5 .row-1 {
+.takes-4-5 .row-1, .takes-4-5 .row-2 {
     display: none;
 }
+.takes-4-5 .two-lines .last-row-0:after, .takes-4-5 .three-lines .last-row-0:after {
+    content: attr(data-remaining-label);
+    position: absolute;
+    bottom: -18px;
+    font-style: italic;
+    color: #30546B;
+    white-space: nowrap;
+    right: 0px;
+    font-size: 12px;
+}
+
 
 span.filter-this.is-atrribute-filter:hover{
                 background-image:url(<?php echo json_encode(UrlFrom('{assets}/Control Panel Icons/search.png?tint=rgb(48, 84, 107)'));?>);
@@ -312,4 +336,3 @@ span.filter-this.is-atrribute-filter:hover{
                 background-repeat: no-repeat;
                 background-position: center;
             }
-
