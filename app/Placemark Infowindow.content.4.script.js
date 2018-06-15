@@ -4,5 +4,5 @@ return (new ModalFormButtonModule(item.getMap(), item, {
     "formOptions":{
        // "template":"form"
     },
-    "className":"WizardButton btn"
+    "className":"field-value-module detail-link"
 }))
