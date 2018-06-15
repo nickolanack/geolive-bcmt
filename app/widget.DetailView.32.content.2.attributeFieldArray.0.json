@@ -3,15 +3,15 @@
     "tableId": 3,
     "tableName": "siteData",
     "tableSuffix": "_3544",
-    "title": "landingComments",
-    "label": "Landing Comments",
+    "title": "landTenure",
+    "label": "Land Tenure",
     "description": "",
     "fieldType": "text",
     "color": "#FFFFFF",
     "searchability": "public",
     "editability": "registered",
     "fieldTextOptions": {
-        "textType": "input",
+        "textType": "options",
         "inputOptions": {
             "buildAutocomplete": false,
             "requireModeration": false,
