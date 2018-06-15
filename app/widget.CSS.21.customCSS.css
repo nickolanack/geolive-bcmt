@@ -274,3 +274,16 @@ span.WizardButtonContainer {
     display: inline-block;
     margin-right: 10px;
 }
+
+
+.takes-4-5 .atr-campComments span.attribute-value, 
+.takes-4-5 .atr-otherComments span.attribute-value, 
+.takes-4-5 .atr-landingComments span.attribute-value {
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: calc( 100% - 30px );
+}
+
