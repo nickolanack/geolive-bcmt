@@ -2878,8 +2878,8 @@
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
-                    "x": -18,
-                    "y": 171
+                    "x": 57,
+                    "y": 168
                 },
                 "children": [
                     "widget.UserWizardBuilder.31.metadata.children.0.json",
@@ -2890,23 +2890,25 @@
                             "widget.UserWizardBuilder.31.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 169,
-                            "y": 204
+                            "x": 179,
+                            "y": 214
                         },
                         "children": [
                             "widget.UserWizardBuilder.31.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 129,
-                                    "y": 370
+                                    "x": 139,
+                                    "y": 380
                                 }
                             }
                         ],
                         "builderMetadata": {
                             "positions": {
                                 "title": {
-                                    "modules": []
+                                    "modules": [
+                                        "widget.UserWizardBuilder.31.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                    ]
                                 },
                                 "content": {
                                     "modules": [
