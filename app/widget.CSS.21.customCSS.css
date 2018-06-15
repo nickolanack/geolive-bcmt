@@ -276,9 +276,9 @@ span.WizardButtonContainer {
 }
 
 
-.takes-4-5 .atr-campComments span.attribute-value, 
-.takes-4-5 .atr-otherComments span.attribute-value, 
-.takes-4-5 .atr-landingComments span.attribute-value {
+.takes-4-5 .atr-campComments, 
+.takes-4-5 .atr-otherComments, 
+.takes-4-5 .atr-landingComments{
 
     white-space: nowrap;
     overflow: hidden;
