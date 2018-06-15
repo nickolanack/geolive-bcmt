@@ -276,8 +276,6 @@ span.WizardButtonContainer {
 }
 
 
-
-
 .takes-4-5 .atr-campComments, 
 .takes-4-5 .atr-otherComments, 
 .takes-4-5 .atr-landingComments{
@@ -286,21 +284,10 @@ span.WizardButtonContainer {
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
-    width: 100%;
+    width: calc( 100% - 30px );
 }
 
 
-.takes-4-5 .atr-landTenure, .takes-4-5 .atr-tentSites {
-    width: 60%;
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 7px;
-}
-
-.takes-4-5 .atr-tentSites {
-    width: calc( 40% - 10px );
-    margin-left: 10px;
-}
 
 span.resizedImage {
     display:inline-block;
@@ -309,7 +296,6 @@ span.resizedImage {
 .takes-4-5 .row-1 {
     display: none;
 }
-
 
 span.filter-this.is-atrribute-filter:hover{
                 background-image:url(<?php echo json_encode(UrlFrom('{assets}/Control Panel Icons/search.png?tint=rgb(48, 84, 107)'));?>);
@@ -326,3 +312,4 @@ span.filter-this.is-atrribute-filter:hover{
                 background-repeat: no-repeat;
                 background-position: center;
             }
+

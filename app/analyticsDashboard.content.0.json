@@ -1,9 +1,0 @@
-{
-    "type": "InlineHtml",
-    "config": {
-        "className": "",
-        "text": "<h1 style=\"    font-weight: 100;\n    max-width: 800px;\n    text-align: center;\n    font-size: 50px;\n    color: rgb(0, 187, 222);\">BCMT Map Analytics<\/h1>",
-        "template": "",
-        "templateVariablesScript": ""
-    }
-}

@@ -61,11 +61,6 @@
             ]
         }
     },
-    "plugin.15": {
-        "name": "Data Types",
-        "instance": "Data",
-        "parameters": {}
-    },
     "plugin.8": {
         "name": "Filesystem",
         "instance": "Filesystem",
@@ -113,11 +108,6 @@
         "instance": "GoogleMaps",
         "parameters": {}
     },
-    "plugin.24": {
-        "name": "Pusher Message Server",
-        "instance": "PusherMessages",
-        "parameters": "_PusherMessages.json"
-    },
     "plugin.14": {
         "name": "User Interface",
         "instance": "UserInterface",
@@ -128,6 +118,11 @@
                 "pluginView": "front"
             }
         }
+    },
+    "plugin.15": {
+        "name": "Data Types",
+        "instance": "Data",
+        "parameters": {}
     },
     "plugin.16": {
         "name": "Deploy",
@@ -173,30 +168,28 @@
         "parameters": {
             "clientSecretUrl": "XXXX-XXXX",
             "clientPublicUrl": "https:\/\/6197cf631f844a1583e5a04266b48cb5@sentry.io\/297472",
-            "enabled": true
+            "enabled": false
         }
+    },
+    "plugin.24": {
+        "name": "Pusher Message Server",
+        "instance": "PusherMessages",
+        "parameters": "_PusherMessages.json"
     },
     "plugin.25": {
         "name": "Keen I O",
         "instance": "KeenIO",
         "parameters": {
-            "enabled": true,
+            "enabled": false,
             "projectId": "5b1f5e81c9e77c000165ff79",
-            "writeKey": "XXXX-XXXX",
+            "writeKey": "",
             "readKey": "XXXX-XXXX",
             "ignoreEvents": [
+                "onManipulateMap",
+                "onDisplayView",
+                "onDisplayMap",
                 ""
             ]
-        }
-    },
-    "widget.28": {
-        "name": "Stylesheet",
-        "instance": "CSS",
-        "parameters": {
-            "target": "map.12",
-            "customCSS": "Template Theme Integration.customCSS.css",
-            "widgetTitle": "Template Theme Integration",
-            "readAccess": "public"
         }
     },
     "widget.2": {
@@ -285,18 +278,6 @@
                         ]
                     },
                     "components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_%5BImAgE%5D_%5BG%5D.png": {
-                        "anchor": [
-                            "50.0%",
-                            "100.0%"
-                        ]
-                    },
-                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/E6W_OuT_Yn7_[ImAgE]_[G].png": {
-                        "anchor": [
-                            "50.0%",
-                            "100.0%"
-                        ]
-                    },
-                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/f7k_oU2_Xyh_[G]_[ImAgE].png": {
                         "anchor": [
                             "50.0%",
                             "100.0%"
@@ -1346,7 +1327,9 @@
             "direction": "vertical",
             "tilePadding": 0,
             "iconSetReferenceName": "",
-            "tileIcon": [],
+            "tileIcon": [
+                "http:\/\/www.bcmarinetrails.org\/administrator\/components\/com_geolive\/geolive\/Extensions\/Widgets\/DiscussionMenu\/images\/default_tile.png"
+            ],
             "groupIcon": [],
             "discussionTag": 1,
             "markerSearch": 1,
@@ -1361,17 +1344,6 @@
             "filterLayerMappedIcons": 1,
             "iconsetMetadata": [],
             "controlColor": "rgb(64, 94, 109)"
-        }
-    },
-    "widget.29": {
-        "name": "Map Navigation",
-        "instance": "MapNavigation",
-        "parameters": {
-            "widgetTitle": "",
-            "target": "map.12",
-            "relativeUrl": "bc-map",
-            "readAccess": "public",
-            "position": ""
         }
     },
     "widget.12": {
@@ -1408,7 +1380,7 @@
             "startColor": "rgb(77, 144, 254)",
             "vertexColor": "rgb(255,255,255)",
             "endColor": "rgb(77, 144, 254)",
-            "formatPopover": "if(data.isFirst){\r\n\r\nif(!(data.latLng&&data.latLng.lat)){\r\n\t\t\t\t\t\t\tthrow 'Expected data.latLng.lat: '+JSON.stringify(data)\r\n\t\t\t\t\t\t}\r\n\r\n\r\n\t\t\t\t\t\tvar lat=roundCoordinate(data.latLng.lat,5);\r\n\t\t\t\t\t\tvar lng=roundCoordinate(data.latLng.lng,5);\r\n\t\t\t\t\t\treturn lat+', '+lng;\r\n\r\n\t\t\t\t\t}\r\n\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\tvar i=data.index;\r\n\r\n\t\t\t\t\treturn ''+\r\n\t\t\t\t\t'<span style=\"color:cornflowerblue;\">total distance: '+formatDistance(data.distanceTotal)+'<\/span><br\/>'+\r\n\t\t\t\t\t'from '+(i==1?'start':'last position')+':  '+formatDistance(data.distanceToPrevious)+'<br\/>'+\r\n\t\t\t\t\t'heading from last position:  '+formatHeading(data.heading)+\r\n\t\t\t\t\t(i==1||data.isLast?'':('<br\/>current distance: '+formatDistance(data.distance)))+\r\n\t\t\t\t\t(data.isLast?'':('<br\/>% of total trip: '+data.percent+'%'))+'<br\/>* headings relative to true north';",
+            "formatPopover": "if(data.isFirst){\r\n\r\nif(!(data.latLng&&data.latLng.lat)){\r\n\t\t\t\t\t\t\tthrow 'Expected data.latLng.lat: '+JSON.stringify(data)\r\n\t\t\t\t\t\t}\r\n\r\n\r\n\t\t\t\t\t\tvar lat=Math.round(data.latLng.lat*1000)\/1000;\r\n\t\t\t\t\t\tvar lng=Math.round(data.latLng.lng*1000)\/1000;\r\n\t\t\t\t\t\treturn lat+', '+lng;\r\n\r\n\t\t\t\t\t}\r\n\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\tvar i=data.index;\r\n\r\n\t\t\t\t\treturn ''+\r\n\t\t\t\t\t'<span style=\"color:cornflowerblue;\">total distance: '+formatDistance(data.distanceTotal)+'<\/span><br\/>'+\r\n\t\t\t\t\t'from '+(i==1?'start':'last position')+':  '+formatDistance(data.distanceToPrevious)+'<br\/>'+\r\n\t\t\t\t\t'heading from last position:  '+formatHeading(data.heading)+\r\n\t\t\t\t\t(i==1||data.isLast?'':('<br\/>current distance: '+formatDistance(data.distance)))+\r\n\t\t\t\t\t(data.isLast?'':('<br\/>% of total trip: '+data.percent+'%'))+'<br\/>* headings relative to true north';",
             "formatDistance": "var nm= (d\/1852);\r\nif(nm>50){\r\nnm=Math.round(nm);\r\n}else if(nm>1){\r\nnm=Math.round(nm*10)\/10.0;\r\n}else{\r\nnm=Math.round(nm*100)\/100.0;\r\n}\r\nvar km=d;\r\nvar kmu=\"km\";\r\n   if(d<900){\r\n   km=Math.round(d); \/\/this is meters not km\r\nkmu='m'\r\n}else{\r\n   km=d\/1000.0;\r\n   if(km>50){\r\n       km=Math.round(km);\r\n   }else if(km>10){\r\n       km=Math.round(km*10)\/10.0;\r\n   }else{\r\n      km=Math.round(km*100)\/100.0;\r\n   }\r\n\r\n\r\n}\r\nreturn nm+\"NM\"+' ('+km+kmu+')';",
             "formatHeading": "if(h<0) h= 360+h;\r\nreturn Math.round(h)+\"&#176N\"",
             "widgetTitle": "",
@@ -1501,38 +1473,6 @@
                                             "tableId": 3,
                                             "tableName": "siteData",
                                             "tableSuffix": "_3544",
-                                            "title": "tentSites",
-                                            "label": "Tent Sites",
-                                            "description": false,
-                                            "fieldType": "text",
-                                            "color": "#FFFFFF",
-                                            "searchability": "public",
-                                            "editability": "registered",
-                                            "fieldTextOptions": {
-                                                "textType": "input",
-                                                "inputOptions": {
-                                                    "buildAutocomplete": false,
-                                                    "requireModeration": false,
-                                                    "limitMaxChars": true,
-                                                    "limitMaxWords": true,
-                                                    "allowHtml": false,
-                                                    "allowMedia": false,
-                                                    "allowLinks": true
-                                                },
-                                                "listOptions": {
-                                                    "takeSugesstions": false,
-                                                    "buildTree": false,
-                                                    "iconize": false,
-                                                    "colorize": false
-                                                }
-                                            },
-                                            "allowMultiple": false
-                                        },
-                                        {
-                                            "visibility": "public",
-                                            "tableId": "3",
-                                            "tableName": "siteData",
-                                            "tableSuffix": "_3544",
                                             "title": "landingComments",
                                             "label": "Landing Comments",
                                             "description": "",
@@ -1562,7 +1502,7 @@
                                         },
                                         {
                                             "visibility": "public",
-                                            "tableId": "3",
+                                            "tableId": 3,
                                             "tableName": "siteData",
                                             "tableSuffix": "_3544",
                                             "title": "campComments",
@@ -1594,7 +1534,39 @@
                                         },
                                         {
                                             "visibility": "public",
-                                            "tableId": "3",
+                                            "tableId": 3,
+                                            "tableName": "siteData",
+                                            "tableSuffix": "_3544",
+                                            "title": "tentSites",
+                                            "label": "Tent Sites",
+                                            "description": false,
+                                            "fieldType": "text",
+                                            "color": "#FFFFFF",
+                                            "searchability": "public",
+                                            "editability": "registered",
+                                            "fieldTextOptions": {
+                                                "textType": "input",
+                                                "inputOptions": {
+                                                    "buildAutocomplete": false,
+                                                    "requireModeration": false,
+                                                    "limitMaxChars": true,
+                                                    "limitMaxWords": true,
+                                                    "allowHtml": false,
+                                                    "allowMedia": false,
+                                                    "allowLinks": true
+                                                },
+                                                "listOptions": {
+                                                    "takeSugesstions": false,
+                                                    "buildTree": false,
+                                                    "iconize": false,
+                                                    "colorize": false
+                                                }
+                                            },
+                                            "allowMultiple": false
+                                        },
+                                        {
+                                            "visibility": "public",
+                                            "tableId": 3,
                                             "tableName": "siteData",
                                             "tableSuffix": "_3544",
                                             "title": "otherComments",
@@ -1626,7 +1598,7 @@
                                         },
                                         {
                                             "visibility": "public",
-                                            "tableId": "3",
+                                            "tableId": 3,
                                             "tableName": "siteData",
                                             "tableSuffix": "_3544",
                                             "title": "siteConditionNotes",
@@ -2833,13 +2805,34 @@
             "position": ""
         }
     },
+    "widget.28": {
+        "name": "Stylesheet",
+        "instance": "CSS",
+        "parameters": {
+            "target": "map.12",
+            "customCSS": "Template Theme Integration.customCSS.css",
+            "widgetTitle": "Template Theme Integration",
+            "readAccess": "public"
+        }
+    },
+    "widget.29": {
+        "name": "Map Navigation",
+        "instance": "MapNavigation",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "map.12",
+            "relativeUrl": "bc-map",
+            "readAccess": "public",
+            "position": ""
+        }
+    },
     "widget.30": {
         "name": "Detail View",
         "instance": "DetailView",
         "parameters": {
-            "widgetTitle": "analyticsDashboard",
-            "target": "analyticsDashboard",
-            "templateName": "analyticsDashboard",
+            "widgetTitle": "analyticDasboard",
+            "target": "analyticDasboard",
+            "templateName": "analyticDasboard",
             "requireTarget": false,
             "onRenderApplictionScript": "",
             "metadata": {
@@ -2849,11 +2842,7 @@
                     },
                     "content": {
                         "modules": [
-                            "analyticsDashboard.metadata.positions.content.modules.0.json",
-                            {
-                                "type": "plugin.KeenIO.MapAnalytic",
-                                "config": []
-                            }
+                            "analyticDasboard.metadata.positions.content.modules.0.json"
                         ]
                     },
                     "footer": {
@@ -2871,17 +2860,6 @@
                 ],
                 "_diagramState": []
             },
-            "readAccess": "public"
-        }
-    },
-    "widget.31": {
-        "name": "Template",
-        "instance": "Template",
-        "parameters": {
-            "contentTemplate": "<h1>Map Analytics<\/h1>",
-            "widgetTitle": "module..text",
-            "target": "module..text",
-            "comments": "",
             "readAccess": "public"
         }
     }
