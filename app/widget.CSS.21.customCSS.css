@@ -290,7 +290,7 @@ span.WizardButtonContainer {
 }
 
 
-.takes-4-5 .atr-landTenure, .atr-tentSites {
+.takes-4-5 .atr-landTenure, .takes-4-5 .atr-tentSites {
     width: 60%;
     display: inline-block;
     vertical-align: top;
