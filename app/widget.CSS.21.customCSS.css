@@ -280,13 +280,10 @@ span.WizardButtonContainer {
 
 .takes-4-5 .atr-campComments, 
 .takes-4-5 .atr-otherComments, 
-.takes-4-5 .atr-landingComments{
+.takes-4-5 .atr-landingComments,
+.takes-4-5 .atr-siteConditionNotes{
 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-    width: 100%;
+       display: none;
 }
 
 
