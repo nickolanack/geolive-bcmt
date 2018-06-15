@@ -2884,5 +2884,13 @@
             "comments": "",
             "readAccess": "public"
         }
+    },
+    "widget.32": {
+        "name": "Add Spatial File",
+        "instance": "AddSpatial",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "map.12"
+        }
     }
 }
