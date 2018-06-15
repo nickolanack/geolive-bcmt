@@ -287,3 +287,20 @@ span.WizardButtonContainer {
     width: calc( 100% - 30px );
 }
 
+
+span.filter-this.is-atrribute-filter:hover{
+                background-image:url(<?php echo json_encode(UrlFrom('{assets}/Control Panel Icons/search.png?tint=rgb(48, 84, 107)'));?>);
+            }
+
+            span.filter-this.is-atrribute-filter {
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                background-color: cornflowerblue;
+                cursor: pointer;
+                margin-right: 5px;
+                background-size: 90%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
