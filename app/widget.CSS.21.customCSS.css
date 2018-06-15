@@ -336,11 +336,3 @@ span.filter-this.is-atrribute-filter:hover{
                 background-repeat: no-repeat;
                 background-position: center;
             }
-            
-            
-.atr-campComments span.filter-this.is-atrribute-filter, 
-.atr-otherComments span.filter-this.is-atrribute-filter, 
-.atr-landingComments span.filter-this.is-atrribute-filter,
-.atr-siteConditionNotes span.filter-this.is-atrribute-filter{
-     display:none;
-}
