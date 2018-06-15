@@ -286,6 +286,20 @@ span.WizardButtonContainer {
        display: none;
 }
 
+.field-value-module.detail-link{
+    display:none;
+}
+.takes-4-5 .field-value-module.detail-link {
+    display:block;
+    background: none;
+    color: cornflowerblue;
+    border: none;
+    border-bottom: 1px solid rgb(64, 94, 109);
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
 
 .takes-4-5 .atr-landTenure, .takes-4-5 .atr-tentSites {
     width: 60%;
