@@ -302,6 +302,10 @@ span.WizardButtonContainer {
     margin-left: 10px;
 }
 
+span.resizedImage {
+    display:inline-block;
+}
+
 
 span.filter-this.is-atrribute-filter:hover{
                 background-image:url(<?php echo json_encode(UrlFrom('{assets}/Control Panel Icons/search.png?tint=rgb(48, 84, 107)'));?>);
