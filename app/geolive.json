@@ -1428,7 +1428,7 @@
         "parameters": {
             "widgetTitle": "",
             "target": "map.12",
-            "offset": "100",
+            "offset": "0",
             "maxHeight": "1000",
             "minHeight": "300",
             "customScript": "",
