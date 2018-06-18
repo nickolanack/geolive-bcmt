@@ -1,7 +1,0 @@
-{
-    "type": "DefaultTitle",
-    "config": {
-        "className": "site-title",
-        "maxChars": 0
-    }
-}
