@@ -2856,6 +2856,10 @@
                             {
                                 "type": "plugin.KeenIO.MapAnalytic",
                                 "config": []
+                            },
+                            {
+                                "type": "plugin.KeenIO.Analytic",
+                                "config": []
                             }
                         ]
                     },
