@@ -2854,10 +2854,6 @@
                         "modules": [
                             "analyticsDashboard.metadata.positions.content.modules.0.json",
                             {
-                                "type": "plugin.KeenIO.MapAnalytic",
-                                "config": []
-                            },
-                            {
                                 "type": "plugin.KeenIO.Analytic",
                                 "config": []
                             }
