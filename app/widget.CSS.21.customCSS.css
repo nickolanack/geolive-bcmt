@@ -275,10 +275,54 @@ span.WizardButtonContainer {
     margin-right: 10px;
 }
 
+.item-detail-view {
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 1.3em;
+}
+
+.item-detail-view span.attribute-item {
+    margin-bottom: 13px;
+    display: inline-block;
+}
+
+
+.item-detail-view .site-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #30546B;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.item-detail-view .site-title:after {
+    content: ": Comments";
+    font-size: 15px;
+}
 
 
 
+.takes-4-5 .atr-campComments, 
+.takes-4-5 .atr-otherComments, 
+.takes-4-5 .atr-landingComments,
+.takes-4-5 .atr-siteConditionNotes{
 
+       display: none;
+}
+
+.field-value-module.detail-link{
+    display:none;
+}
+.takes-4-5 .field-value-module.detail-link {
+    display:block;
+    background: none;
+    color: cornflowerblue;
+    border: none;
+    border-bottom: 1px solid rgb(64, 94, 109);
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
 
 
 .takes-4-5 .atr-landTenure, .takes-4-5 .atr-tentSites {
@@ -328,10 +372,13 @@ span.filter-this.is-atrribute-filter:hover{
                 background-position: center;
             }
             
-            
 .atr-campComments span.filter-this.is-atrribute-filter, 
 .atr-otherComments span.filter-this.is-atrribute-filter, 
 .atr-landingComments span.filter-this.is-atrribute-filter,
 .atr-siteConditionNotes span.filter-this.is-atrribute-filter{
      display:none;
-}
+}            
+            
+            
+            
+            

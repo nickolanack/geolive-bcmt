@@ -1,0 +1,145 @@
+{
+    "type": "plugin.Attributes.TextAttributes",
+    "config": {
+        "attributeFieldArray": [
+            {
+                "visibility": "public",
+                "tableId": 3,
+                "tableName": "siteData",
+                "tableSuffix": "_3544",
+                "title": "landingComments",
+                "label": "Landing Comments",
+                "description": "",
+                "fieldType": "text",
+                "color": "#FFFFFF",
+                "searchability": "public",
+                "editability": "registered",
+                "fieldTextOptions": {
+                    "textType": "input",
+                    "inputOptions": {
+                        "buildAutocomplete": false,
+                        "requireModeration": false,
+                        "limitMaxChars": 1,
+                        "limitMaxWords": 1,
+                        "allowHtml": false,
+                        "allowMedia": false,
+                        "allowLinks": true
+                    },
+                    "listOptions": {
+                        "takeSugesstions": false,
+                        "buildTree": false,
+                        "iconize": false,
+                        "colorize": false
+                    }
+                },
+                "allowMultiple": false
+            },
+            {
+                "visibility": "public",
+                "tableId": 3,
+                "tableName": "siteData",
+                "tableSuffix": "_3544",
+                "title": "campComments",
+                "label": "Camp Comments",
+                "description": false,
+                "fieldType": "text",
+                "color": "#FFFFFF",
+                "searchability": "public",
+                "editability": "registered",
+                "fieldTextOptions": {
+                    "textType": "input",
+                    "inputOptions": {
+                        "buildAutocomplete": false,
+                        "requireModeration": false,
+                        "limitMaxChars": true,
+                        "limitMaxWords": true,
+                        "allowHtml": false,
+                        "allowMedia": false,
+                        "allowLinks": true
+                    },
+                    "listOptions": {
+                        "takeSugesstions": false,
+                        "buildTree": false,
+                        "iconize": false,
+                        "colorize": false
+                    }
+                },
+                "allowMultiple": false
+            },
+            {
+                "visibility": "public",
+                "tableId": 3,
+                "tableName": "siteData",
+                "tableSuffix": "_3544",
+                "title": "otherComments",
+                "label": "Other Comments",
+                "description": false,
+                "fieldType": "text",
+                "color": "#FFFFFF",
+                "searchability": "public",
+                "editability": "registered",
+                "fieldTextOptions": {
+                    "textType": "input",
+                    "inputOptions": {
+                        "buildAutocomplete": false,
+                        "requireModeration": false,
+                        "limitMaxChars": true,
+                        "limitMaxWords": true,
+                        "allowHtml": false,
+                        "allowMedia": false,
+                        "allowLinks": true
+                    },
+                    "listOptions": {
+                        "takeSugesstions": false,
+                        "buildTree": false,
+                        "iconize": false,
+                        "colorize": false
+                    }
+                },
+                "allowMultiple": false
+            },
+            {
+                "visibility": "public",
+                "tableId": 3,
+                "tableName": "siteData",
+                "tableSuffix": "_3544",
+                "title": "siteConditionNotes",
+                "label": "Site Condition Notes",
+                "description": "",
+                "fieldType": "text",
+                "color": "rgb(undefined, undefined, undefined)",
+                "searchability": "public",
+                "editability": "registered",
+                "fieldTextOptions": {
+                    "textType": "input",
+                    "inputOptions": {
+                        "buildAutocomplete": false,
+                        "requireModeration": false,
+                        "limitMaxChars": 0,
+                        "limitMaxWords": 0,
+                        "allowHtml": false,
+                        "allowMedia": true,
+                        "allowLinks": true
+                    },
+                    "listOptions": {
+                        "takeSugesstions": true,
+                        "buildTree": false,
+                        "iconize": false,
+                        "colorize": false
+                    }
+                },
+                "allowMultiple": false
+            }
+        ],
+        "className": "",
+        "maxHeight": 0,
+        "maxWidth": 370,
+        "showLabels": true,
+        "showEmpty": false,
+        "showTitle": false,
+        "title": "",
+        "formatData": "",
+        "formatValueElement": "",
+        "formatContainerElement": ""
+    }
+}
