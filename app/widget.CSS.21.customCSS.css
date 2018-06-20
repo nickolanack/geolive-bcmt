@@ -383,4 +383,17 @@ span.filter-this.is-atrribute-filter:hover{
 a.item-stats {
     font-size: 0;
     background-image: url(<?php echo json_encode(UrlFrom('{assets}/Control Panel Icons/chart.png?tint=rgb(48, 84, 107)'));?>);
+
+
+    float: left;
+    height: 20px;
+    width: 15px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 6px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
 }
