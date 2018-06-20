@@ -2940,5 +2940,12 @@
             },
             "readAccess": "public"
         }
+    },
+    "widget.34": {
+        "name": "Form View",
+        "instance": "UserWizardBuilder",
+        "parameters": {
+            "target": "none"
+        }
     }
 }
