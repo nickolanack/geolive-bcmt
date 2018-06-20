@@ -3030,7 +3030,10 @@
         "name": "Content",
         "instance": "CustomContent",
         "parameters": {
-            "target": "map.12"
+            "target": "map.12",
+            "customScript": "widget.CustomContent.36.customScript.js",
+            "widgetTitle": "",
+            "readAccess": "public"
         }
     }
 }

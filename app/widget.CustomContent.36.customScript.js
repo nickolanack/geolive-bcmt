@@ -1,0 +1,1 @@
+HtmlDocument()->META(HtmlDocument()->website(), 'base');
