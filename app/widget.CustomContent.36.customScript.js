@@ -1,1 +1,1 @@
-HtmlDocument()->META(HtmlDocument()->website(), 'base');
+<?php HtmlDocument()->META(HtmlDocument()->website(), 'base'); ?>
