@@ -61,6 +61,11 @@
             ]
         }
     },
+    "plugin.15": {
+        "name": "Data Types",
+        "instance": "Data",
+        "parameters": {}
+    },
     "plugin.8": {
         "name": "Filesystem",
         "instance": "Filesystem",
@@ -108,6 +113,11 @@
         "instance": "GoogleMaps",
         "parameters": {}
     },
+    "plugin.24": {
+        "name": "Pusher Message Server",
+        "instance": "PusherMessages",
+        "parameters": "_PusherMessages.json"
+    },
     "plugin.14": {
         "name": "User Interface",
         "instance": "UserInterface",
@@ -118,11 +128,6 @@
                 "pluginView": "front"
             }
         }
-    },
-    "plugin.15": {
-        "name": "Data Types",
-        "instance": "Data",
-        "parameters": {}
     },
     "plugin.16": {
         "name": "Deploy",
@@ -168,28 +173,30 @@
         "parameters": {
             "clientSecretUrl": "XXXX-XXXX",
             "clientPublicUrl": "https:\/\/6197cf631f844a1583e5a04266b48cb5@sentry.io\/297472",
-            "enabled": false
+            "enabled": true
         }
-    },
-    "plugin.24": {
-        "name": "Pusher Message Server",
-        "instance": "PusherMessages",
-        "parameters": "_PusherMessages.json"
     },
     "plugin.25": {
         "name": "Keen I O",
         "instance": "KeenIO",
         "parameters": {
-            "enabled": false,
+            "enabled": true,
             "projectId": "5b1f5e81c9e77c000165ff79",
-            "writeKey": "",
+            "writeKey": "XXXX-XXXX",
             "readKey": "XXXX-XXXX",
             "ignoreEvents": [
-                "onManipulateMap",
-                "onDisplayView",
-                "onDisplayMap",
                 ""
             ]
+        }
+    },
+    "widget.28": {
+        "name": "Stylesheet",
+        "instance": "CSS",
+        "parameters": {
+            "target": "map.12",
+            "customCSS": "Template Theme Integration.customCSS.css",
+            "widgetTitle": "Template Theme Integration",
+            "readAccess": "public"
         }
     },
     "widget.2": {
@@ -1356,6 +1363,17 @@
             "controlColor": "rgb(64, 94, 109)"
         }
     },
+    "widget.29": {
+        "name": "Map Navigation",
+        "instance": "MapNavigation",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "map.12",
+            "relativeUrl": "bc-map",
+            "readAccess": "public",
+            "position": ""
+        }
+    },
     "widget.12": {
         "name": "Edit Behavior",
         "instance": "ItemEditBehavior",
@@ -1428,8 +1446,8 @@
         "parameters": {
             "widgetTitle": "",
             "target": "map.12",
-            "offset": "0",
-            "maxHeight": "1000",
+            "offset": "100",
+            "maxHeight": "550",
             "minHeight": "300",
             "customScript": "",
             "readAccess": "public"
@@ -1509,28 +1527,42 @@
                                                 }
                                             },
                                             "allowMultiple": false
-                                        }
-                                    ],
-                                    "className": "",
-                                    "maxHeight": 0,
-                                    "maxWidth": 371,
-                                    "showLabels": true,
-                                    "showEmpty": false,
-                                    "showTitle": false,
-                                    "title": "",
-                                    "formatData": "if(this.item.getLayer().getId()==3){\n    \n    \n    \n\n    record.otherComments+='<span style=\"font-style: italic;color: #888888;display: inline-block;\">Visited by paddlers, other boaters. Assessed by BCMTN. Currently on public land. Consultations are yet to occur with local First Nations as to its suitability. Do not disturb soils or remove anything but waste.<\/span>';   \n}\n",
-                                    "formatValueElement": "",
-                                    "formatContainerElement": ""
-                                }
-                            },
-                            {
-                                "type": "plugin.Attributes.TextAttributes",
-                                "config": {
-                                    "attributeFieldArray": [
-                                        "Placemark Infowindow.metadata.positions.content.modules.3.config.attributeFieldArray.0.json",
+                                        },
                                         {
                                             "visibility": "public",
-                                            "tableId": 3,
+                                            "tableId": "3",
+                                            "tableName": "siteData",
+                                            "tableSuffix": "_3544",
+                                            "title": "landingComments",
+                                            "label": "Landing Comments",
+                                            "description": "",
+                                            "fieldType": "text",
+                                            "color": "#FFFFFF",
+                                            "searchability": "public",
+                                            "editability": "registered",
+                                            "fieldTextOptions": {
+                                                "textType": "input",
+                                                "inputOptions": {
+                                                    "buildAutocomplete": false,
+                                                    "requireModeration": false,
+                                                    "limitMaxChars": 1,
+                                                    "limitMaxWords": 1,
+                                                    "allowHtml": false,
+                                                    "allowMedia": false,
+                                                    "allowLinks": true
+                                                },
+                                                "listOptions": {
+                                                    "takeSugesstions": false,
+                                                    "buildTree": false,
+                                                    "iconize": false,
+                                                    "colorize": false
+                                                }
+                                            },
+                                            "allowMultiple": false
+                                        },
+                                        {
+                                            "visibility": "public",
+                                            "tableId": "3",
                                             "tableName": "siteData",
                                             "tableSuffix": "_3544",
                                             "title": "campComments",
@@ -1562,7 +1594,7 @@
                                         },
                                         {
                                             "visibility": "public",
-                                            "tableId": 3,
+                                            "tableId": "3",
                                             "tableName": "siteData",
                                             "tableSuffix": "_3544",
                                             "title": "otherComments",
@@ -1594,7 +1626,7 @@
                                         },
                                         {
                                             "visibility": "public",
-                                            "tableId": 3,
+                                            "tableId": "3",
                                             "tableName": "siteData",
                                             "tableSuffix": "_3544",
                                             "title": "siteConditionNotes",
@@ -1627,21 +1659,14 @@
                                     ],
                                     "className": "",
                                     "maxHeight": 0,
-                                    "maxWidth": 370,
+                                    "maxWidth": 371,
                                     "showLabels": true,
                                     "showEmpty": false,
                                     "showTitle": false,
                                     "title": "",
-                                    "formatData": "",
+                                    "formatData": "if(this.item.getLayer().getId()==3){\n    \n    \n    \n\n    record.otherComments+='<span style=\"font-style: italic;color: #888888;display: inline-block;\">Visited by paddlers, other boaters. Assessed by BCMTN. Currently on public land. Consultations are yet to occur with local First Nations as to its suitability. Do not disturb soils or remove anything but waste.<\/span>';   \n}\n",
                                     "formatValueElement": "",
                                     "formatContainerElement": ""
-                                }
-                            },
-                            {
-                                "type": "WizardScriptElement",
-                                "config": {
-                                    "script": "Placemark Infowindow.metadata.positions.content.modules.4.config.script.js",
-                                    "identifier": "customScriptElement"
                                 }
                             },
                             {
@@ -1659,13 +1684,6 @@
                                     "className": "",
                                     "showEmpty": false,
                                     "displayImage": false
-                                }
-                            },
-                            {
-                                "type": "WizardScriptElement",
-                                "config": {
-                                    "script": "Placemark Infowindow.metadata.positions.content.modules.7.config.script.js",
-                                    "identifier": "customScriptElement"
                                 }
                             }
                         ]
@@ -2815,27 +2833,6 @@
             "position": ""
         }
     },
-    "widget.28": {
-        "name": "Stylesheet",
-        "instance": "CSS",
-        "parameters": {
-            "target": "map.12",
-            "customCSS": "Template Theme Integration.customCSS.css",
-            "widgetTitle": "Template Theme Integration",
-            "readAccess": "public"
-        }
-    },
-    "widget.29": {
-        "name": "Map Navigation",
-        "instance": "MapNavigation",
-        "parameters": {
-            "widgetTitle": "",
-            "target": "map.12",
-            "relativeUrl": "bc-map",
-            "readAccess": "public",
-            "position": ""
-        }
-    },
     "widget.30": {
         "name": "Detail View",
         "instance": "DetailView",
@@ -2878,134 +2875,24 @@
         }
     },
     "widget.31": {
-        "name": "Form View",
-        "instance": "UserWizardBuilder",
+        "name": "Template",
+        "instance": "Template",
         "parameters": {
-            "target": "map.12",
-            "metadata": {
-                "class": "DecisionNode",
-                "_diagramState": {
-                    "x": 57,
-                    "y": 168
-                },
-                "children": [
-                    "widget.UserWizardBuilder.31.metadata.children.0.json",
-                    {
-                        "title": "New Empty Step",
-                        "class": "AttributesTableNode",
-                        "fields": [
-                            "widget.UserWizardBuilder.31.metadata.children.1.fields.0.json"
-                        ],
-                        "_diagramState": {
-                            "x": 199,
-                            "y": 234
-                        },
-                        "children": [
-                            "widget.UserWizardBuilder.31.metadata.children.1.children.0.json",
-                            {
-                                "class": "InsertNode",
-                                "_diagramState": {
-                                    "x": 159,
-                                    "y": 400
-                                }
-                            }
-                        ],
-                        "builderMetadata": {
-                            "positions": {
-                                "title": {
-                                    "modules": [
-                                        "widget.UserWizardBuilder.31.metadata.children.1.builderMetadata.positions.title.modules.0.json"
-                                    ]
-                                },
-                                "content": {
-                                    "modules": [
-                                        "widget.UserWizardBuilder.31.metadata.children.1.builderMetadata.positions.content.modules.0.json"
-                                    ]
-                                },
-                                "footer": {
-                                    "modules": []
-                                },
-                                "menu": {
-                                    "modules": []
-                                }
-                            },
-                            "positionList": [
-                                "title",
-                                "content",
-                                "footer",
-                                "menu"
-                            ],
-                            "_diagramState": {
-                                "minimized": false
-                            }
-                        }
-                    }
-                ]
-            },
-            "beforeSubmitScript": "",
-            "onCreateScript": "",
-            "onUpdateScript": "",
-            "onSaveScript": "",
-            "onLoadScript": "",
-            "requireTarget": true,
-            "templateName": "itemAttributesView",
-            "widgetTitle": "",
+            "contentTemplate": "<h1>Map Analytics<\/h1>",
+            "widgetTitle": "module..text",
+            "target": "module..text",
+            "comments": "",
             "readAccess": "public"
         }
     },
     "widget.32": {
-        "name": "Detail View",
-        "instance": "DetailView",
+        "name": "Add Spatial File",
+        "instance": "AddSpatial",
         "parameters": {
             "widgetTitle": "",
             "target": "map.12",
-            "templateName": "itemDetail",
-            "requireTarget": true,
-            "onRenderApplictionScript": "",
-            "metadata": {
-                "positions": {
-                    "title": {
-                        "modules": [
-                            "widget.DetailView.32.metadata.positions.title.modules.0.json"
-                        ]
-                    },
-                    "content": {
-                        "modules": [
-                            "widget.DetailView.32.metadata.positions.content.modules.0.json",
-                            {
-                                "type": "WizardScriptElement",
-                                "config": {
-                                    "script": "widget.DetailView.32.metadata.positions.content.modules.1.config.script.js",
-                                    "identifier": "customScriptElement"
-                                }
-                            }
-                        ]
-                    },
-                    "footer": {
-                        "modules": []
-                    },
-                    "menu": {
-                        "modules": []
-                    }
-                },
-                "positionList": [
-                    "title",
-                    "content",
-                    "footer",
-                    "menu"
-                ],
-                "_diagramState": []
-            },
-            "readAccess": "public"
-        }
-    },
-    "widget.33": {
-        "name": "Template",
-        "instance": "Template",
-        "parameters": {
-            "contentTemplate": "module--text.contentTemplate.html",
-            "widgetTitle": "module..text",
-            "target": "module..text"
+            "readAccess": "public",
+            "position": ""
         }
     }
 }
