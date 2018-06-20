@@ -3025,5 +3025,12 @@
         "parameters": {
             "target": "map.12"
         }
+    },
+    "widget.36": {
+        "name": "Content",
+        "instance": "CustomContent",
+        "parameters": {
+            "target": "map.12"
+        }
     }
 }
