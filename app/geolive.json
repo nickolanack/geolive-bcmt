@@ -3018,5 +3018,12 @@
             "widgetTitle": "",
             "readAccess": "public"
         }
+    },
+    "widget.35": {
+        "name": "Search Engine Optimization Helper",
+        "instance": "SearchEngineOptimizationHelper",
+        "parameters": {
+            "target": "map.12"
+        }
     }
 }
