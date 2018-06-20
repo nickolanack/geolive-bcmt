@@ -2900,8 +2900,8 @@
         "instance": "DetailView",
         "parameters": {
             "widgetTitle": "",
-            "target": "none",
-            "templateName": "{target}",
+            "target": "map.12",
+            "templateName": "itemDetail",
             "requireTarget": true,
             "onRenderApplictionScript": "",
             "metadata": {
