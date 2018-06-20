@@ -378,3 +378,9 @@ span.filter-this.is-atrribute-filter:hover{
 .atr-siteConditionNotes span.filter-this.is-atrribute-filter{
      display:none;
 }
+
+
+a.item-stats {
+    font-size: 0;
+    background-image: url(<?php echo json_encode(UrlFrom('{assets}/Control Panel Icons/chart.png?tint=rgb(48, 84, 107)'));?>);
+}
