@@ -1312,8 +1312,8 @@
             "importEncoding": "UTF-8",
             "showImportEncoding": false,
             "filename": "Geolive Export DATE[Y-m-d (H.i.s)]",
-            "filterRowScript": "return true;",
-            "filterFieldsScript": "return true;",
+            "filterRowScript": "label this widget.filterRowScript.js",
+            "filterFieldsScript": "label this widget.filterFieldsScript.js",
             "target": "map.12"
         }
     },
