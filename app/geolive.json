@@ -1543,23 +1543,148 @@
                             },
                             {
                                 "type": "plugin.Attributes.TextAttributes",
-                                "config": []
+                                "config": {
+                                    "attributeFieldArray": [
+                                        "Placemark Infowindow.metadata.positions.content.modules.3.config.attributeFieldArray.0.json",
+                                        {
+                                            "visibility": "public",
+                                            "tableId": 3,
+                                            "tableName": "siteData",
+                                            "tableSuffix": "_3544",
+                                            "title": "campComments",
+                                            "label": "Camp Comments",
+                                            "description": false,
+                                            "fieldType": "text",
+                                            "color": "#FFFFFF",
+                                            "searchability": "public",
+                                            "editability": "registered",
+                                            "fieldTextOptions": {
+                                                "textType": "input",
+                                                "inputOptions": {
+                                                    "buildAutocomplete": false,
+                                                    "requireModeration": false,
+                                                    "limitMaxChars": true,
+                                                    "limitMaxWords": true,
+                                                    "allowHtml": false,
+                                                    "allowMedia": false,
+                                                    "allowLinks": true
+                                                },
+                                                "listOptions": {
+                                                    "takeSugesstions": false,
+                                                    "buildTree": false,
+                                                    "iconize": false,
+                                                    "colorize": false
+                                                }
+                                            },
+                                            "allowMultiple": false
+                                        },
+                                        {
+                                            "visibility": "public",
+                                            "tableId": 3,
+                                            "tableName": "siteData",
+                                            "tableSuffix": "_3544",
+                                            "title": "otherComments",
+                                            "label": "Other Comments",
+                                            "description": false,
+                                            "fieldType": "text",
+                                            "color": "#FFFFFF",
+                                            "searchability": "public",
+                                            "editability": "registered",
+                                            "fieldTextOptions": {
+                                                "textType": "input",
+                                                "inputOptions": {
+                                                    "buildAutocomplete": false,
+                                                    "requireModeration": false,
+                                                    "limitMaxChars": true,
+                                                    "limitMaxWords": true,
+                                                    "allowHtml": false,
+                                                    "allowMedia": false,
+                                                    "allowLinks": true
+                                                },
+                                                "listOptions": {
+                                                    "takeSugesstions": false,
+                                                    "buildTree": false,
+                                                    "iconize": false,
+                                                    "colorize": false
+                                                }
+                                            },
+                                            "allowMultiple": false
+                                        },
+                                        {
+                                            "visibility": "public",
+                                            "tableId": 3,
+                                            "tableName": "siteData",
+                                            "tableSuffix": "_3544",
+                                            "title": "siteConditionNotes",
+                                            "label": "Site Condition Notes",
+                                            "description": "",
+                                            "fieldType": "text",
+                                            "color": "rgb(undefined, undefined, undefined)",
+                                            "searchability": "public",
+                                            "editability": "registered",
+                                            "fieldTextOptions": {
+                                                "textType": "input",
+                                                "inputOptions": {
+                                                    "buildAutocomplete": false,
+                                                    "requireModeration": false,
+                                                    "limitMaxChars": 0,
+                                                    "limitMaxWords": 0,
+                                                    "allowHtml": false,
+                                                    "allowMedia": true,
+                                                    "allowLinks": true
+                                                },
+                                                "listOptions": {
+                                                    "takeSugesstions": true,
+                                                    "buildTree": false,
+                                                    "iconize": false,
+                                                    "colorize": false
+                                                }
+                                            },
+                                            "allowMultiple": false
+                                        }
+                                    ],
+                                    "className": "",
+                                    "maxHeight": 0,
+                                    "maxWidth": 370,
+                                    "showLabels": true,
+                                    "showEmpty": false,
+                                    "showTitle": false,
+                                    "title": "",
+                                    "formatData": "",
+                                    "formatValueElement": "",
+                                    "formatContainerElement": ""
+                                }
                             },
                             {
                                 "type": "WizardScriptElement",
-                                "config": []
+                                "config": {
+                                    "script": "Placemark Infowindow.metadata.positions.content.modules.4.config.script.js",
+                                    "identifier": "customScriptElement"
+                                }
                             },
                             {
                                 "type": "NearbyMapitems",
-                                "config": []
+                                "config": {
+                                    "className": "",
+                                    "label": "Places Nearby",
+                                    "lineBreak": false,
+                                    "popoverLabelFunction": "\nvar nautical=1.852; \/\/ km\/nm\nvar nauticalLabel=(Math.round((item.distance\/nautical)\/100.0)\/10.0)+\"NM\";\nreturn '<span style=\"color:cornflowerblue;\">'+item.name+' '+nauticalLabel+' ('+NearbyMapitemsModule.DefaultDistance(item)+') <\/span><br\/> *distances are as the crow flies';"
+                                }
                             },
                             {
                                 "type": "StreetView",
-                                "config": []
+                                "config": {
+                                    "className": "",
+                                    "showEmpty": false,
+                                    "displayImage": false
+                                }
                             },
                             {
                                 "type": "WizardScriptElement",
-                                "config": []
+                                "config": {
+                                    "script": "Placemark Infowindow.metadata.positions.content.modules.7.config.script.js",
+                                    "identifier": "customScriptElement"
+                                }
                             }
                         ]
                     },
