@@ -39,7 +39,7 @@
             "JSCacheObfuscationEnabled": false,
             "phase": "production",
             "ExternalizeWidgetScripts": true,
-            "showFrontEndEditButtons": true,
+            "showFrontEndEditButtons": false,
             "ForceHTTPS": false,
             "allowProxiesFrom": [
                 "*",
@@ -60,6 +60,11 @@
                 ""
             ]
         }
+    },
+    "plugin.15": {
+        "name": "Data Types",
+        "instance": "Data",
+        "parameters": {}
     },
     "plugin.8": {
         "name": "Filesystem",
@@ -108,6 +113,11 @@
         "instance": "GoogleMaps",
         "parameters": {}
     },
+    "plugin.24": {
+        "name": "Pusher Message Server",
+        "instance": "PusherMessages",
+        "parameters": "_PusherMessages.json"
+    },
     "plugin.14": {
         "name": "User Interface",
         "instance": "UserInterface",
@@ -118,11 +128,6 @@
                 "pluginView": "front"
             }
         }
-    },
-    "plugin.15": {
-        "name": "Data Types",
-        "instance": "Data",
-        "parameters": {}
     },
     "plugin.16": {
         "name": "Deploy",
@@ -168,28 +173,30 @@
         "parameters": {
             "clientSecretUrl": "XXXX-XXXX",
             "clientPublicUrl": "https:\/\/6197cf631f844a1583e5a04266b48cb5@sentry.io\/297472",
-            "enabled": false
+            "enabled": true
         }
-    },
-    "plugin.24": {
-        "name": "Pusher Message Server",
-        "instance": "PusherMessages",
-        "parameters": "_PusherMessages.json"
     },
     "plugin.25": {
         "name": "Keen I O",
         "instance": "KeenIO",
         "parameters": {
-            "enabled": false,
+            "enabled": true,
             "projectId": "5b1f5e81c9e77c000165ff79",
-            "writeKey": "",
+            "writeKey": "XXXX-XXXX",
             "readKey": "XXXX-XXXX",
             "ignoreEvents": [
-                "onManipulateMap",
-                "onDisplayView",
-                "onDisplayMap",
                 ""
             ]
+        }
+    },
+    "widget.28": {
+        "name": "Stylesheet",
+        "instance": "CSS",
+        "parameters": {
+            "target": "map.12",
+            "customCSS": "Template Theme Integration.customCSS.css",
+            "widgetTitle": "Template Theme Integration",
+            "readAccess": "public"
         }
     },
     "widget.2": {
@@ -1305,8 +1312,8 @@
             "importEncoding": "UTF-8",
             "showImportEncoding": false,
             "filename": "Geolive Export DATE[Y-m-d (H.i.s)]",
-            "filterRowScript": "return true;",
-            "filterFieldsScript": "return true;",
+            "filterRowScript": "label this widget.filterRowScript.js",
+            "filterFieldsScript": "label this widget.filterFieldsScript.js",
             "target": "map.12"
         }
     },
@@ -1354,6 +1361,17 @@
             "filterLayerMappedIcons": 1,
             "iconsetMetadata": [],
             "controlColor": "rgb(64, 94, 109)"
+        }
+    },
+    "widget.29": {
+        "name": "Map Navigation",
+        "instance": "MapNavigation",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "map.12",
+            "relativeUrl": "bc-map",
+            "readAccess": "public",
+            "position": ""
         }
     },
     "widget.12": {
@@ -1428,8 +1446,8 @@
         "parameters": {
             "widgetTitle": "",
             "target": "map.12",
-            "offset": "0",
-            "maxHeight": "1000",
+            "offset": "100",
+            "maxHeight": "550",
             "minHeight": "300",
             "customScript": "",
             "readAccess": "public"
@@ -2815,27 +2833,6 @@
             "position": ""
         }
     },
-    "widget.28": {
-        "name": "Stylesheet",
-        "instance": "CSS",
-        "parameters": {
-            "target": "map.12",
-            "customCSS": "Template Theme Integration.customCSS.css",
-            "widgetTitle": "Template Theme Integration",
-            "readAccess": "public"
-        }
-    },
-    "widget.29": {
-        "name": "Map Navigation",
-        "instance": "MapNavigation",
-        "parameters": {
-            "widgetTitle": "",
-            "target": "map.12",
-            "relativeUrl": "bc-map",
-            "readAccess": "public",
-            "position": ""
-        }
-    },
     "widget.30": {
         "name": "Detail View",
         "instance": "DetailView",
@@ -2878,6 +2875,73 @@
         }
     },
     "widget.31": {
+        "name": "Template",
+        "instance": "Template",
+        "parameters": {
+            "contentTemplate": "<h1>Map Analytics<\/h1>",
+            "widgetTitle": "module..text",
+            "target": "module..text",
+            "comments": "",
+            "readAccess": "public"
+        }
+    },
+    "widget.32": {
+        "name": "Add Spatial File",
+        "instance": "AddSpatial",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "map.12",
+            "readAccess": "public",
+            "position": ""
+        }
+    },
+    "widget.33": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "map.12",
+            "templateName": "itemDetail",
+            "requireTarget": true,
+            "onRenderApplictionScript": "",
+            "metadata": {
+                "positions": {
+                    "title": {
+                        "modules": [
+                            "widget.DetailView.33.metadata.positions.title.modules.0.json"
+                        ]
+                    },
+                    "content": {
+                        "modules": [
+                            "widget.DetailView.33.metadata.positions.content.modules.0.json",
+                            {
+                                "type": "WizardScriptElement",
+                                "config": {
+                                    "script": "widget.DetailView.33.metadata.positions.content.modules.1.config.script.js",
+                                    "identifier": "customScriptElement"
+                                }
+                            }
+                        ]
+                    },
+                    "footer": {
+                        "modules": []
+                    },
+                    "menu": {
+                        "modules": []
+                    }
+                },
+                "positionList": [
+                    "title",
+                    "content",
+                    "footer",
+                    "menu"
+                ],
+                "_diagramState": []
+            },
+            "readAccess": "public"
+        }
+    },
+    "widget.34": {
         "name": "Form View",
         "instance": "UserWizardBuilder",
         "parameters": {
@@ -2889,24 +2953,24 @@
                     "y": 168
                 },
                 "children": [
-                    "widget.UserWizardBuilder.31.metadata.children.0.json",
+                    "widget.UserWizardBuilder.34.metadata.children.0.json",
                     {
                         "title": "New Empty Step",
                         "class": "AttributesTableNode",
                         "fields": [
-                            "widget.UserWizardBuilder.31.metadata.children.1.fields.0.json"
+                            "widget.UserWizardBuilder.34.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 199,
-                            "y": 234
+                            "x": 209,
+                            "y": 244
                         },
                         "children": [
-                            "widget.UserWizardBuilder.31.metadata.children.1.children.0.json",
+                            "widget.UserWizardBuilder.34.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 159,
-                                    "y": 400
+                                    "x": 169,
+                                    "y": 410
                                 }
                             }
                         ],
@@ -2914,16 +2978,18 @@
                             "positions": {
                                 "title": {
                                     "modules": [
-                                        "widget.UserWizardBuilder.31.metadata.children.1.builderMetadata.positions.title.modules.0.json"
+                                        "widget.UserWizardBuilder.34.metadata.children.1.builderMetadata.positions.title.modules.0.json"
                                     ]
                                 },
                                 "content": {
                                     "modules": [
-                                        "widget.UserWizardBuilder.31.metadata.children.1.builderMetadata.positions.content.modules.0.json"
+                                        "widget.UserWizardBuilder.34.metadata.children.1.builderMetadata.positions.content.modules.0.json"
                                     ]
                                 },
                                 "footer": {
-                                    "modules": []
+                                    "modules": [
+                                        "widget.UserWizardBuilder.34.metadata.children.1.builderMetadata.positions.footer.modules.0.json"
+                                    ]
                                 },
                                 "menu": {
                                     "modules": []
@@ -2953,92 +3019,21 @@
             "readAccess": "public"
         }
     },
-    "widget.32": {
-        "name": "Detail View",
-        "instance": "DetailView",
-        "parameters": {
-            "widgetTitle": "",
-            "target": "map.12",
-            "templateName": "itemDetail",
-            "requireTarget": true,
-            "onRenderApplictionScript": "",
-            "metadata": {
-                "positions": {
-                    "title": {
-                        "modules": [
-                            "widget.DetailView.32.metadata.positions.title.modules.0.json"
-                        ]
-                    },
-                    "content": {
-                        "modules": [
-                            "widget.DetailView.32.metadata.positions.content.modules.0.json",
-                            {
-                                "type": "WizardScriptElement",
-                                "config": {
-                                    "script": "widget.DetailView.32.metadata.positions.content.modules.1.config.script.js",
-                                    "identifier": "customScriptElement"
-                                }
-                            }
-                        ]
-                    },
-                    "footer": {
-                        "modules": []
-                    },
-                    "menu": {
-                        "modules": []
-                    }
-                },
-                "positionList": [
-                    "title",
-                    "content",
-                    "footer",
-                    "menu"
-                ],
-                "_diagramState": []
-            },
-            "readAccess": "public"
-        }
-    },
-    "widget.33": {
-        "name": "Template",
-        "instance": "Template",
-        "parameters": {
-            "contentTemplate": "module--text.contentTemplate.html",
-            "widgetTitle": "module..text",
-            "target": "module..text"
-        }
-    },
-    "widget.34": {
-        "name": "Detail View",
-        "instance": "DetailView",
-        "parameters": {
-            "widgetTitle": "",
-            "target": "none",
-            "templateName": "{target}",
-            "requireTarget": true,
-            "onRenderApplictionScript": ""
-        }
-    },
     "widget.35": {
-        "name": "Detail View",
-        "instance": "DetailView",
+        "name": "Search Engine Optimization Helper",
+        "instance": "SearchEngineOptimizationHelper",
         "parameters": {
-            "widgetTitle": "",
-            "target": "none",
-            "templateName": "{target}",
-            "requireTarget": true,
-            "onRenderApplictionScript": ""
+            "target": "map.12"
         }
     },
     "widget.36": {
-        "name": "Detail View",
-        "instance": "DetailView",
+        "name": "Content",
+        "instance": "CustomContent",
         "parameters": {
+            "target": "map.12",
+            "customScript": "widget.CustomContent.36.customScript.js",
             "widgetTitle": "",
-            "target": "none",
-            "templateName": "{target}",
-            "requireTarget": true,
-            "onRenderApplictionScript": ""
+            "readAccess": "public"
         }
     }
 }
