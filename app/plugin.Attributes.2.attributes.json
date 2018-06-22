@@ -1,6 +1,6 @@
 [
     {
-        "id": "3",
+        "id": 3,
         "name": "siteData",
         "description": "",
         "label": "",
@@ -11,13 +11,13 @@
             "appliesTo": [
                 "marker"
             ],
-            "id": "3",
+            "id": 3,
             "suffix": "_3544",
             "description": "",
             "fields": [
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "landTenure",
@@ -49,7 +49,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "tentSites",
@@ -81,7 +81,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "landingComments",
@@ -113,7 +113,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "campComments",
@@ -145,7 +145,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "otherComments",
@@ -177,7 +177,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "siteConditionNotes",
@@ -209,7 +209,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "siteConditionDate",
@@ -241,7 +241,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "siteFunction",
@@ -273,7 +273,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "siteUsage",
@@ -305,7 +305,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "rationale",
@@ -337,7 +337,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "planningAction",
@@ -369,7 +369,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "siteAccess",
@@ -401,7 +401,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "coordinateSource",
@@ -433,7 +433,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "provenance",
@@ -465,7 +465,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "structures",
@@ -497,7 +497,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "visitDetail",
@@ -529,7 +529,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "siteVisitDone",
@@ -561,7 +561,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "siteVisitedBy",
@@ -593,7 +593,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "siteVisitDate",
@@ -625,7 +625,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "proposedGroundCheckDate",
@@ -657,7 +657,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "section",
@@ -689,7 +689,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "paddlingArea",
@@ -721,7 +721,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "trail",
@@ -753,7 +753,7 @@
                 },
                 {
                     "visibility": "public",
-                    "tableId": "3",
+                    "tableId": 3,
                     "tableName": "siteData",
                     "tableSuffix": "_3544",
                     "title": "additionalTrails",

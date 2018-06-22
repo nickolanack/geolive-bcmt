@@ -1,1 +1,0 @@
-<?php HtmlDocument()->META(HtmlDocument()->website(), 'base'); ?>
