@@ -3018,5 +3018,16 @@
             "requireTarget": true,
             "onRenderApplictionScript": ""
         }
+    },
+    "widget.35": {
+        "name": "Detail View",
+        "instance": "DetailView",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "none",
+            "templateName": "{target}",
+            "requireTarget": true,
+            "onRenderApplictionScript": ""
+        }
     }
 }
