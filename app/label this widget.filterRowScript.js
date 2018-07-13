@@ -1,2 +1,2 @@
-Emit('onFilterCSVRow', array('record'=>$record, 'index'=>$index));
+//Emit('onFilterCSVRow', array('record'=>$record, 'index'=>$index));
 return true;
