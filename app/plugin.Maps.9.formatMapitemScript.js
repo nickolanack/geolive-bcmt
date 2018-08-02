@@ -9,6 +9,6 @@ $feature->attributes->siteData->lastEditor=GetClient()->getRealName();
 $feature->attributes->siteData->editCount=0;
 
 if($feature->markerId>0){
-    $siteData=(new attributes\Record('siteData')->getValues($feature->markerId, 'marker'));
+    $siteData=(new attributes\Record('siteData'))->getValues($feature->markerId, 'marker');
     $feature->attributes->siteData->editCount=intval($siteData['editCount'])+1;
 }
