@@ -1815,19 +1815,11 @@
                 "fields": [
                     "siteData.metadata.fields.0.json",
                     {
-                        "icon": [],
-                        "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
-                            "hideFalse": true,
-                            "trueLabel": "",
-                            "falseLabel": "",
-                            "useFieldIcon": false
-                        },
                         "was": "tentSites",
                         "title": "tentSites",
                         "label": "Tent Sites",
                         "description": false,
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -1856,22 +1848,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "landingComments",
                         "title": "landingComments",
                         "label": "Landing Comments",
                         "description": "",
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -1900,22 +1892,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "campComments",
                         "title": "campComments",
                         "label": "Camp Comments",
                         "description": false,
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -1944,22 +1936,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "otherComments",
                         "title": "otherComments",
                         "label": "Other Comments",
                         "description": false,
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -1988,22 +1980,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "",
                         "title": "siteConditionNotes",
                         "label": "Site Condition Notes",
                         "description": "",
+                        "icon": [],
                         "color": "rgb(undefined, undefined, undefined)",
                         "visibility": "public",
                         "editability": "registered",
@@ -2032,22 +2024,22 @@
                             "precision": 0,
                             "limitMinValue": "",
                             "limitMaxValue": ""
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "",
                         "title": "siteConditionDate",
                         "label": "SC Report Date",
                         "description": "",
+                        "icon": [],
                         "color": "rgb(NaN, NaN, NaN)",
                         "visibility": "public",
                         "editability": "registered",
@@ -2076,22 +2068,22 @@
                             "precision": 0,
                             "limitMinValue": "",
                             "limitMaxValue": ""
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "siteFunction",
                         "title": "siteFunction",
                         "label": "Site Function",
                         "description": "",
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -2120,22 +2112,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "siteUsage",
                         "title": "siteUsage",
                         "label": "Site Usage",
                         "description": "",
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -2164,22 +2156,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "rationale",
                         "title": "rationale",
                         "label": "Rationale",
                         "description": false,
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -2208,22 +2200,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "",
                         "title": "planningAction",
                         "label": "Planning Action",
                         "description": "",
+                        "icon": [],
                         "color": "rgb(undefined, undefined, undefined)",
                         "visibility": "public",
                         "editability": "registered",
@@ -2252,22 +2244,22 @@
                             "precision": 0,
                             "limitMinValue": "",
                             "limitMaxValue": ""
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "siteAccess",
                         "title": "siteAccess",
                         "label": "Site Access",
                         "description": "",
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -2296,22 +2288,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "coordinateSource",
                         "title": "coordinateSource",
                         "label": "Coordinate Source",
                         "description": "",
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -2340,22 +2332,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "",
                         "title": "provenance",
                         "label": "Provenance",
                         "description": "",
+                        "icon": [],
                         "color": "rgb(undefined, undefined, undefined)",
                         "visibility": "public",
                         "editability": "registered",
@@ -2384,22 +2376,22 @@
                             "precision": 0,
                             "limitMinValue": "",
                             "limitMaxValue": ""
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "",
                         "title": "structures",
                         "label": "Signage & Structures",
                         "description": "",
+                        "icon": [],
                         "color": "rgb(undefined, undefined, undefined)",
                         "visibility": "public",
                         "editability": "registered",
@@ -2428,22 +2420,22 @@
                             "precision": 0,
                             "limitMinValue": "",
                             "limitMaxValue": ""
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "",
                         "title": "visitDetail",
                         "label": "Known Visit Detail",
                         "description": "",
+                        "icon": [],
                         "color": "rgb(NaN, NaN, NaN)",
                         "visibility": "public",
                         "editability": "registered",
@@ -2472,22 +2464,22 @@
                             "precision": 0,
                             "limitMinValue": "",
                             "limitMaxValue": ""
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "siteVisitDone",
                         "title": "siteVisitDone",
                         "label": "Site Visit Done",
                         "description": false,
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -2516,22 +2508,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "siteVisitedBy",
                         "title": "siteVisitedBy",
                         "label": "Site Visited By",
                         "description": false,
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -2560,22 +2552,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "siteVisitDate",
                         "title": "siteVisitDate",
                         "label": "Site Visit Date",
                         "description": "false",
+                        "icon": [],
                         "color": "rgb(undefined, undefined, undefined)",
                         "visibility": "public",
                         "editability": "registered",
@@ -2604,22 +2596,22 @@
                             "precision": 0,
                             "limitMinValue": "0",
                             "limitMaxValue": "0"
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "proposedGroundCheckDate",
                         "title": "proposedGroundCheckDate",
                         "label": "Proposed Ground Check Date",
                         "description": false,
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -2648,22 +2640,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "section",
                         "title": "section",
                         "label": "Region",
                         "description": "",
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -2692,22 +2684,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "paddlingArea",
                         "title": "paddlingArea",
                         "label": "Paddling Area",
                         "description": "",
+                        "icon": [],
                         "color": "rgb(NaN, NaN, NaN)",
                         "visibility": "public",
                         "editability": "registered",
@@ -2736,22 +2728,22 @@
                             "precision": 0,
                             "limitMinValue": "0",
                             "limitMaxValue": "0"
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "trail",
                         "title": "trail",
                         "label": "Trail",
                         "description": "",
+                        "icon": [],
                         "color": "#FFFFFF",
                         "visibility": "public",
                         "editability": "registered",
@@ -2780,22 +2772,22 @@
                             "precision": 0,
                             "limitMinValue": 0,
                             "limitMaxValue": 0
-                        }
-                    },
-                    {
-                        "icon": [],
+                        },
                         "fieldBooleanOptions": {
-                            "trueIcon": [],
-                            "falseIcon": [],
                             "hideFalse": true,
                             "trueLabel": "",
                             "falseLabel": "",
-                            "useFieldIcon": false
-                        },
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
                         "was": "",
                         "title": "additionalTrails",
                         "label": "Additional Trails",
                         "description": "",
+                        "icon": [],
                         "color": "rgb(undefined, undefined, undefined)",
                         "visibility": "public",
                         "editability": "registered",
@@ -2824,6 +2816,58 @@
                             "precision": 0,
                             "limitMinValue": "",
                             "limitMaxValue": ""
+                        },
+                        "fieldBooleanOptions": {
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
+                        }
+                    },
+                    {
+                        "was": "",
+                        "title": "lastEditor",
+                        "label": "Last Editor",
+                        "description": "",
+                        "icon": [],
+                        "color": "rgb(undefined, undefined, undefined)",
+                        "visibility": "public",
+                        "editability": "registered",
+                        "searchability": "public",
+                        "allowMultiple": false,
+                        "fieldType": "text",
+                        "fieldTextOptions": {
+                            "textType": "input",
+                            "inputOptions": {
+                                "buildAutocomplete": false,
+                                "requireModeration": false,
+                                "limitMaxChars": 0,
+                                "limitMaxWords": 0,
+                                "allowHtml": false,
+                                "allowMedia": true,
+                                "allowLinks": true
+                            },
+                            "listOptions": {
+                                "takeSugesstions": true,
+                                "buildTree": false,
+                                "iconize": false,
+                                "colorize": false
+                            }
+                        },
+                        "fieldNumberOptions": {
+                            "precision": 0,
+                            "limitMinValue": "",
+                            "limitMaxValue": ""
+                        },
+                        "fieldBooleanOptions": {
+                            "hideFalse": true,
+                            "trueLabel": "",
+                            "falseLabel": "",
+                            "useFieldIcon": false,
+                            "trueIcon": [],
+                            "falseIcon": []
                         }
                     }
                 ]
