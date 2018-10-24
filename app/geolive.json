@@ -3129,7 +3129,25 @@
         "instance": "Legend",
         "parameters": {
             "position": "LEFT_CENTER",
-            "target": "map.12"
+            "target": "map.12",
+            "useIconSet": true,
+            "draggableIcons": false,
+            "startMinimized": true,
+            "showToggle": false,
+            "guestLoginDrag": true,
+            "legendParams": [],
+            "shouldShowLayerScript": "return true",
+            "editableLayerScript": "return true",
+            "formatLayerScript": "",
+            "formatLayerPopoverScript": "",
+            "formatLegendScript": "",
+            "onDragEndScript": "defaultBehaviorFn();",
+            "iconSize": 16,
+            "defaultIcon": "DEFAULT",
+            "showEditLayerButtons": true,
+            "editLayerScript": "defaultBehaviorFn();",
+            "widgetTitle": "",
+            "readAccess": "special"
         }
     }
 }
