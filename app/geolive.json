@@ -173,7 +173,7 @@
         "parameters": {
             "clientSecretUrl": "XXXX-XXXX",
             "clientPublicUrl": "https:\/\/6197cf631f844a1583e5a04266b48cb5@sentry.io\/297472",
-            "enabled": false
+            "enabled": true
         }
     },
     "plugin.25": {
@@ -3128,7 +3128,7 @@
         "name": "Legend",
         "instance": "Legend",
         "parameters": {
-            "position": "LEFT_CENTER",
+            "position": "LEFT_BOTTOM",
             "target": "map.12",
             "useIconSet": true,
             "draggableIcons": false,
