@@ -3136,7 +3136,7 @@
             "showToggle": false,
             "guestLoginDrag": true,
             "legendParams": [],
-            "shouldShowLayerScript": "return true",
+            "shouldShowLayerScript": "return layerId>=11;",
             "editableLayerScript": "return true",
             "formatLayerScript": "",
             "formatLayerPopoverScript": "",
@@ -3146,7 +3146,7 @@
             "defaultIcon": "DEFAULT",
             "showEditLayerButtons": true,
             "editLayerScript": "defaultBehaviorFn();",
-            "widgetTitle": "",
+            "widgetTitle": "Trails Legend",
             "readAccess": "special"
         }
     },
