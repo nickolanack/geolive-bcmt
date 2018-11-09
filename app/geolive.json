@@ -3149,5 +3149,12 @@
             "widgetTitle": "",
             "readAccess": "special"
         }
+    },
+    "widget.38": {
+        "name": "Javascript",
+        "instance": "CustomBehaviorScript",
+        "parameters": {
+            "target": "none"
+        }
     }
 }
