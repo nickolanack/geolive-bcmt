@@ -3138,7 +3138,7 @@
             "legendParams": [],
             "shouldShowLayerScript": "return id>=11;",
             "editableLayerScript": "return true",
-            "formatLayerScript": "",
+            "formatLayerScript": "Trails Legend.formatLayerScript.js",
             "formatLayerPopoverScript": "",
             "formatLegendScript": "",
             "onDragEndScript": "defaultBehaviorFn();",
