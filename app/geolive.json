@@ -1457,8 +1457,8 @@
         "name": "Javascript",
         "instance": "CustomBehaviorScript",
         "parameters": {
-            "customScript": "widget.CustomBehaviorScript.19.customScript.js",
-            "widgetTitle": "",
+            "customScript": "Cluster Icons.customScript.js",
+            "widgetTitle": "Cluster Icons",
             "target": "map.12",
             "readAccess": "public"
         }
