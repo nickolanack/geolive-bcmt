@@ -380,7 +380,7 @@
             "showToggle": true,
             "legendParams": [],
             "guestLoginDrag": true,
-            "shouldShowLayerScript": "return layerId<11",
+            "shouldShowLayerScript": "return id<11",
             "editableLayerScript": "return true",
             "formatLayerScript": "",
             "formatLayerPopoverScript": "Legend.formatLayerPopoverScript.js",
