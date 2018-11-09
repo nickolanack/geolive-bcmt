@@ -3142,7 +3142,7 @@
             "formatLayerPopoverScript": "",
             "formatLegendScript": "",
             "onDragEndScript": "defaultBehaviorFn();",
-            "iconSize": 16,
+            "iconSize": 14,
             "defaultIcon": "DEFAULT",
             "showEditLayerButtons": true,
             "editLayerScript": "defaultBehaviorFn();",
