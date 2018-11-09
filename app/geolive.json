@@ -3154,7 +3154,10 @@
         "name": "Javascript",
         "instance": "CustomBehaviorScript",
         "parameters": {
-            "target": "none"
+            "target": "map.12",
+            "customScript": "Google Roads Style.customScript.js",
+            "widgetTitle": "Google Roads Style",
+            "readAccess": "public"
         }
     }
 }
