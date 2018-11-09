@@ -3136,7 +3136,7 @@
             "showToggle": false,
             "guestLoginDrag": true,
             "legendParams": [],
-            "shouldShowLayerScript": "return layerId>=11;",
+            "shouldShowLayerScript": "return id>=11;",
             "editableLayerScript": "return true",
             "formatLayerScript": "",
             "formatLayerPopoverScript": "",
