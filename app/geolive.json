@@ -380,14 +380,14 @@
             "showToggle": true,
             "legendParams": [],
             "guestLoginDrag": true,
-            "shouldShowLayerScript": "return true",
+            "shouldShowLayerScript": "return layerId<11",
             "editableLayerScript": "return true",
             "formatLayerScript": "",
             "formatLayerPopoverScript": "Legend.formatLayerPopoverScript.js",
             "formatLegendScript": "",
             "onDragEndScript": "defaultBehaviorFn();",
             "target": "map.12",
-            "editLayerScript": "\r\ndefaultBehaviorFn();\r\n"
+            "editLayerScript": "defaultBehaviorFn();"
         }
     },
     "widget.6": {
