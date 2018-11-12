@@ -13,12 +13,16 @@ if(!me._layerGroupsMap){
 var getGroup=function(layer, element){
     var id=layer.getId();
     var keys=Object.keys(me._layerGroupsMap);
+    var key=null;
+    var map=null;
     for(var i=0;i<keys.Length;i++){
-        for(var j=0;j<me._layerGroupsMap[keys[i]].Length;j++){
-            if(id+""==me._layerGroupsMap[keys[i]][j]+""){
-                return keys[i];
+        key=keys[i];
+        map=me._layerGroupsMap[key];
+        for(var j=0;j<map.Length;j++){
+            if(id+""==map[j]+""){
+                return key;
             }
-            addClass("not-"+id);
+            element.addClass("not-"+map[j]);
         }
     }
     return false;
@@ -39,7 +43,7 @@ var addToGroup=function(group, layer, element){
     
 };
 
-var group=getGroup(layer)
+var group=getGroup(layer, element)
 
 if(group){
     
