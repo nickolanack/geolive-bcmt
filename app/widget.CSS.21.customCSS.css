@@ -1,3 +1,7 @@
+li.layer.nested-1 {
+    display: none;
+}
+
 .edit-widget-btns {
     position: absolute;
     top: 0;
