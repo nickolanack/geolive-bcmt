@@ -40,8 +40,11 @@ var addToGroup=function(group, layer, element){
         me._layerGroupEls[group]=category
         element.parentNode.insertBefore(category, element);
         category.appendChild(Asset.image(element.firstChild.src,{style:element.firstChild.style}));
-        category.appendChild(new Element('span',{"class":"label"}));
-        category.appendChild(new Element('span',{"class":"indicator-switch", events:{'click':function(){
+        category.appendChild(new Element('span',{"class":"label", html:group}));
+        category.appendChild(new Element('span',{"class":"indicator-switch"}));
+        
+        
+        category.addEvent('click',function(){
             
             var layers=me._layerGroupsMap[group].map(function(lid){return application.getLayerManager().getLayer(lid);});
             var value=false;
@@ -64,7 +67,9 @@ var addToGroup=function(group, layer, element){
                 category.addClass('active');
             }
             
-        }}}));
+        });
+        
+        
     }else{
         
     }
