@@ -72,7 +72,7 @@ var addToGroup=function(group, layer, element){
                 var east = -Infinity;
                 var west = Infinity;
 
-                layers.forEach(function(i) {
+                layers.runOnceOnLoad(function(i) {
 
                     var c1=i.getBounds().getNorthEast();
                     var c2=i.getBounds().getSouthWest();
@@ -101,14 +101,16 @@ var addToGroup=function(group, layer, element){
                     south = Math.min(south, s);
                     west = Math.min(west, w);
             
+                    application.fitBounds({
+                        "north": north,
+                        "south": south,
+                        "east": east,
+                        "west": west
+                    });
+            
                 });
                 
-                application.fitBounds({
-                    "north": north,
-                    "south": south,
-                    "east": east,
-                    "west": west
-                });
+                
                 
             }
             
