@@ -15,12 +15,11 @@ var getGroup=function(layer, element){
     var keys=Object.keys(me._layerGroupsMap);
     var key=null;
     var map=null;
-    var i;
-    var j;
-    for(i=0;i<keys.Length;i++){
+  
+    for(var i=0;i<keys.length;i++){
         key=keys[i];
         map=me._layerGroupsMap[key];
-        for(j=0;j<map.Length;j++){
+        for(var j=0;j<map.length;j++){
             if(id+""==map[j]+""){
                 return key;
             }
