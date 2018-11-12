@@ -1421,9 +1421,10 @@
         "name": "Stylesheet",
         "instance": "CSS",
         "parameters": {
-            "customCSS": "widget.CSS.16.customCSS.css",
-            "widgetTitle": "",
-            "readAccess": "public"
+            "customCSS": "Markers Style.customCSS.css",
+            "widgetTitle": "Markers Style",
+            "readAccess": "public",
+            "target": "map.12"
         }
     },
     "widget.17": {
