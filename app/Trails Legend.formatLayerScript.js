@@ -43,7 +43,7 @@ var addToGroup=function(group, layer, element){
         category.appendChild(new Element('span',{"class":"label"}));
         category.appendChild(new Element('span',{"class":"indicator-switch", events:{'click':function(){
             
-            var layers=me._layerGroupsMap[group].map(function(lid){return application.getLayerManager().getLayer();});
+            var layers=me._layerGroupsMap[group].map(function(lid){return application.getLayerManager().getLayer(lid);});
             var value=false;
             layers.forEach(function(l){
                 if(l.isVisible()){
