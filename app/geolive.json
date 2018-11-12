@@ -61,6 +61,11 @@
             ]
         }
     },
+    "plugin.15": {
+        "name": "Data Types",
+        "instance": "Data",
+        "parameters": {}
+    },
     "plugin.8": {
         "name": "Filesystem",
         "instance": "Filesystem",
@@ -108,6 +113,11 @@
         "instance": "GoogleMaps",
         "parameters": {}
     },
+    "plugin.24": {
+        "name": "Pusher Message Server",
+        "instance": "PusherMessages",
+        "parameters": "_PusherMessages.json"
+    },
     "plugin.14": {
         "name": "User Interface",
         "instance": "UserInterface",
@@ -118,11 +128,6 @@
                 "pluginView": "front"
             }
         }
-    },
-    "plugin.15": {
-        "name": "Data Types",
-        "instance": "Data",
-        "parameters": {}
     },
     "plugin.16": {
         "name": "Deploy",
@@ -158,7 +163,6 @@
         "name": "Monolog Plugin",
         "instance": "Monolog",
         "parameters": {
-            "enabled": true,
             "logPath": "{front}\/..\/log",
             "logToSentry": false
         }
@@ -172,11 +176,6 @@
             "enabled": true
         }
     },
-    "plugin.24": {
-        "name": "Pusher Message Server",
-        "instance": "PusherMessages",
-        "parameters": "_PusherMessages.json"
-    },
     "plugin.25": {
         "name": "Keen I O",
         "instance": "KeenIO",
@@ -187,8 +186,17 @@
             "readKey": "XXXX-XXXX",
             "ignoreEvents": [
                 ""
-            ],
-            "eventPrefix": ""
+            ]
+        }
+    },
+    "widget.28": {
+        "name": "Stylesheet",
+        "instance": "CSS",
+        "parameters": {
+            "target": "map.12",
+            "customCSS": "Template Theme Integration.customCSS.css",
+            "widgetTitle": "Template Theme Integration",
+            "readAccess": "public"
         }
     },
     "widget.2": {
@@ -372,14 +380,14 @@
             "showToggle": true,
             "legendParams": [],
             "guestLoginDrag": true,
-            "shouldShowLayerScript": "return true",
+            "shouldShowLayerScript": "return id<11",
             "editableLayerScript": "return true",
             "formatLayerScript": "",
             "formatLayerPopoverScript": "Legend.formatLayerPopoverScript.js",
             "formatLegendScript": "",
             "onDragEndScript": "defaultBehaviorFn();",
             "target": "map.12",
-            "editLayerScript": "\r\ndefaultBehaviorFn();\r\n"
+            "editLayerScript": "defaultBehaviorFn();"
         }
     },
     "widget.6": {
@@ -397,16 +405,6 @@
         "name": "Generic Wizard",
         "instance": "WizardBuilder",
         "parameters": {
-            "widgetTitle": "",
-            "target": "map.12",
-            "templateName": "MapItemTemplate",
-            "requireTarget": true,
-            "resolveItemScript": "return item;",
-            "beforeSubmitScript": "",
-            "onCreateScript": "",
-            "onUpdateScript": "",
-            "onSaveScript": "",
-            "onLoadScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -636,7 +634,16 @@
                     }
                 ]
             },
-            "readAccess": "public"
+            "readAccess": "public",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "widgetTitle": "",
+            "beforeSubmitScript": "",
+            "onLoadScript": "",
+            "requireTarget": true,
+            "templateName": "MapItemTemplate",
+            "target": "map.12"
         }
     },
     "widget.9": {
@@ -1356,6 +1363,17 @@
             "controlColor": "rgb(64, 94, 109)"
         }
     },
+    "widget.29": {
+        "name": "Map Navigation",
+        "instance": "MapNavigation",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "map.12",
+            "relativeUrl": "bc-map",
+            "readAccess": "public",
+            "position": ""
+        }
+    },
     "widget.12": {
         "name": "Edit Behavior",
         "instance": "ItemEditBehavior",
@@ -1413,7 +1431,6 @@
         "instance": "GoogleMap",
         "parameters": {
             "widgetTitle": "The Map",
-            "loadMapId": "{default}",
             "target": "googleMapDetail",
             "templateName": "googleMapDetail",
             "loadWidgetsWithTarget": "map.12",
@@ -1454,9 +1471,7 @@
             "target": "map.12",
             "templateName": "default",
             "requireTarget": true,
-            "resolveItemScript": "return item",
             "onRenderApplictionScript": "",
-            "notifyViewer": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -1722,9 +1737,7 @@
             "target": "testDashboard",
             "templateName": "testDashboard",
             "requireTarget": false,
-            "resolveItemScript": "return item",
             "onRenderApplictionScript": "testDashboard.onRenderApplictionScript.js",
-            "notifyViewer": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -2908,27 +2921,6 @@
             "position": ""
         }
     },
-    "widget.28": {
-        "name": "Stylesheet",
-        "instance": "CSS",
-        "parameters": {
-            "target": "map.12",
-            "customCSS": "Template Theme Integration.customCSS.css",
-            "widgetTitle": "Template Theme Integration",
-            "readAccess": "public"
-        }
-    },
-    "widget.29": {
-        "name": "Map Navigation",
-        "instance": "MapNavigation",
-        "parameters": {
-            "widgetTitle": "",
-            "target": "map.12",
-            "relativeUrl": "bc-map",
-            "readAccess": "public",
-            "position": ""
-        }
-    },
     "widget.30": {
         "name": "Detail View",
         "instance": "DetailView",
@@ -2937,9 +2929,7 @@
             "target": "analyticsDashboard",
             "templateName": "analyticsDashboard",
             "requireTarget": false,
-            "resolveItemScript": "return item",
             "onRenderApplictionScript": "",
-            "notifyViewer": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -3001,9 +2991,7 @@
             "target": "map.12",
             "templateName": "itemDetail",
             "requireTarget": true,
-            "resolveItemScript": "return item",
             "onRenderApplictionScript": "",
-            "notifyViewer": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -3148,9 +3136,9 @@
             "showToggle": false,
             "guestLoginDrag": true,
             "legendParams": [],
-            "shouldShowLayerScript": "return true",
+            "shouldShowLayerScript": "return id>=11;",
             "editableLayerScript": "return true",
-            "formatLayerScript": "",
+            "formatLayerScript": "Trails Legend.formatLayerScript.js",
             "formatLayerPopoverScript": "",
             "formatLegendScript": "",
             "onDragEndScript": "defaultBehaviorFn();",
@@ -3158,7 +3146,7 @@
             "defaultIcon": "DEFAULT",
             "showEditLayerButtons": true,
             "editLayerScript": "defaultBehaviorFn();",
-            "widgetTitle": "",
+            "widgetTitle": "Trails Legend",
             "readAccess": "special"
         }
     },
@@ -3170,15 +3158,6 @@
             "customScript": "Google Roads Style.customScript.js",
             "widgetTitle": "Google Roads Style",
             "readAccess": "public"
-        }
-    },
-    "widget.39": {
-        "name": "Template",
-        "instance": "Template",
-        "parameters": {
-            "contentTemplate": "Error",
-            "widgetTitle": "site.error.html",
-            "target": "site.error.html"
         }
     }
 }
