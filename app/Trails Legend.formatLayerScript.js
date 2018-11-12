@@ -10,7 +10,7 @@ if(!me._layerGroupsMap){
     element.addClass("created-groups");
 }
 
-var getGroup=function(layer){
+var getGroup=function(layer, element){
     var id=layer.getId();
     var keys=Object.keys(me._layerGroupsMap);
     for(var i=0;i<keys.Length;i++){
@@ -18,6 +18,7 @@ var getGroup=function(layer){
             if(id+""==me._layerGroupsMap[keys[i]][j]+""){
                 return keys[i];
             }
+            addClass("not-"+id);
         }
     }
     return false;
