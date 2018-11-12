@@ -25,18 +25,25 @@ var getGroup=function(layer, element){
             }
             element.addClass("not-"+map[j]);
         }
-        element.addClass("not-"+map.join('-'));
+        // element.addClass("not-"+map.join('-'));
     }
-    //element.addClass("not-any-"+keys.map(function(k){return k.toLowerCase().split(' ').join('-'); }).join('-'));
+    // element.addClass("not-any-"+keys.map(function(k){return k.toLowerCase().split(' ').join('-'); }).join('-'));
     return false;
 };
 
 
 var addToGroup=function(group, layer, element){
     
-    if(!me._layerGroupEls[group]){
-        me._layerGroupEls[group]=new Element('li');
-        element.parentNode.insertBefore(me._layerGroupEls[group], element);
+    var category=me._layerGroupEls[group];
+    if(!category){
+        category=new Element('li');
+        me._layerGroupEls[group]=category
+        element.parentNode.insertBefore(category, element);
+        category.appendChild(Asset.image(element.firstChild.src,{style:element.firstChild.style}));
+        category.appendChild(new Element('span',{"class":"label"}));
+        category.appendChild(new Element('span',{"class":"indicator-switch"}));
+    }else{
+        
     }
     
     element.addClass("nested-1");
