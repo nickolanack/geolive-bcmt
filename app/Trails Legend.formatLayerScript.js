@@ -26,7 +26,7 @@ var getGroup=function(layer, element){
         }
         element.addClass("not-"+key);
     }
-     element.addClass("not-any");
+     element.addClass("not-any-"+keys.map(function(k){return k.toLowerCase().split(' ').join('-'); }).join('-'));
     return false;
 };
 
