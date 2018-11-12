@@ -35,6 +35,7 @@ var getGroup=function(layer, element){
 var addToGroup=function(group, layer, element){
     
     var category=me._layerGroupEls[group];
+    var groupKabob=group.toLowerCase().split(' ').join('-')
     if(!category){
         category=new Element('li',{"class":"layer"});
         me._layerGroupEls[group]=category
@@ -69,13 +70,19 @@ var addToGroup=function(group, layer, element){
             
         });
         
+        new UIPopover(category, {
+                title: Localize(group, groupKabob),
+                description:"",
+                anchor: UIPopover.AnchorTo(['right'])
+            });
+        
         
     }else{
         
     }
     
     element.addClass("nested-1");
-    element.addClass(group.toLowerCase().split(' ').join('-'));
+    element.addClass(groupKabob);
     
     
     
