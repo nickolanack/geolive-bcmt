@@ -11,10 +11,10 @@ if(!me._layerGroupsMap){
 
 var getGroup=function(layer){
     var id=layer.getId();
-    var keys=Object.keys(me._layerGroups);
+    var keys=Object.keys(me._layerGroupsMap);
     for(var i=0;i<keys.Length;i++){
         for(var j=0;j<keys.Length;j++){
-            if(id+""===me._layerGroups[keys[i]][j]+""){
+            if(id+""===me._layerGroupsMap[keys[i]][j]+""){
                 return keys[i];
             }
         }
