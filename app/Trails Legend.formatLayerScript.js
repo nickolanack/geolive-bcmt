@@ -14,7 +14,7 @@ var getGroup=function(layer){
     var keys=Object.keys(me._layerGroupsMap);
     for(var i=0;i<keys.Length;i++){
         for(var j=0;j<keys.Length;j++){
-            if(id+""===me._layerGroupsMap[keys[i]][j]+""){
+            if(id+""==me._layerGroupsMap[keys[i]][j]+""){
                 return keys[i];
             }
         }
@@ -29,6 +29,9 @@ var addToGroup=function(group, layer, element){
         me._layerGroupEls[group]=new Element('li');
         element.parentNode.insertBefore(me._layerGroupEls[group], element);
     }
+    
+    element.addClass("nested-1");
+    
     
     
 };
