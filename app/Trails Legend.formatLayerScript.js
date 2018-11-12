@@ -24,7 +24,9 @@ var getGroup=function(layer, element){
             }
             element.addClass("not-"+map[j]);
         }
+        element.addClass("not-"+key);
     }
+     element.addClass("not-any");
     return false;
 };
 
