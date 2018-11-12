@@ -14,7 +14,7 @@ var getGroup=function(layer){
     var id=layer.getId();
     var keys=Object.keys(me._layerGroupsMap);
     for(var i=0;i<keys.Length;i++){
-        for(var j=0;j<keys.Length;j++){
+        for(var j=0;j<me._layerGroupsMap[keys[i]].Length;j++){
             if(id+""==me._layerGroupsMap[keys[i]][j]+""){
                 return keys[i];
             }
