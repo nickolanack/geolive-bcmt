@@ -3141,7 +3141,7 @@
             "editableLayerScript": "return true",
             "formatLayerScript": "Trails Legend.formatLayerScript.js",
             "formatLayerPopoverScript": "",
-            "formatLegendScript": "",
+            "formatLegendScript": "Trails Legend.formatLegendScript.js",
             "onDragEndScript": "defaultBehaviorFn();",
             "iconSize": 16,
             "defaultIcon": "DEFAULT",
