@@ -7,6 +7,7 @@ if(!me._layerGroupsMap){
     me._layerGroupEls={
     };
     
+    element.addClass("created-groups");
 }
 
 var getGroup=function(layer){
@@ -31,6 +32,7 @@ var addToGroup=function(group, layer, element){
     }
     
     element.addClass("nested-1");
+    element.addClass(group.toLowerCase().split(' ').join('-'));
     
     
     
