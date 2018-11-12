@@ -66,6 +66,50 @@ var addToGroup=function(group, layer, element){
                 category.removeClass('active');
             }else{
                 category.addClass('active');
+                
+                var north = -Infinity;
+                var south = Infinity;
+                var east = -Infinity;
+                var west = Infinity;
+
+                layers.forEach(function(i) {
+
+                    var c1=i.getBounds().getNorthEast();
+                    var c2=i.getBounds().getSouthWest();
+
+                    var n=c1.lat;
+                    var e=c1.lng;
+                    var s=c2.lat;
+                    var w=c2.lng;
+
+
+                    if(typeof n=='function'){
+                        n=n.bind(c1)();
+                    }
+                    if(typeof e=='function'){
+                        e=e.bind(c1)();
+                    }
+                    if(typeof s=='function'){
+                        s=s.bind(c2)();
+                    }
+                    if(typeof w=='function'){
+                        w=w.bind(c2)();
+                    }
+
+                    north = Math.max(north, n);
+                    east = Math.max(east, e);
+                    south = Math.min(south, s);
+                    west = Math.min(west, w);
+            
+                });
+                
+                application.fitBounds({
+                    "north": north,
+                    "south": south,
+                    "east": east,
+                    "west": west
+                });
+                
             }
             
         });
