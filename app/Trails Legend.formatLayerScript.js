@@ -40,7 +40,14 @@ var addToGroup=function(group, layer, element){
         category=new Element('li',{"class":"layer"});
         me._layerGroupEls[group]=category
         element.parentNode.insertBefore(category, element);
-        category.appendChild(Asset.image(element.firstChild.src,{style:element.firstChild.style}));
+        category.appendChild(Asset.image(element.firstChild.src,{styles:{
+            
+                "width": "22px",
+                "height": "auto",
+                "padding-top": "1px",
+                "padding-bottom": "1px"
+            
+        }}));
         category.appendChild(new Element('span',{"class":"label", html:group}));
         category.appendChild(new Element('span',{"class":"indicator-switch"}));
         
