@@ -26,6 +26,18 @@ li.layer.expandable-parent.expanded:before {
 }
 
 
+li.layer.expandable-child:before {
+    position: absolute;
+    content: "↳";
+    left: -10px;
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    transform: rotate(0deg);
+    top: 1px;
+    color: #767980;
+}
+
 
 
 li.layer.expandable-parent.expanded{
