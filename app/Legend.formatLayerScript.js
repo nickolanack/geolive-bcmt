@@ -128,7 +128,7 @@ if (!window.UILayerGroup) {
             if(count==total){
                 category.addClass('all');
             }
-            if(count<0){
+            if(count<total){
                 category.removeClass('all');
             }
             
