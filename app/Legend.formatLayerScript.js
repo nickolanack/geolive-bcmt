@@ -7,8 +7,8 @@ if (!window.UILayerGroup) {
             me.options = Object.append({
                 "showExpand":true,
                 "stackIcons":3, //shows the first layer icons stacked
-                "zoomToExtents":false
-           
+                "zoomToExtents":false,
+                "applyClick"
             }, options);
 
             me._layerGroupsMap = groupMap;
@@ -103,6 +103,39 @@ if (!window.UILayerGroup) {
 
             });
         },
+        updateState:function(group){
+
+            var me=this;
+            var category=me._layerGroupEls[group];
+
+            var layers = me._layerGroupsMap[group].map(function(lid) {
+                return application.getLayerManager().getLayer(lid);
+            });
+
+            var count = 0;
+            var total=layers.length;
+            layers.forEach(function(l) {
+                if (l.isVisible()) {
+                    count++;
+                }
+            });
+
+            if(count==total){
+                category.addClass('all');
+            }
+            if(count<0){
+                category.removeClass('all');
+            }
+            
+
+            if(count==0){
+                 category.removeClass('active');
+            }
+            if(count>0){
+                category.addClass('active');
+            }
+
+        },
         addToGroup: function(group, layer, element) {
             var me = this;
             var category = me._layerGroupEls[group];
@@ -177,17 +210,14 @@ if (!window.UILayerGroup) {
                         }
                     });
 
-                    if (value) {
-                        category.removeClass('active');
-                    } else {
-                        category.addClass('active');
-
-
+                    if (!value) {
+                    
                         if(me.options.zoomToExtents){
                             me.zoomToExtents(group);
                         }
 
                     }
+                    
 
                 });
 
@@ -198,9 +228,17 @@ if (!window.UILayerGroup) {
                 });
 
 
-            } else {
+            } 
 
-            }
+            
+            layer.addEvent('hide',function(){
+                updateState(group);
+            });
+            layer.addEvent('hide',function(){
+                updateState(group);
+            });
+
+            updateState(group);
 
             element.addClass("nested-1");
             element.addClass(groupKabob);
