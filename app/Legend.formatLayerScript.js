@@ -114,6 +114,12 @@ if (!window.UILayerGroup) {
             var count = 0;
             var total=layers.length;
             layers.forEach(function(l) {
+
+                if(l===false){
+                    total--;
+                    return;
+                }
+
                 if (l.isVisible()) {
                     count++;
                 }
