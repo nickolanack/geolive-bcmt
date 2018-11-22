@@ -265,6 +265,7 @@ if (!window.UILayerGroup) {
                     me.updatePopover(group);
                 }).addEvent('click',function(){
                     me.toggleNesting(group);
+                    me._layerGroupPopovers[group].hide();
                 });
 
 
