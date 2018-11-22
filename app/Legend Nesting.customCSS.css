@@ -2,6 +2,10 @@ li.layer.nested-1 {
     display: none;
 }
 
+li.layer.nested-1.expanded {
+    display: inline-block;
+}
+
 
 li.layer.expandable-parent:before {
     position: absolute;
@@ -20,6 +24,8 @@ li.layer.expandable-parent.expanded:before {
     transform: rotate(0);
     top: -1px;
 }
+
+
 
 
 li.layer.expandable-parent.expanded{
