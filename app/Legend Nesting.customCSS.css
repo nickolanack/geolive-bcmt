@@ -84,7 +84,7 @@ li.layer.expandable-parent.expanded{
     display: none;
 }
 
-.popover li.layer.nested-1 .layer.hand:after{
+.popover li.layer.nested-1.hand:after{
     display:none;
 }
 
