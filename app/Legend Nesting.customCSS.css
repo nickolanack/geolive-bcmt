@@ -48,15 +48,10 @@ li.layer.expandable-parent.expanded:before, li.layer.first-nested-child.expanded
 
 
 li.layer.expandable-parent.expanded{
-   
+   display:none;
 }
 
-li.layer.expandable-child.expanded{
-   
-}
-li.layer.expandable-child.expanded:before{
-   
-}
+
 
 
 .edit-widget-btns {
