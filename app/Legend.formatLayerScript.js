@@ -308,11 +308,15 @@ if (!me._layerGroups) {
     me._layerGroups = new UILayerGroup(application, {
         "Campsites": [2, 3, 8]
     }).addEvent('addGroup',function(group, groupEl){
-        ([]).forEach(function(img){
+        ([
+            "https://www.bcmarinetrails.org/components/com_geolive/users_files/user_files_62/Uploads/tJf_Z34_jL9_[G]_[ImAgE].png?thumb=>22x>22",
+            "https://www.bcmarinetrails.org/components/com_geolive/users_files/user_files_62/Uploads/E6W_OuT_Yn7_[ImAgE]_[G].png?thumb=>22x>22"          
+        ]).forEach(function(img, i){
             
             groupEl.appendChild(Asset.image(image, {
+                    
                     styles: {
-
+                        "position":"absolute",
                         "width": "22px",
                         "height": "auto",
                         "padding-top": "1px",
