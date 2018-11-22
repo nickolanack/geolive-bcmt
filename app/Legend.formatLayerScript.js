@@ -260,7 +260,7 @@ if (!window.UILayerGroup) {
                     title: Localize(group, groupKabob),
                     description: "",
                     anchor: UIPopover.AnchorTo([me.options.anchorTo]),
-                    clickable:true;
+                    clickable:true
                 }).addEvent('show',function(){
                     me.updatePopover(group);
                 }).addEvent('click',function(){
