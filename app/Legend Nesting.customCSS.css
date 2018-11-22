@@ -65,7 +65,7 @@ li.layer.expandable-parent.expanded{
 
 .popover ul {
    display:inline-block;
-   max-width:100px;
+   max-width: 120px;
    margin:0;
 }
 .popover li.layer.nested-1 {
@@ -84,7 +84,9 @@ li.layer.expandable-parent.expanded{
     display: none;
 }
 
-
+.popover li.layer.nested-1 .layer.hand:after{
+    display:none;
+}
 
 
 
