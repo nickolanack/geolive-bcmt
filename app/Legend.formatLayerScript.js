@@ -75,7 +75,7 @@ if (!window.UILayerGroup) {
 
             popover.setText('<ul>'+me._layerGroupChildren[group].map(function(el){
                 return el.outerHTML;
-            }).join('')+'<ul>')
+            }).join('')+'</ul>')
 
         },
         zoomToExtents:function(group){
