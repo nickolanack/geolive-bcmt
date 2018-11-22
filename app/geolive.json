@@ -387,7 +387,7 @@
             "guestLoginDrag": true,
             "shouldShowLayerScript": "return id<11",
             "editableLayerScript": "return true",
-            "formatLayerScript": "",
+            "formatLayerScript": "Legend.formatLayerScript.js",
             "formatLayerPopoverScript": "Legend.formatLayerPopoverScript.js",
             "formatLegendScript": "",
             "onDragEndScript": "defaultBehaviorFn();",
