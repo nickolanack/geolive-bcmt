@@ -7,7 +7,6 @@ if (!window.UILayerGroup) {
             var me = this;
             me.options = Object.append({
                 "showExpand":true,
-                "stackIcons":3, //shows the first layer icons stacked
                 "zoomToExtents":false,
                 "anchorTo":"left"
 
@@ -78,7 +77,7 @@ if (!window.UILayerGroup) {
             var me=this;
             var popover=me._layerGroupPopovers[group];
 
-            popover.setText('<ul class="'+group.toLowerCase().split(' ').join('-')+'">'+me._layerGroupChildren[group].map(function(el){
+            popover.setText('<div style="color:cornflowerblue;">Click to open</div><ul class="'+group.toLowerCase().split(' ').join('-')+'">'+me._layerGroupChildren[group].map(function(el){
                 return el.outerHTML;
             }).join('')+'</ul>')
 
@@ -260,9 +259,12 @@ if (!window.UILayerGroup) {
                 me._layerGroupPopovers[group]=new UIPopover(category, {
                     title: Localize(group, groupKabob),
                     description: "",
-                    anchor: UIPopover.AnchorTo([me.options.anchorTo])
+                    anchor: UIPopover.AnchorTo([me.options.anchorTo]),
+                    clickable:true;
                 }).addEvent('show',function(){
                     me.updatePopover(group);
+                }).addEvent('click',function(){
+                    me.toggleNesting(group);
                 });
 
 
