@@ -320,7 +320,9 @@ if (!me._layerGroups) {
                         "width": "22px",
                         "height": "auto",
                         "padding-top": "1px",
-                        "padding-bottom": "1px"
+                        "padding-bottom": "1px",
+                            "left":5*(i+1),
+                            "z-index": -(i+1);
 
                     }
                 }));
