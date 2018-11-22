@@ -3167,5 +3167,12 @@
             "widgetTitle": "Google Roads Style",
             "readAccess": "public"
         }
+    },
+    "widget.39": {
+        "name": "Custom Tile Control Script",
+        "instance": "CustomTileControlScript",
+        "parameters": {
+            "target": "map.12"
+        }
     }
 }
