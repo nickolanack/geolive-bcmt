@@ -2,6 +2,32 @@ li.layer.nested-1 {
     display: none;
 }
 
+
+li.layer.expandable-parent:before {
+    position: absolute;
+    content: "▼";
+    left: -19px;
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    top: 11px;
+    color: #3c67d1;
+}
+
+
+li.layer.expandable-parent.expanded{
+   
+}
+
+li.layer.expandable-child.expanded{
+   
+}
+li.layer.expandable-child.expanded:before{
+   
+}
+
+
 .edit-widget-btns {
     position: absolute;
     top: 0;
