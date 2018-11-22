@@ -313,7 +313,7 @@ if (!me._layerGroups) {
             "https://www.bcmarinetrails.org/components/com_geolive/users_files/user_files_62/Uploads/E6W_OuT_Yn7_[ImAgE]_[G].png?thumb=>22x>22"          
         ]).forEach(function(img, i){
             
-            groupEl.appendChild(Asset.image(image, {
+            groupEl.appendChild(Asset.image(img, {
                     
                     styles: {
                         "position":"absolute",
