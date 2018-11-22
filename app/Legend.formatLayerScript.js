@@ -7,7 +7,8 @@ if (!window.UILayerGroup) {
             me.options = Object.append({
                 "showExpand":true,
                 "stackIcons":3, //shows the first layer icons stacked
-                "zoomToExtents":false
+                "zoomToExtents":false,
+                "applyClick"
             }, options);
 
             me._layerGroupsMap = groupMap;
@@ -48,6 +49,60 @@ if (!window.UILayerGroup) {
             // element.addClass("not-any-"+keys.map(function(k){return k.toLowerCase().split(' ').join('-'); }).join('-'));
             return false;
         },
+        toggleNesting:function(group){
+
+            var me=this;
+            var category=me._layerGroupEls[group];
+
+
+            if(category.hasClass('expanded')){
+                category.removeClass('expanded');
+                me._layerGroupChildren[group].forEach(function(el){
+                    el.removeClass('expanded');
+                });
+                return;
+            }
+
+
+            category.addClass('expanded');
+            me._layerGroupChildren[group].forEach(function(el){
+                    el.addClass('expanded');
+            });
+
+        },
+        zoomToExtents:function(group){
+
+            var me=this;
+
+            var layers = me._layerGroupsMap[group].map(function(lid) {
+                return application.getLayerManager().getLayer(lid);
+            });
+
+            var north = -Infinity;
+            var south = Infinity;
+            var east = -Infinity;
+            var west = Infinity;
+
+            layers.forEach(function(i) {
+                i.runOnceOnLoad(function() {
+
+                    var b = i.getBounds();
+
+                    north = Math.max(north, b.north);
+                    east = Math.max(east, b.east);
+                    south = Math.min(south, b.south);
+                    west = Math.min(west, b.west);
+
+                    application.fitBounds({
+                        "north": north,
+                        "south": south,
+                        "east": east,
+                        "west": west
+                    });
+                });
+
+            });
+        },
         addToGroup: function(group, layer, element) {
             var me = this;
             var category = me._layerGroupEls[group];
@@ -64,7 +119,7 @@ if (!window.UILayerGroup) {
                 me._layerGroupEls[group] = category;
                 me._layerGroupChildren[group]=[];
                 element.parentNode.insertBefore(category, element);
-                category.appendChild(Asset.image(element.firstChild.src, {
+                var img=category.appendChild(Asset.image(element.firstChild.src, {
                     styles: {
 
                         "width": "22px",
@@ -82,25 +137,24 @@ if (!window.UILayerGroup) {
                     "class": "indicator-switch"
                 }));
 
+                element.addClass('first-nested-child');
+                element.insertBefore(new Element('span', {
+                    "class":"alt-toggle",
+                    "events":{"click":function(e){
+                        e.stop();
+                        me.toggleNesting(group);
+                    }}
+                }), element.firstChild);
+
+              
+
 
                 category.addEvent('click', function(e) {
 
 
-                    if(me.options.showExpand){
+                    if(me.options.showExpand&e.target!==indicator){
 
-                        if(category.hasClass('expanded')){
-                            category.removeClass('expanded');
-                            me._layerGroupChildren[group].forEach(function(el){
-                                el.removeClass('expanded');
-                            });
-                            return;
-                        }
-
-
-                        category.addClass('expanded');
-                        me._layerGroupChildren[group].forEach(function(el){
-                                el.addClass('expanded');
-                        });
+                        me.toggleNesting(group);
 
                         return;
                     }
@@ -130,34 +184,7 @@ if (!window.UILayerGroup) {
 
 
                         if(me.options.zoomToExtents){
-
-                            var north = -Infinity;
-                            var south = Infinity;
-                            var east = -Infinity;
-                            var west = Infinity;
-
-                            layers.forEach(function(i) {
-                                i.runOnceOnLoad(function() {
-
-
-
-                                    var b = i.getBounds();
-
-                                    north = Math.max(north, b.north);
-                                    east = Math.max(east, b.east);
-                                    south = Math.min(south, b.south);
-                                    west = Math.min(west, b.west);
-
-                                    application.fitBounds({
-                                        "north": north,
-                                        "south": south,
-                                        "east": east,
-                                        "west": west
-                                    });
-                                })
-
-                            });
-
+                            me.zoomToExtents(group);
                         }
 
                     }
@@ -180,10 +207,6 @@ if (!window.UILayerGroup) {
 
             if(me.options.showExpand){
                 me._layerGroupChildren[group].push(element);
-                if(me._layerGroupChildren[group].length==1){
-                    element.addClass('first-nested-child');
-                }
-
                 element.addClass("expandable-child");
             }
 
