@@ -1,7 +1,7 @@
 if (!window.UILayerGroup) {
     var UILayerGroup = new Class({
 
-        initialize: function(groupMap, options) {
+        initialize: function(application, groupMap, options) {
 
             var me = this;
             me.options = Object.append({
@@ -10,6 +10,8 @@ if (!window.UILayerGroup) {
                 "zoomToExtents":false,
                 "anchorTo":"left"
             }, options);
+
+            me.application=application;
 
             me._layerGroupsMap = groupMap;
             
@@ -74,7 +76,7 @@ if (!window.UILayerGroup) {
             var me=this;
             var popover=me._layerGroupPopovers[group];
 
-            popover.setText('<ul>'+me._layerGroupChildren[group].map(function(el){
+            popover.setText('<ul class="'+group.toLowerCase().split(' ').join('-')+'">'+me._layerGroupChildren[group].map(function(el){
                 return el.outerHTML;
             }).join('')+'</ul>')
 
@@ -84,7 +86,7 @@ if (!window.UILayerGroup) {
             var me=this;
 
             var layers = me._layerGroupsMap[group].map(function(lid) {
-                return application.getLayerManager().getLayer(lid);
+                return me.application.getLayerManager().getLayer(lid);
             });
 
             var north = -Infinity;
@@ -102,7 +104,7 @@ if (!window.UILayerGroup) {
                     south = Math.min(south, b.south);
                     west = Math.min(west, b.west);
 
-                    application.fitBounds({
+                    me.application.fitBounds({
                         "north": north,
                         "south": south,
                         "east": east,
@@ -118,7 +120,7 @@ if (!window.UILayerGroup) {
             var category=me._layerGroupEls[group];
 
             var layers = me._layerGroupsMap[group].map(function(lid) {
-                return application.getLayerManager().getLayer(lid);
+                return me.application.getLayerManager().getLayer(lid);
             });
 
             var count = 0;
@@ -151,6 +153,27 @@ if (!window.UILayerGroup) {
             }
 
         },
+
+        addIconImage:function(group, element){
+
+            var me=this;
+
+            var category=me._layerGroupEls[group];
+
+            var img=category.appendChild(Asset.image(element.firstChild.src, {
+                    styles: {
+
+                        "width": "22px",
+                        "height": "auto",
+                        "padding-top": "1px",
+                        "padding-bottom": "1px"
+
+                    }
+                }));
+
+            return img;
+        },
+
         addToGroup: function(group, layer, element) {
             var me = this;
             var category = me._layerGroupEls[group];
@@ -167,16 +190,9 @@ if (!window.UILayerGroup) {
                 me._layerGroupEls[group] = category;
                 me._layerGroupChildren[group]=[];
                 element.parentNode.insertBefore(category, element);
-                var img=category.appendChild(Asset.image(element.firstChild.src, {
-                    styles: {
+                
+                addIconImage(group, element);
 
-                        "width": "22px",
-                        "height": "auto",
-                        "padding-top": "1px",
-                        "padding-bottom": "1px"
-
-                    }
-                }));
                 category.appendChild(new Element('span', {
                     "class": "label",
                     html: group
@@ -209,7 +225,7 @@ if (!window.UILayerGroup) {
 
 
                     var layers = me._layerGroupsMap[group].map(function(lid) {
-                        return application.getLayerManager().getLayer(lid);
+                        return me.application.getLayerManager().getLayer(lid);
                     });
                     var value = false;
                     layers.forEach(function(l) {
@@ -247,6 +263,8 @@ if (!window.UILayerGroup) {
 
             } 
 
+
+
             
             layer.addEvent('hide',function(){
                 me.updateState(group);
@@ -262,6 +280,7 @@ if (!window.UILayerGroup) {
             element.addClass(groupKabob);
 
             me._layerGroupChildren[group].push(element);
+            addIconImage(group, element).addClass('child-image-'+me._layerGroupChildren[group].length);
 
             if(me.options.showExpand){
                 
@@ -279,7 +298,7 @@ if (!window.UILayerGroup) {
 
 var me = this;
 if (!me._layerGroups) {
-    me._layerGroups = new UILayerGroup({
+    me._layerGroups = new UILayerGroup(application, {
         "Campsites": [2, 3, 8]
     });
     element.addClass("created-groups");
