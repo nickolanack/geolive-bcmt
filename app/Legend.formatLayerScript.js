@@ -1,5 +1,6 @@
 if (!window.UILayerGroup) {
     var UILayerGroup = new Class({
+        Implements:[Events],
 
         initialize: function(application, groupMap, options) {
 
@@ -9,6 +10,7 @@ if (!window.UILayerGroup) {
                 "stackIcons":3, //shows the first layer icons stacked
                 "zoomToExtents":false,
                 "anchorTo":"left"
+
             }, options);
 
             me.application=application;
@@ -193,8 +195,8 @@ if (!window.UILayerGroup) {
                 
                 me.addIconImage(group, element);
 
-                
-                
+
+
 
                 category.appendChild(new Element('span', {
                     "class": "label",
@@ -264,6 +266,9 @@ if (!window.UILayerGroup) {
                 });
 
 
+
+                me.fireEvent("addGroup", [group, category]);
+
             } 
 
 
@@ -302,7 +307,23 @@ var me = this;
 if (!me._layerGroups) {
     me._layerGroups = new UILayerGroup(application, {
         "Campsites": [2, 3, 8]
-    });
+    }).addEvent('addGroup',function(group, groupEl){
+        ([]).forEach(function(img){
+            
+            groupEl.appendChild(Asset.image(image, {
+                    styles: {
+
+                        "width": "22px",
+                        "height": "auto",
+                        "padding-top": "1px",
+                        "padding-bottom": "1px"
+
+                    }
+                }));
+            
+        });
+        
+    })
     element.addClass("created-groups");
 }
 
