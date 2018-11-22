@@ -14,7 +14,7 @@ if (!window.UILayerGroup) {
             
             me._layerGroupEls = {};
             me._layerGroupChildren={};
-
+            me._layerGroupPopovers={};
 
         },
         addLegendLayer: function(layer, element) {
@@ -67,6 +67,15 @@ if (!window.UILayerGroup) {
             me._layerGroupChildren[group].forEach(function(el){
                     el.addClass('expanded');
             });
+
+        },
+        updatePopover:function(group){
+            var me=this;
+            var popover=me._layerGroupPopovers[group];
+
+            popover.setText('<ul>'+me._layerGroupEls[group].map(function(el){
+                return el.outerHTML;
+            }).join('')+'<ul>')
 
         },
         zoomToExtents:function(group){
@@ -226,7 +235,7 @@ if (!window.UILayerGroup) {
 
                 });
 
-                new UIPopover(category, {
+                me._layerGroupPopovers[group]=new UIPopover(category, {
                     title: Localize(group, groupKabob),
                     description: "",
                     anchor: UIPopover.AnchorTo(['right'])
@@ -244,6 +253,7 @@ if (!window.UILayerGroup) {
             });
 
             me.updateState(group);
+            me.updatePopover(group);
 
             element.addClass("nested-1");
             element.addClass(groupKabob);
@@ -260,7 +270,6 @@ if (!window.UILayerGroup) {
 
     });
 }
-
 
 
 var me = this;
