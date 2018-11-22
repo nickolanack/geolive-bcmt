@@ -239,7 +239,7 @@ if (!window.UILayerGroup) {
             layer.addEvent('hide',function(){
                 me.updateState(group);
             });
-            layer.addEvent('hide',function(){
+            layer.addEvent('show',function(){
                 me.updateState(group);
             });
 
