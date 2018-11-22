@@ -216,7 +216,7 @@ if (!window.UILayerGroup) {
                         }
 
                     }
-                    
+
 
                 });
 
@@ -231,13 +231,13 @@ if (!window.UILayerGroup) {
 
             
             layer.addEvent('hide',function(){
-                updateState(group);
+                me.updateState(group);
             });
             layer.addEvent('hide',function(){
-                updateState(group);
+                me.updateState(group);
             });
 
-            updateState(group);
+            me.updateState(group);
 
             element.addClass("nested-1");
             element.addClass(groupKabob);
@@ -254,6 +254,7 @@ if (!window.UILayerGroup) {
 
     });
 }
+
 
 
 var me = this;
