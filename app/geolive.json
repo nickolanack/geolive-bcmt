@@ -422,16 +422,16 @@
                             "widget.WizardBuilder.8.metadata.children.1.fields.0.json"
                         ],
                         "_diagramState": {
-                            "x": 123,
-                            "y": 258
+                            "x": 133,
+                            "y": 268
                         },
                         "children": [
                             "widget.WizardBuilder.8.metadata.children.1.children.0.json",
                             {
                                 "class": "InsertNode",
                                 "_diagramState": {
-                                    "x": 83,
-                                    "y": 509
+                                    "x": 93,
+                                    "y": 519
                                 }
                             }
                         ],
@@ -456,7 +456,7 @@
                                                     "components\/com_geolive\/users_files\/user_files_62\/Uploads\/f7k_oU2_Xyh_[G]_[ImAgE].png",
                                                     "components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png",
                                                     "components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_[ImAgE]_[G].png",
-                                                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/v5x_[ImAgE]_[G]_zyH_uyJ.png"
+                                                    "components\/com_geolive\/users_files\/user_files_62\/Uploads\/s7M_[ImAgE]_3XI_EXm_[G].png"
                                                 ],
                                                 "iconsetMetadata": {
                                                     "layerMap": {
@@ -467,7 +467,7 @@
                                                         "components\/com_geolive\/users_files\/user_files_62\/Uploads\/f7k_oU2_Xyh_[G]_[ImAgE].png": 4,
                                                         "components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png": 8,
                                                         "components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_[ImAgE]_[G].png": 6,
-                                                        "components\/com_geolive\/users_files\/user_files_62\/Uploads\/v5x_[ImAgE]_[G]_zyH_uyJ.png": 9
+                                                        "components\/com_geolive\/users_files\/user_files_62\/Uploads\/s7M_[ImAgE]_3XI_EXm_[G].png": 9
                                                     },
                                                     "renderSettings": []
                                                 },
