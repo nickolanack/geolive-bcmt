@@ -63,6 +63,34 @@ li.layer.expandable-parent.expanded{
 }
 
 
+.popover ul {
+   display:inline-block;
+   max-width:100px;
+   margin:0;
+}
+.popover li.layer.nested-1 {
+    display: inline-block;
+
+}
+.popover li.layer.nested-1:before {
+     display: none;
+}
+
+.popover li.layer.nested-1 .label{
+     background-color:transparent;
+}
+
+.popover li.layer.nested-1 .indicator-switch {
+    display: none;
+}
+
+
+
+
+
+
+
+
 
 
 .edit-widget-btns {
