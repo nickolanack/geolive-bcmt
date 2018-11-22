@@ -239,6 +239,8 @@ if (!window.UILayerGroup) {
                     title: Localize(group, groupKabob),
                     description: "",
                     anchor: UIPopover.AnchorTo(['right'])
+                }).addEvent('show',function(){
+                    me.updatePopover(group);
                 });
 
 
