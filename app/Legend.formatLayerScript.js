@@ -7,7 +7,8 @@ if (!window.UILayerGroup) {
             me.options = Object.append({
                 "showExpand":true,
                 "stackIcons":3, //shows the first layer icons stacked
-                "zoomToExtents":false
+                "zoomToExtents":false,
+                "anchorTo":"left"
             }, options);
 
             me._layerGroupsMap = groupMap;
@@ -238,7 +239,7 @@ if (!window.UILayerGroup) {
                 me._layerGroupPopovers[group]=new UIPopover(category, {
                     title: Localize(group, groupKabob),
                     description: "",
-                    anchor: UIPopover.AnchorTo(['right'])
+                    anchor: UIPopover.AnchorTo([me.options.anchorTo])
                 }).addEvent('show',function(){
                     me.updatePopover(group);
                 });
