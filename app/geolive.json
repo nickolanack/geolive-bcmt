@@ -3179,7 +3179,7 @@
             "className": "",
             "widgetTitle": "Esri Tile",
             "readAccess": "registered",
-            "position": "LEFT_CENTER"
+            "position": "BOTTOM_LEFT"
         }
     }
 }
