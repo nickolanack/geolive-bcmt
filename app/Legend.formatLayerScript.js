@@ -46,6 +46,7 @@ if (!window.UILayerGroup) {
         },
         addToGroup: function(group, layer, element) {
 
+            var me = this;
             var category = me._layerGroupEls[group];
             var groupKabob = group.toLowerCase().split(' ').join('-')
             if (!category) {
