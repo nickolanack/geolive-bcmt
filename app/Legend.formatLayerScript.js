@@ -193,6 +193,9 @@ if (!window.UILayerGroup) {
                 
                 me.addIconImage(group, element);
 
+                
+                
+
                 category.appendChild(new Element('span', {
                     "class": "label",
                     html: group
@@ -280,7 +283,7 @@ if (!window.UILayerGroup) {
             element.addClass(groupKabob);
 
             me._layerGroupChildren[group].push(element);
-            me.addIconImage(group, element).addClass('child-image-'+me._layerGroupChildren[group].length);
+           
 
             if(me.options.showExpand){
                 
@@ -294,7 +297,6 @@ if (!window.UILayerGroup) {
 
     });
 }
-
 
 var me = this;
 if (!me._layerGroups) {
