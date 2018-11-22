@@ -8,7 +8,7 @@ if (!window.UILayerGroup) {
                 "showExpand":true,
                 "stackIcons":3, //shows the first layer icons stacked
                 "zoomToExtents":false,
-                "applyClick"
+           
             }, options);
 
             me._layerGroupsMap = groupMap;
