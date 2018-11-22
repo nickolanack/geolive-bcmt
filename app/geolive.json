@@ -3173,7 +3173,7 @@
         "instance": "CustomTileControlScript",
         "parameters": {
             "target": "map.12",
-            "customScript": "",
+            "customScript": "Esri Tile.customScript.js",
             "tileIcon": [],
             "hoverTip": "Alternate Satellite Layer",
             "className": "",
