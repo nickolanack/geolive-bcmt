@@ -28,6 +28,13 @@ li.layer.first-nested-child.expanded:before {
     display:none;
 }
 
+.active.expandable-parent>.indicator-switch {
+    background-color: white;
+}
+.active.all.expandable-parent>.indicator-switch {
+    background-color: aqua;
+}
+
 
 li.layer.expandable-parent:before, li.layer.first-nested-child.expanded>.alt-toggle:before {
     position: absolute;
