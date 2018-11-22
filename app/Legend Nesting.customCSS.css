@@ -24,8 +24,12 @@ li.layer.expandable-child:before {
     color: #767980;
 }
 
+li.layer.first-nested-child.expanded:before {
+    display:none;
+}
 
-li.layer.expandable-parent:before, li.layer.first-nested-child.expanded:before {
+
+li.layer.expandable-parent:before, li.layer.first-nested-child.expanded>.alt-toggle:before {
     position: absolute;
     content: "▼";
     left: -19px;
@@ -37,7 +41,7 @@ li.layer.expandable-parent:before, li.layer.first-nested-child.expanded:before {
     color: #3c67d1;
 }
 
-li.layer.expandable-parent.expanded:before, li.layer.first-nested-child.expanded:before {
+li.layer.expandable-parent.expanded:before, li.layer.first-nested-child.expanded>.alt-toggle:before {
     left: -12px;
     transform: rotate(0);
     top: -1px;
