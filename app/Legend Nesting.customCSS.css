@@ -12,25 +12,6 @@ li.layer.expanded {
     width: calc( 100% - 6px);
 }
 
-li.layer.expandable-parent:before {
-    position: absolute;
-    content: "▼";
-    left: -19px;
-    height: 5px;
-    width: 5px;
-    display: inline-block;
-    transform: rotate(-90deg);
-    top: 11px;
-    color: #3c67d1;
-}
-
-li.layer.expandable-parent.expanded:before {
-    left: -12px;
-    transform: rotate(0);
-    top: -1px;
-}
-
-
 li.layer.expandable-child:before {
     position: absolute;
     content: "↳";
@@ -42,6 +23,27 @@ li.layer.expandable-child:before {
     top: 1px;
     color: #767980;
 }
+
+
+li.layer.expandable-parent:before, li.layer.first-nested-child.expanded:before {
+    position: absolute;
+    content: "▼";
+    left: -19px;
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    top: 11px;
+    color: #3c67d1;
+}
+
+li.layer.expandable-parent.expanded:before, li.layer.first-nested-child.expanded:before {
+    left: -12px;
+    transform: rotate(0);
+    top: -1px;
+}
+
+
 
 
 
