@@ -3172,7 +3172,14 @@
         "name": "Custom Tile Control Script",
         "instance": "CustomTileControlScript",
         "parameters": {
-            "target": "map.12"
+            "target": "map.12",
+            "customScript": "",
+            "tileIcon": [],
+            "hoverTip": "Alternate Satellite Layer",
+            "className": "",
+            "widgetTitle": "Esri Tile",
+            "readAccess": "registered",
+            "position": "LEFT_CENTER"
         }
     }
 }
