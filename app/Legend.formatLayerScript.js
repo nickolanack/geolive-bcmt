@@ -6,7 +6,7 @@ if (!window.UILayerGroup) {
             var me = this;
             me.options = Object.append({
                 "showExpand":true,
-                "stackIcons":3 //shows the first layer icons stacked
+                "stackIcons":3, //shows the first layer icons stacked
                 "zoomToExtents":false
             }, options);
 
