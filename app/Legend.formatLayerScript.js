@@ -322,7 +322,7 @@ if (!me._layerGroups) {
                         "padding-top": "1px",
                         "padding-bottom": "1px",
                             "left":5*(i+1),
-                            "z-index": -(i+1);
+                            "z-index": -(i+1)
 
                     }
                 }));
