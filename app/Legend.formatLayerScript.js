@@ -6,7 +6,7 @@ if (!window.UILayerGroup) {
             var me = this;
             me.options = Object.append({
                 "showExpand":true,
-                "stackIcons":3, //shows the first layer icons stacked
+                "stackIcons":3 //shows the first layer icons stacked
                 "zoomToExtents":false
             }, options);
 
@@ -179,6 +179,11 @@ if (!window.UILayerGroup) {
             element.addClass(groupKabob);
 
             if(me.options.showExpand){
+                me._layerGroupChildren[group].push(element);
+                if(me._layerGroupChildren[group].length==1){
+                    element.addClass('first-nested-child');
+                }
+
                 element.addClass("expandable-child");
             }
 
