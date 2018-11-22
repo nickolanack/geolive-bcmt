@@ -5,7 +5,8 @@ if (!window.UILayerGroup) {
 
             var me = this;
             me.options = Object.append({
-
+                "showExpand":true,
+                "stackIcons":3 //shows the first layer icons stacked
             }, options);
 
             me._layerGroupsMap = groupMap;
@@ -45,7 +46,6 @@ if (!window.UILayerGroup) {
             return false;
         },
         addToGroup: function(group, layer, element) {
-
             var me = this;
             var category = me._layerGroupEls[group];
             var groupKabob = group.toLowerCase().split(' ').join('-')
@@ -53,6 +53,11 @@ if (!window.UILayerGroup) {
                 category = new Element('li', {
                     "class": "layer"
                 });
+
+                if(me.options.showExpand){
+                    category.addClass("expandable-parent");
+                }
+
                 me._layerGroupEls[group] = category
                 element.parentNode.insertBefore(category, element);
                 category.appendChild(Asset.image(element.firstChild.src, {
@@ -144,6 +149,10 @@ if (!window.UILayerGroup) {
 
             element.addClass("nested-1");
             element.addClass(groupKabob);
+
+            if(me.options.showExpand){
+                element.addClass("expandable-child");
+            }
 
 
 
