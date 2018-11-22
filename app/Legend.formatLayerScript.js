@@ -191,7 +191,7 @@ if (!window.UILayerGroup) {
                 me._layerGroupChildren[group]=[];
                 element.parentNode.insertBefore(category, element);
                 
-                addIconImage(group, element);
+                me.addIconImage(group, element);
 
                 category.appendChild(new Element('span', {
                     "class": "label",
@@ -280,7 +280,7 @@ if (!window.UILayerGroup) {
             element.addClass(groupKabob);
 
             me._layerGroupChildren[group].push(element);
-            addIconImage(group, element).addClass('child-image-'+me._layerGroupChildren[group].length);
+            me.addIconImage(group, element).addClass('child-image-'+me._layerGroupChildren[group].length);
 
             if(me.options.showExpand){
                 
