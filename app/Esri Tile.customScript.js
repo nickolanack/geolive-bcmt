@@ -16,7 +16,7 @@ map.getBaseMap().mapTypes.set('EsriWorldMap', new google.maps.ImageMapType({
 
 var last;
 
-tile.addEvent('click',{
+tile.addEvent('click',function(){
     
     
     if(map.getBaseMap().getMapTypeId()=='EsriWorldMap'){
