@@ -15,6 +15,12 @@ li.layer.expandable-parent:before {
     color: #3c67d1;
 }
 
+li.layer.expandable-parent.expanded:before {
+    left: -12px;
+    transform: rotate(0);
+    top: -1px;
+}
+
 
 li.layer.expandable-parent.expanded{
    

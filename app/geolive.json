@@ -1720,8 +1720,8 @@
         "name": "Stylesheet",
         "instance": "CSS",
         "parameters": {
-            "customCSS": "widget.CSS.21.customCSS.css",
-            "widgetTitle": "",
+            "customCSS": "Legend Nesting.customCSS.css",
+            "widgetTitle": "Legend Nesting",
             "target": "map.12",
             "readAccess": "public"
         }
