@@ -73,7 +73,7 @@ if (!window.UILayerGroup) {
             var me=this;
             var popover=me._layerGroupPopovers[group];
 
-            popover.setText('<ul>'+me._layerGroupEls[group].map(function(el){
+            popover.setText('<ul>'+me._layerGroupChildren[group].map(function(el){
                 return el.outerHTML;
             }).join('')+'<ul>')
 
@@ -258,8 +258,10 @@ if (!window.UILayerGroup) {
             element.addClass("nested-1");
             element.addClass(groupKabob);
 
+            me._layerGroupChildren[group].push(element);
+
             if(me.options.showExpand){
-                me._layerGroupChildren[group].push(element);
+                
                 element.addClass("expandable-child");
             }
 
