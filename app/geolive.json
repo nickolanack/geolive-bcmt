@@ -3174,7 +3174,9 @@
         "parameters": {
             "target": "map.12",
             "customScript": "Esri Tile.customScript.js",
-            "tileIcon": [],
+            "tileIcon": [
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/UV_[G]_[ImAgE]_ZF_GgA.png"
+            ],
             "hoverTip": "Alternate Satellite Layer",
             "className": "",
             "widgetTitle": "Esri Tile",
