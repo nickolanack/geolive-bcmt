@@ -7,10 +7,13 @@ if (!window.UILayerGroup) {
             me.options = Object.append({
                 "showExpand":true,
                 "stackIcons":3 //shows the first layer icons stacked
+                "zoomToExtents":false
             }, options);
 
             me._layerGroupsMap = groupMap;
+            
             me._layerGroupEls = {};
+            me._layerGroupChildren={};
 
 
         },
@@ -58,7 +61,8 @@ if (!window.UILayerGroup) {
                     category.addClass("expandable-parent");
                 }
 
-                me._layerGroupEls[group] = category
+                me._layerGroupEls[group] = category;
+                me._layerGroupChildren[group]=[];
                 element.parentNode.insertBefore(category, element);
                 category.appendChild(Asset.image(element.firstChild.src, {
                     styles: {
@@ -74,12 +78,33 @@ if (!window.UILayerGroup) {
                     "class": "label",
                     html: group
                 }));
-                category.appendChild(new Element('span', {
+                var indicator=category.appendChild(new Element('span', {
                     "class": "indicator-switch"
                 }));
 
 
-                category.addEvent('click', function() {
+                category.addEvent('click', function(e) {
+
+
+                    if(me.options.showExpand){
+
+                        if(category.hasClass('expanded')){
+                            category.removeClass('expanded');
+                            me._layerGroupChildren[group].forEach(function(el){
+                                el.removeClass('expanded');
+                            });
+                            return;
+                        }
+
+
+                        category.addClass('expanded');
+                        me._layerGroupChildren[group].forEach(function(el){
+                                el.addClass('expanded');
+                        });
+
+                        return;
+                    }
+
 
                     var layers = me._layerGroupsMap[group].map(function(lid) {
                         return application.getLayerManager().getLayer(lid);
@@ -103,34 +128,37 @@ if (!window.UILayerGroup) {
                     } else {
                         category.addClass('active');
 
-                        var north = -Infinity;
-                        var south = Infinity;
-                        var east = -Infinity;
-                        var west = Infinity;
 
-                        layers.forEach(function(i) {
-                            i.runOnceOnLoad(function() {
+                        if(me.options.zoomToExtents){
 
+                            var north = -Infinity;
+                            var south = Infinity;
+                            var east = -Infinity;
+                            var west = Infinity;
 
-
-                                var b = i.getBounds();
-
-                                north = Math.max(north, b.north);
-                                east = Math.max(east, b.east);
-                                south = Math.min(south, b.south);
-                                west = Math.min(west, b.west);
-
-                                application.fitBounds({
-                                    "north": north,
-                                    "south": south,
-                                    "east": east,
-                                    "west": west
-                                });
-                            })
-
-                        });
+                            layers.forEach(function(i) {
+                                i.runOnceOnLoad(function() {
 
 
+
+                                    var b = i.getBounds();
+
+                                    north = Math.max(north, b.north);
+                                    east = Math.max(east, b.east);
+                                    south = Math.min(south, b.south);
+                                    west = Math.min(west, b.west);
+
+                                    application.fitBounds({
+                                        "north": north,
+                                        "south": south,
+                                        "east": east,
+                                        "west": west
+                                    });
+                                })
+
+                            });
+
+                        }
 
                     }
 
@@ -161,7 +189,6 @@ if (!window.UILayerGroup) {
 
     });
 }
-
 
 
 var me = this;
