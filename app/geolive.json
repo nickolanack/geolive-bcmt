@@ -76,7 +76,16 @@
             "uploadViewInlineCss": "",
             "uploadViewPageScript": "",
             "enableFileAttributes": false,
-            "fileAttributesTableName": "filesystemAttributes"
+            "fileAttributesTableName": "filesystemAttributes",
+            "useS3Storage": false,
+            "bucket": "",
+            "folder": "",
+            "region": "us-west-2",
+            "version": "latest",
+            "key": "",
+            "secret": "",
+            "useCloudFront": false,
+            "cloudFrontDomain": ""
         }
     },
     "plugin.9": {
@@ -97,16 +106,26 @@
         "instance": "Users",
         "parameters": {
             "customUserGroups": [
-                "site-planning"
+                "site-planning",
+                ""
             ],
             "customUserScript": "plugin.Users.10.customUserScript.js",
-            "customGroupMemberOfGroupScript": "return array(\"special\");"
+            "customGroupMemberOfGroupScript": "return array(\"special\");",
+            "defaultImage": [],
+            "userProfileImageScript": "return $defaultImage;",
+            "validateEmail": true,
+            "magicLinkUrl": "",
+            "useRecaptcha": false,
+            "recaptchaKey": "",
+            "recaptchaSecret": ""
         }
     },
     "plugin.11": {
         "name": "External Content",
         "instance": "ExternalContent",
-        "parameters": {}
+        "parameters": {
+            "youtube-api-key": ""
+        }
     },
     "plugin.12": {
         "name": "Google Maps",
@@ -114,9 +133,9 @@
         "parameters": {}
     },
     "plugin.24": {
-        "name": "Pusher Message Server",
-        "instance": "PusherMessages",
-        "parameters": "_PusherMessages.json"
+        "name": "Message Subscription Server",
+        "instance": "MessageSystem",
+        "parameters": "_MessageSystem.json"
     },
     "plugin.14": {
         "name": "User Interface",
@@ -137,7 +156,23 @@
     "plugin.17": {
         "name": "Email",
         "instance": "Email",
-        "parameters": {}
+        "parameters": {
+            "fromEmail": "",
+            "fromEmailName": "",
+            "useSmtp": false,
+            "smtpHost": "",
+            "username": "",
+            "password": "",
+            "port": "587",
+            "useMailgun": false,
+            "domain": "",
+            "apiKey": "",
+            "validateSenderDomain": false,
+            "useGlobalMailTemplate": false,
+            "globalTemplate": "DefaultMailerTemplate",
+            "recieveMail": false,
+            "recieveMailSecretToken": "XXXX-XXXX"
+        }
     },
     "plugin.18": {
         "name": "Events",
@@ -163,6 +198,7 @@
         "name": "Monolog Plugin",
         "instance": "Monolog",
         "parameters": {
+            "enabled": true,
             "logPath": "{front}\/..\/log",
             "logToSentry": false
         }
@@ -173,29 +209,33 @@
         "parameters": {
             "clientSecretUrl": "XXXX-XXXX",
             "clientPublicUrl": "https:\/\/6197cf631f844a1583e5a04266b48cb5@sentry.io\/297472",
-            "enabled": false
+            "enabled": true,
+            "enabledFrontEnd": false
         }
     },
     "plugin.25": {
         "name": "Keen I O",
         "instance": "KeenIO",
         "parameters": {
-            "enabled": true,
+            "enabled": false,
             "projectId": "5b1f5e81c9e77c000165ff79",
             "writeKey": "XXXX-XXXX",
             "readKey": "XXXX-XXXX",
             "ignoreEvents": [
                 ""
-            ]
+            ],
+            "eventPrefix": ""
         }
     },
     "widget.28": {
         "name": "Stylesheet",
         "instance": "CSS",
         "parameters": {
+            "cacheable": false,
+            "link": false,
+            "widgetTitle": "Template Theme Integration",
             "target": "map.12",
             "customCSS": "Template Theme Integration.customCSS.css",
-            "widgetTitle": "Template Theme Integration",
             "readAccess": "public"
         }
     },
@@ -203,41 +243,20 @@
         "name": "Tile Buttons",
         "instance": "TileButtons",
         "parameters": {
-            "sections": [],
-            "markerIcons": "[\"components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_mF_Cry_87_[ImAgE].png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/1QS_[ImAgE]_HKc_[G]_vuX.png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/5qW_[G]_hcQ_[ImAgE]_6hG.png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_jMs_DPA_JWx_[ImAgE].png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_%5BImAgE%5D_%5BG%5D.png\"]",
-            "fullscreenTip": "",
-            "homeTip": "",
-            "markerTip": "",
-            "searchTip": "",
-            "loginTip": "",
-            "logoutTip": "",
-            "profileTip": "",
-            "showToolTips": true,
-            "position": "LEFT_BOTTOM",
-            "offsetX": 100,
-            "offsetY": 100,
-            "markerSize": 32,
-            "tileSize": 50,
-            "direction": "vertical",
-            "tilePadding": 0,
-            "iconSetReferenceName": "",
-            "tileIcon": [],
-            "discussionTag": false,
-            "markerSearch": true,
-            "layerMap": {
-                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png": "3",
-                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_mF_Cry_87_[ImAgE].png": "2",
-                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/5qW_[G]_hcQ_[ImAgE]_6hG.png": "1",
-                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/1QS_[ImAgE]_HKc_[G]_vuX.png": "7",
-                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_jMs_DPA_JWx_[ImAgE].png": "4",
-                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_%5BImAgE%5D_%5BG%5D.png": "6"
-            },
-            "tipMap": [],
-            "showShiboleth": 0,
-            "showFacebook": 0,
-            "showJoomlaLogin": 1,
             "widgetTitle": "label this widget",
-            "readAccess": "public",
+            "target": "map.12",
+            "position": "LEFT_BOTTOM",
+            "fullscreen": false,
+            "home": false,
+            "iconset": false,
+            "login": false,
+            "logout": false,
+            "controlColor": "rgb(147, 0, 147)",
+            "subControlColor": "rgb(100, 149, 237)",
+            "tileIcon": [],
+            "displayMapSave": true,
+            "tileSize": "50",
+            "markerSize": "32",
             "markerIconset": [
                 "components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png",
                 "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_mF_Cry_87_[ImAgE].png",
@@ -248,8 +267,6 @@
                 "components\/com_geolive\/users_files\/user_files_62\/Uploads\/f7k_oU2_Xyh_[G]_[ImAgE].png",
                 "components\/com_geolive\/users_files\/user_files_62\/Uploads\/s7M_[ImAgE]_3XI_EXm_[G].png"
             ],
-            "groupIcon": [],
-            "filterLayerMappedIcons": true,
             "iconsetMetadata": {
                 "layerMap": {
                     "components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png": 8,
@@ -306,17 +323,45 @@
                     }
                 }
             },
-            "controlColor": "rgb(147, 0, 147)",
-            "subControlColor": "rgb(100, 149, 237)",
+            "groupIcon": [],
+            "showToolTips": true,
+            "useTipIconsetLayerTitle": false,
             "showLogoutProfile": false,
-            "displayMapSave": "1",
+            "formatTipScript": "",
             "guestLoginDrag": true,
             "onDragEndScript": "defaultBehaviorFn();",
-            "useTipIconsetLayerTitle": false,
-            "formatTipScript": "",
             "onDisplayTileScript": "",
             "onProfileClickScript": "",
-            "target": "map.12",
+            "sections": [],
+            "markerIcons": "[\"components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_mF_Cry_87_[ImAgE].png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/1QS_[ImAgE]_HKc_[G]_vuX.png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/5qW_[G]_hcQ_[ImAgE]_6hG.png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_jMs_DPA_JWx_[ImAgE].png\", \"components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_%5BImAgE%5D_%5BG%5D.png\"]",
+            "fullscreenTip": "",
+            "homeTip": "",
+            "markerTip": "",
+            "searchTip": "",
+            "loginTip": "",
+            "logoutTip": "",
+            "profileTip": "",
+            "offsetX": 100,
+            "offsetY": 100,
+            "direction": "vertical",
+            "tilePadding": 0,
+            "iconSetReferenceName": "",
+            "discussionTag": false,
+            "markerSearch": true,
+            "layerMap": {
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/tJf_Z34_jL9_[G]_[ImAgE].png": "3",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_mF_Cry_87_[ImAgE].png": "2",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/5qW_[G]_hcQ_[ImAgE]_6hG.png": "1",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/1QS_[ImAgE]_HKc_[G]_vuX.png": "7",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[G]_jMs_DPA_JWx_[ImAgE].png": "4",
+                "components\/com_geolive\/users_files\/user_files_62\/Uploads\/nae_Nyt_JZL_%5BImAgE%5D_%5BG%5D.png": "6"
+            },
+            "tipMap": [],
+            "showShiboleth": 0,
+            "showFacebook": 0,
+            "showJoomlaLogin": 1,
+            "readAccess": "public",
+            "filterLayerMappedIcons": true,
             "profileIcon": null,
             "_raw_layerMap": null,
             "_raw_tipMap": null
@@ -376,7 +421,7 @@
             "useIconSet": true,
             "iconImage": "",
             "startMinimized": true,
-            "iconSize": 22,
+            "iconSize": "22",
             "widgetTitle": "Legend",
             "readAccess": "public",
             "draggableIcons": true,
@@ -410,6 +455,16 @@
         "name": "Generic Wizard",
         "instance": "WizardBuilder",
         "parameters": {
+            "widgetTitle": "",
+            "target": "map.12",
+            "templateName": "MapItemTemplate",
+            "requireTarget": true,
+            "resolveItemScript": "return item;",
+            "beforeSubmitScript": "",
+            "onCreateScript": "",
+            "onUpdateScript": "",
+            "onSaveScript": "",
+            "onLoadScript": "",
             "metadata": {
                 "class": "DecisionNode",
                 "_diagramState": {
@@ -641,16 +696,7 @@
                     }
                 ]
             },
-            "readAccess": "public",
-            "onCreateScript": "",
-            "onUpdateScript": "",
-            "onSaveScript": "",
-            "widgetTitle": "",
-            "beforeSubmitScript": "",
-            "onLoadScript": "",
-            "requireTarget": true,
-            "templateName": "MapItemTemplate",
-            "target": "map.12"
+            "readAccess": "public"
         }
     },
     "widget.9": {
@@ -1299,35 +1345,64 @@
     },
     "widget.10": {
         "name": "Attr CSV Export",
-        "instance": "AttributesCSVExport",
+        "instance": "ExportData",
         "parameters": {
-            "position": "RIGHT_TOP",
-            "iconImage": [],
-            "iconTile": "[]",
             "widgetTitle": "label this widget",
             "readAccess": "special",
+            "target": "map.12",
+            "position": "RIGHT_TOP",
+            "downloadImage": [],
             "controlColor": "rgb(48,84,107)",
+            "tileHoverTip": "Download CSV File",
+            "skipConsitencyCheck": false,
+            "exportEncoding": "UTF-8",
+            "filename": "Geolive Export DATE[Y-m-d (H.i.s)]",
             "exportMetadata": {
                 "fields": "DEFAULT"
             },
-            "downloadImage": [],
-            "uploadImage": [],
-            "showImport": false,
-            "tileIcon": [],
-            "tileHoverTip": "Download CSV File",
-            "exportEncoding": "UTF-8",
-            "importEncoding": "UTF-8",
             "showImportEncoding": false,
-            "filename": "Geolive Export DATE[Y-m-d (H.i.s)]",
-            "filterRowScript": "label this widget.filterRowScript.js",
+            "importEncoding": "UTF-8",
+            "showImport": false,
             "filterFieldsScript": "label this widget.filterFieldsScript.js",
-            "target": "map.12"
+            "filterRowScript": "label this widget.filterRowScript.js",
+            "formatFieldsScript": "return $fields;",
+            "formatRowScript": "return $record;",
+            "formatMapTile": "",
+            "iconImage": [],
+            "iconTile": "[]",
+            "uploadImage": [],
+            "tileIcon": []
         }
     },
     "widget.11": {
         "name": "Tile Buttons",
         "instance": "TileButtons",
         "parameters": {
+            "widgetTitle": "label this widget",
+            "target": "",
+            "position": "RIGHT_TOP",
+            "fullscreen": true,
+            "home": true,
+            "iconset": true,
+            "login": true,
+            "logout": true,
+            "controlColor": "rgb(64, 94, 109)",
+            "subControlColor": "rgb(100, 149, 237)",
+            "tileIcon": [],
+            "displayMapSave": true,
+            "tileSize": 50,
+            "markerSize": 32,
+            "markerIconset": [],
+            "iconsetMetadata": [],
+            "groupIcon": [],
+            "showToolTips": 1,
+            "useTipIconsetLayerTitle": false,
+            "showLogoutProfile": false,
+            "formatTipScript": "",
+            "guestLoginDrag": true,
+            "onDragEndScript": "defaultBehaviorFn();",
+            "onDisplayTileScript": "",
+            "onProfileClickScript": "",
             "sections": [
                 "fullscreen",
                 "home",
@@ -1344,17 +1419,11 @@
             "loginTip": "",
             "logoutTip": "",
             "profileTip": "",
-            "showToolTips": 1,
-            "position": "RIGHT_TOP",
             "offsetX": 100,
             "offsetY": 100,
-            "markerSize": 32,
-            "tileSize": 50,
             "direction": "vertical",
             "tilePadding": 0,
             "iconSetReferenceName": "",
-            "tileIcon": [],
-            "groupIcon": [],
             "discussionTag": 1,
             "markerSearch": 1,
             "layerMap": "{}",
@@ -1362,12 +1431,8 @@
             "showShiboleth": 0,
             "showFacebook": 0,
             "showJoomlaLogin": 1,
-            "widgetTitle": "label this widget",
             "readAccess": "public",
-            "markerIconset": [],
-            "filterLayerMappedIcons": 1,
-            "iconsetMetadata": [],
-            "controlColor": "rgb(64, 94, 109)"
+            "filterLayerMappedIcons": 1
         }
     },
     "widget.29": {
@@ -1428,10 +1493,12 @@
         "name": "Stylesheet",
         "instance": "CSS",
         "parameters": {
-            "customCSS": "Markers Style.customCSS.css",
+            "cacheable": false,
+            "link": false,
             "widgetTitle": "Markers Style",
-            "readAccess": "public",
-            "target": "map.12"
+            "target": "map.12",
+            "customCSS": "Markers Style.customCSS.css",
+            "readAccess": "public"
         }
     },
     "widget.17": {
@@ -1439,6 +1506,7 @@
         "instance": "GoogleMap",
         "parameters": {
             "widgetTitle": "The Map",
+            "loadMapId": "{default}",
             "target": "googleMapDetail",
             "templateName": "googleMapDetail",
             "loadWidgetsWithTarget": "map.12",
@@ -1479,7 +1547,9 @@
             "target": "map.12",
             "templateName": "default",
             "requireTarget": true,
+            "resolveItemScript": "return item",
             "onRenderApplictionScript": "",
+            "notifyViewer": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -1720,9 +1790,11 @@
         "name": "Stylesheet",
         "instance": "CSS",
         "parameters": {
-            "customCSS": "Legend Nesting.customCSS.css",
+            "cacheable": false,
+            "link": false,
             "widgetTitle": "Legend Nesting",
             "target": "map.12",
+            "customCSS": "Legend Nesting.customCSS.css",
             "readAccess": "public"
         }
     },
@@ -1745,7 +1817,9 @@
             "target": "testDashboard",
             "templateName": "testDashboard",
             "requireTarget": false,
+            "resolveItemScript": "return item",
             "onRenderApplictionScript": "testDashboard.onRenderApplictionScript.js",
+            "notifyViewer": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -2937,7 +3011,9 @@
             "target": "analyticsDashboard",
             "templateName": "analyticsDashboard",
             "requireTarget": false,
+            "resolveItemScript": "return item",
             "onRenderApplictionScript": "",
+            "notifyViewer": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -2999,7 +3075,9 @@
             "target": "map.12",
             "templateName": "itemDetail",
             "requireTarget": true,
+            "resolveItemScript": "return item",
             "onRenderApplictionScript": "",
+            "notifyViewer": false,
             "metadata": {
                 "positions": {
                     "title": {
@@ -3150,7 +3228,7 @@
             "formatLayerPopoverScript": "",
             "formatLegendScript": "Trails Legend.formatLegendScript.js",
             "onDragEndScript": "defaultBehaviorFn();",
-            "iconSize": 22,
+            "iconSize": "22",
             "defaultIcon": "DEFAULT",
             "showEditLayerButtons": true,
             "editLayerScript": "defaultBehaviorFn();",
@@ -3168,20 +3246,30 @@
             "readAccess": "public"
         }
     },
+    "widget.40": {
+        "name": "Template",
+        "instance": "Template",
+        "parameters": {
+            "contentTemplate": "Error",
+            "widgetTitle": "site.error.html",
+            "target": "site.error.html"
+        }
+    },
     "widget.39": {
         "name": "Custom Tile Control Script",
         "instance": "CustomTileControlScript",
         "parameters": {
+            "widgetTitle": "Esri Tile",
             "target": "map.12",
+            "readAccess": "registered",
+            "position": "LEFT_CENTER",
             "customScript": "Esri Tile.customScript.js",
+            "hoverTip": "Alternate Satellite Layer",
+            "className": "",
             "tileIcon": [
                 "components\/com_geolive\/users_files\/user_files_62\/Uploads\/UV_[G]_[ImAgE]_ZF_GgA.png"
             ],
-            "hoverTip": "Alternate Satellite Layer",
-            "className": "",
-            "widgetTitle": "Esri Tile",
-            "readAccess": "registered",
-            "position": "LEFT_CENTER"
+            "subTileIcons": []
         }
     }
 }
