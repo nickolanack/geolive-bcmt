@@ -3255,6 +3255,21 @@
             "target": "site.error.html"
         }
     },
+    "widget.44": {
+        "name": "Knack Box Sync",
+        "instance": "KnackBoxSync",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "none",
+            "readAccess": "public",
+            "position": "LEFT_TOP",
+            "customScript": "",
+            "hoverTip": "",
+            "className": "",
+            "tileIcon": [],
+            "subTileIcons": []
+        }
+    },
     "widget.39": {
         "name": "Custom Tile Control Script",
         "instance": "CustomTileControlScript",
