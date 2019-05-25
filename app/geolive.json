@@ -3262,7 +3262,7 @@
             "widgetTitle": "Sync with knack",
             "target": "map.12",
             "readAccess": "special",
-            "position": "LEFT_TOP",
+            "position": "LEFT_CENTER",
             "customScript": "",
             "hoverTip": "Sync Knack Data",
             "className": "",
