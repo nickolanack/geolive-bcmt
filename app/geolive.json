@@ -3261,7 +3261,7 @@
         "parameters": {
             "widgetTitle": "",
             "target": "none",
-            "readAccess": "public",
+            "readAccess": "special",
             "position": "LEFT_TOP",
             "customScript": "",
             "hoverTip": "",
