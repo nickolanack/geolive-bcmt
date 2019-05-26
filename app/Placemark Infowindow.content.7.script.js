@@ -1,3 +1,4 @@
+return null;
 if(AppClient.getUserType()!=="admin"){
     return null;
 }
