@@ -3272,14 +3272,23 @@
                 "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[ImAgE]_[G]_X7I_Um1_EAj.png"
             ],
             "subTileIcons": [],
-            "boxAuthSecreth": [],
-            "knackAuthSecret": [],
             "boxAuth": {
-                "": ""
+                "boxAppSettings": {
+                    "clientID": "00000",
+                    "clientSecret": "XXXX-XXXX",
+                    "appAuth": {
+                        "publicKeyID": "XXXX-XXXX",
+                        "privateKey": "XXXX-XXXX",
+                        "passphrase": "0000"
+                    }
+                },
+                "enterpriseID": "0000"
             },
             "knackAuth": {
                 "": ""
-            }
+            },
+            "boxAuthSecreth": [],
+            "knackAuthSecret": []
         }
     },
     "widget.45": {
