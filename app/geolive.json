@@ -3279,7 +3279,7 @@
                     "appAuth": {
                         "publicKeyID": "XXXX-XXXX",
                         "privateKey": "XXXX-XXXX",
-                        "passphrase": "0000"
+                        "passphrase": "XXXX-XXXX"
                     }
                 },
                 "enterpriseID": "0000"
