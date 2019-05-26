@@ -3274,7 +3274,7 @@
             "subTileIcons": [],
             "boxAuth": {
                 "boxAppSettings": {
-                    "clientID": "00000",
+                    "clientID": "b5ffh5f6v3glfzpp82wyessucwlzoiph",
                     "clientSecret": "XXXX-XXXX",
                     "appAuth": {
                         "publicKeyID": "XXXX-XXXX",
@@ -3282,7 +3282,7 @@
                         "passphrase": "XXXX-XXXX"
                     }
                 },
-                "enterpriseID": "0000"
+                "enterpriseID": "978509"
             },
             "knackAuth": {
                 "": ""
