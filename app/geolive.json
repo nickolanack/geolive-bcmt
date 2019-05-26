@@ -3284,9 +3284,7 @@
                 },
                 "enterpriseID": "978509"
             },
-            "knackAuth": {
-                "": ""
-            },
+            "knackAuth": [],
             "boxAuthSecreth": [],
             "knackAuthSecret": []
         }
