@@ -3276,11 +3276,12 @@
         "name": "Function",
         "instance": "UserFunction",
         "parameters": {
-            "widgetTitle": "",
-            "target": "none",
+            "widgetTitle": "Knack Trigger",
+            "target": "onTriggerKnackSync",
             "customScript": "",
-            "language": "html\/text",
-            "returnsValue": false
+            "language": "php",
+            "returnsValue": false,
+            "readAccess": "public"
         }
     },
     "widget.39": {
