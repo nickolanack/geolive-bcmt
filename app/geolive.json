@@ -3272,6 +3272,8 @@
                 "components\/com_geolive\/users_files\/user_files_62\/Uploads\/[ImAgE]_[G]_X7I_Um1_EAj.png"
             ],
             "subTileIcons": [],
+            "boxAuthSecreth": [],
+            "knackAuthSecret": [],
             "boxAuth": {
                 "": ""
             },
