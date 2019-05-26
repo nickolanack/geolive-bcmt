@@ -3277,7 +3277,7 @@
         "instance": "UserFunction",
         "parameters": {
             "widgetTitle": "Knack Trigger",
-            "target": "onTriggerKnackSync",
+            "target": "onTriggerSyncKnack",
             "customScript": "Knack Trigger.customScript.js",
             "language": "php",
             "returnsValue": false,
