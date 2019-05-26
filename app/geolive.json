@@ -3284,7 +3284,10 @@
                 },
                 "enterpriseID": "978509"
             },
-            "knackAuth": [],
+            "knackAuth": {
+                "id": "asdf",
+                "key": "XXXX-XXXX"
+            },
             "boxAuthSecreth": [],
             "knackAuthSecret": []
         }
