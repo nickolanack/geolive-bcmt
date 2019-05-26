@@ -3278,7 +3278,7 @@
         "parameters": {
             "widgetTitle": "Knack Trigger",
             "target": "onTriggerKnackSync",
-            "customScript": "",
+            "customScript": "Knack Trigger.customScript.js",
             "language": "php",
             "returnsValue": false,
             "readAccess": "public"
