@@ -1,5 +1,5 @@
 <?php
 
-echo 'Hello world';
+Emit('testEmit', array('post'=>$_POST));
 
 ?>
