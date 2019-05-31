@@ -3254,7 +3254,7 @@
         "parameters": {
             "widgetTitle": "Webhook endpoint",
             "target": "boxWebhook",
-            "customScript": "",
+            "customScript": "Webhook endpoint.customScript.js",
             "language": "php",
             "returnsValue": false,
             "readAccess": "public"
