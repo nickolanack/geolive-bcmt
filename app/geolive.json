@@ -3248,6 +3248,17 @@
             "readAccess": "public"
         }
     },
+    "widget.46": {
+        "name": "Function",
+        "instance": "UserFunction",
+        "parameters": {
+            "widgetTitle": "",
+            "target": "none",
+            "customScript": "",
+            "language": "html\/text",
+            "returnsValue": false
+        }
+    },
     "widget.40": {
         "name": "Template",
         "instance": "Template",
@@ -3288,6 +3299,7 @@
                 "id": "5bec7801c5389d5da868a0d8",
                 "key": "XXXX-XXXX"
             },
+            "boxWebhookSignatureSecret": [],
             "boxAuthSecreth": [],
             "knackAuthSecret": []
         }
