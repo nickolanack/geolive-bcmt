@@ -209,7 +209,7 @@
         "parameters": {
             "clientSecretUrl": "XXXX-XXXX",
             "clientPublicUrl": "https:\/\/6197cf631f844a1583e5a04266b48cb5@sentry.io\/297472",
-            "enabled": false,
+            "enabled": true,
             "enabledFrontEnd": false
         }
     },
