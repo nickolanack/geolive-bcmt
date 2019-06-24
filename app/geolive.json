@@ -1769,9 +1769,7 @@
                         ]
                     },
                     "footer": {
-                        "modules": [
-                            "Placemark Infowindow.metadata.positions.footer.modules.0.json"
-                        ]
+                        "modules": []
                     },
                     "menu": {
                         "modules": []
