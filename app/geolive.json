@@ -456,7 +456,7 @@
         "instance": "WizardBuilder",
         "parameters": {
             "widgetTitle": "",
-            "target": "map.12",
+            "target": "disabled",
             "templateName": "MapItemTemplate",
             "requireTarget": true,
             "resolveItemScript": "return item;",
