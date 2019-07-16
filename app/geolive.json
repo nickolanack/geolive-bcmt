@@ -98,7 +98,8 @@
             "googleMapsVersion": "",
             "tileCachePath": "{site}\/..\/map-tiles",
             "layerDisplayFilterScript": "",
-            "formatMapitemScript": "plugin.Maps.9.formatMapitemScript.js"
+            "formatMapitemScript": "plugin.Maps.9.formatMapitemScript.js",
+            "featureUrlScript": "plugin.Maps.9.featureUrlScript.js"
         }
     },
     "plugin.10": {
