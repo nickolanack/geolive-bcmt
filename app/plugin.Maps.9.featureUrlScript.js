@@ -1,5 +1,5 @@
 <?php
 
-return HtmlDocument()->urlToCurrentView().'?mapitem='.$feature->id;
+return HtmlDocument()->urlToCurrentView().'?mapitem='.$feature['id'];
                
                 ?>
