@@ -1380,7 +1380,7 @@
         "instance": "TileButtons",
         "parameters": {
             "widgetTitle": "label this widget",
-            "target": "",
+            "target": "map.12",
             "position": "RIGHT_TOP",
             "fullscreen": true,
             "home": true,
