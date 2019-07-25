@@ -95,7 +95,7 @@
             "enableLayerSyncronization": true,
             "onlyShowMarkersInIconset": false,
             "googleMapsServerApiKey": "XXXX-XXXX",
-            "googleMapsVersion": "",
+            "googleMapsVersion": "weekly",
             "tileCachePath": "{site}\/..\/map-tiles",
             "layerDisplayFilterScript": "",
             "formatMapitemScript": "plugin.Maps.9.formatMapitemScript.js",
