@@ -114,15 +114,6 @@ li.layer.expandable-parent.expanded{
     height: 100%;
 }
 
-.iw-title {
-    width: 100%;
-    display: inline-block;
-    background-color: rgb(64, 94, 109);
-    padding: 10px;
-    box-sizing: border-box;
-    color: white;
-}
-
 
 
 .iw-content {
