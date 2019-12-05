@@ -3226,7 +3226,7 @@
             "showToggle": false,
             "guestLoginDrag": true,
             "legendParams": [],
-            "shouldShowLayerScript": "return id>=11;",
+            "shouldShowLayerScript": "return id>=11&&id<20;",
             "editableLayerScript": "return true",
             "formatLayerScript": "Trails Legend.formatLayerScript.js",
             "formatLayerPopoverScript": "",
