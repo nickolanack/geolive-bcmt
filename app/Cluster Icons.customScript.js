@@ -6,7 +6,8 @@ var circleColor={
     'layer-6':'rgb(247,247,247)',
     'layer-7':'rgb(110, 15, 14)',
     'layer-8':'rgb(175, 192, 158)',
-    'layer-9':'rgb(2, 139, 195)'
+    'layer-9':'rgb(2, 139, 195)',
+    'layer-20':'rgb(29, 35, 94)'
 }
 
 
