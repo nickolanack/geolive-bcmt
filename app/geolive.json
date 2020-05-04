@@ -3275,7 +3275,7 @@
         "name": "Knack Box Sync",
         "instance": "KnackBoxSync",
         "parameters": {
-            "enableSync": true,
+            "enableSync": false,
             "widgetTitle": "Sync with knack",
             "target": "map.12",
             "readAccess": "special",
