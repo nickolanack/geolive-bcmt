@@ -3275,6 +3275,7 @@
         "name": "Knack Box Sync",
         "instance": "KnackBoxSync",
         "parameters": {
+            "enabled": false,
             "widgetTitle": "Sync with knack",
             "target": "map.12",
             "readAccess": "special",
@@ -3302,7 +3303,7 @@
                 "id": "5bec7801c5389d5da868a0d8",
                 "key": "XXXX-XXXX"
             },
-            "boxWebhookSignatureSecret": [],
+            "boxWebhookSignatureSecret": "XXXX-XXXX",
             "boxAuthSecreth": [],
             "knackAuthSecret": []
         }
