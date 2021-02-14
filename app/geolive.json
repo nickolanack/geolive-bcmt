@@ -158,7 +158,7 @@
         "name": "Email",
         "instance": "Email",
         "parameters": {
-            "fromEmail": "geolivemap.ca+bcmt@gmail.com",
+            "fromEmail": "info@bcmarinetrails.org",
             "fromEmailName": "Geolive BCMT Map",
             "useSmtp": true,
             "smtpHost": "smtp.gmail.com",
