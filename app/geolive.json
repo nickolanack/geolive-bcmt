@@ -3237,7 +3237,7 @@
             "showEditLayerButtons": true,
             "editLayerScript": "defaultBehaviorFn();",
             "widgetTitle": "Trails Legend",
-            "readAccess": "special"
+            "readAccess": "public"
         }
     },
     "widget.38": {
