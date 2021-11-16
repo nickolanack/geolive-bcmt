@@ -3277,7 +3277,7 @@
         "parameters": {
             "enableSync": true,
             "widgetTitle": "Sync with knack",
-            "target": "map.12",
+            "target": "map.12 - disabled",
             "readAccess": "special",
             "position": "LEFT_CENTER",
             "customScript": "",
